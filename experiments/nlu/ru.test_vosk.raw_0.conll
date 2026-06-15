@@ -1,0 +1,5111 @@
+# id: test_382
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	сериал	_	B-object_name	_	_	_	_	_	_
+_	невский	_	I-object_name	_	_	_	_	_	_
+_	четыре	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_380
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	этот	_	O	_	_	_	_	_	_
+_	альбом	_	B-music_item	_	_	_	_	_	_
+_	плэй	_	B-playlist	_	_	_	_	_	_
+_	лист	_	I-playlist	_	_	_	_	_	_
+_	русский	_	I-playlist	_	_	_	_	_	_
+_	бит	_	I-playlist	_	_	_	_	_	_
+
+# id: test_378
+# intent = SearchScreeningEvent
+_	покажи	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	расписание	_	O	_	_	_	_	_	_
+_	сеансов	_	O	_	_	_	_	_	_
+_	южных	_	B-location	_	_	_	_	_	_
+_	кинотеатрах	_	I-location	_	_	_	_	_	_
+
+# id: test_385
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	картину	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	утро	_	B-object_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	сосновом	_	O	_	_	_	_	_	_
+_	лесу	_	I-location	_	_	_	_	_	_
+
+# id: test_387
+# intent = SearchScreeningEvent
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	посмотреть	_	O	_	_	_	_	_	_
+_	иван	_	B-movie_name	_	_	_	_	_	_
+_	царевич	_	I-movie_name	_	_	_	_	_	_
+_	и	_	I-movie_name	_	_	_	_	_	_
+_	серый	_	I-movie_name	_	_	_	_	_	_
+_	волк	_	I-movie_name	_	_	_	_	_	_
+_	шесть	_	B-datetime	_	_	_	_	_	_
+
+# id: test_388
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	мелодию	_	B-music_item	_	_	_	_	_	_
+_	веселуха	_	B-playlist	_	_	_	_	_	_
+_	русский	_	I-playlist	_	_	_	_	_	_
+_	ансамбле	_	O	_	_	_	_	_	_
+
+# id: test_381
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	шесть	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	немецком	_	O	_	_	_	_	_	_
+_	ресторане	_	B-restaurant_type	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	сочи	_	B-location	_	_	_	_	_	_
+
+# id: test_383
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	я	_	B-entity_name	_	_	_	_	_	_
+_	хочу	_	I-entity_name	_	_	_	_	_	_
+_	быть	_	I-entity_name	_	_	_	_	_	_
+_	с	_	I-entity_name	_	_	_	_	_	_
+_	тобой	_	I-entity_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	моем	_	B-reference	_	_	_	_	_	_
+_	плэй	_	B-playlist	_	_	_	_	_	_
+_	лист	_	I-playlist	_	_	_	_	_	_
+_	вечерние	_	I-playlist	_	_	_	_	_	_
+_	рук	_	I-playlist	_	_	_	_	_	_
+
+# id: test_384
+# intent = SearchScreeningEvent
+_	покажи	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	расписание	_	B-object_type	_	_	_	_	_	_
+_	только	_	O	_	_	_	_	_	_
+_	анимационных	_	B-movie_type	_	_	_	_	_	_
+_	фильмов	_	I-object_type	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	авроре	_	B-location	_	_	_	_	_	_
+
+# id: test_393
+# intent = BookRestaurant
+_	нужен	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	где-нибудь	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	патриарших	_	B-cuisine	_	_	_	_	_	_
+_	через	_	B-datetime	_	_	_	_	_	_
+_	четырнадцать	_	I-datetime	_	_	_	_	_	_
+_	часов	_	I-datetime	_	_	_	_	_	_
+
+# id: test_390
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	B-restaurant_type	_	_	_	_	_	_
+_	возле	_	B-location	_	_	_	_	_	_
+_	колледже	_	O	_	_	_	_	_	_
+_	синергия	_	B-location	_	_	_	_	_	_
+
+# id: test_391
+# intent = SearchScreeningEvent
+_	идёт	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	постучал	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мою	_	O	_	_	_	_	_	_
+_	дверь	_	I-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кинотеатрах	_	O	_	_	_	_	_	_
+_	кару	_	B-location	_	_	_	_	_	_
+
+# id: test_389
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	творческую	_	O	_	_	_	_	_	_
+_	работу	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	ревизор	_	B-object_name	_	_	_	_	_	_
+
+# id: test_394
+# intent = alarm/set_alarm
+_	включи	_	O	_	_	_	_	_	_
+_	полину	_	B-artist	_	_	_	_	_	_
+_	гагарину	_	I-artist	_	_	_	_	_	_
+
+# id: test_379
+# intent = SearchScreeningEvent
+_	найди	_	O	_	_	_	_	_	_
+_	расписание	_	B-object_type	_	_	_	_	_	_
+_	фильмов	_	I-object_type	_	_	_	_	_	_
+_	рядом	_	B-location	_	_	_	_	_	_
+
+# id: test_398
+# intent = SearchScreeningEvent
+_	проверь	_	O	_	_	_	_	_	_
+_	расписание	_	O	_	_	_	_	_	_
+_	кинотеатр	_	B-object_type	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	москве	_	B-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+
+# id: test_395
+# intent = SearchScreeningEvent
+_	покажи	_	O	_	_	_	_	_	_
+_	ближайший	_	O	_	_	_	_	_	_
+_	кинотеатр	_	B-object_location_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	показывает	_	O	_	_	_	_	_	_
+_	любовь	_	B-movie_name	_	_	_	_	_	_
+_	советского	_	I-movie_name	_	_	_	_	_	_
+_	союза	_	I-movie_name	_	_	_	_	_	_
+
+# id: test_396
+# intent = PlayMusic
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	включи	_	O	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плэй	_	B-playlist	_	_	_	_	_	_
+_	лист	_	O	_	_	_	_	_	_
+_	песни	_	B-playlist	_	_	_	_	_	_
+_	и	_	I-playlist	_	_	_	_	_	_
+_	смешариков	_	I-playlist	_	_	_	_	_	_
+
+# id: test_397
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	песню	_	O	_	_	_	_	_	_
+_	тает	_	B-object_name	_	_	_	_	_	_
+_	лёд	_	I-object_name	_	_	_	_	_	_
+
+# id: test_386
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	важен	_	O	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	данном	_	O	_	_	_	_	_	_
+_	месте	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	пятнадцать	_	B-datetime	_	_	_	_	_	_
+_	девятнадцать	_	I-datetime	_	_	_	_	_	_
+_	двадцать	_	I-datetime	_	_	_	_	_	_
+_	девять	_	I-datetime	_	_	_	_	_	_
+
+# id: test_404
+# intent = SearchScreeningEvent
+_	через	_	B-datetime	_	_	_	_	_	_
+_	тринадцать	_	I-datetime	_	_	_	_	_	_
+_	часов	_	I-datetime	_	_	_	_	_	_
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	отведать	_	O	_	_	_	_	_	_
+_	деликатесы	_	O	_	_	_	_	_	_
+_	русской	_	B-location	_	_	_	_	_	_
+_	кухни	_	O	_	_	_	_	_	_
+
+# id: test_400
+# intent = AddToPlaylist
+_	мне	_	O	_	_	_	_	_	_
+_	нужно	_	O	_	_	_	_	_	_
+_	добавить	_	O	_	_	_	_	_	_
+_	произведений	_	O	_	_	_	_	_	_
+_	сергея	_	B-artist	_	_	_	_	_	_
+_	журова	_	I-artist	_	_	_	_	_	_
+_	мы	_	O	_	_	_	_	_	_
+_	плэй	_	B-playlist	_	_	_	_	_	_
+_	лист	_	I-playlist	_	_	_	_	_	_
+_	питер	_	I-playlist	_	_	_	_	_	_
+
+# id: test_402
+# intent = weather/find
+_	насколько	_	O	_	_	_	_	_	_
+_	холоднее	_	B-weather/attribute	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	недалеко	_	B-location	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	подольска	_	B-location	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	три	_	B-datetime	_	_	_	_	_	_
+_	часа	_	I-datetime	_	_	_	_	_	_
+_	ночи	_	I-datetime	_	_	_	_	_	_
+
+# id: test_407
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	лучшую	_	B-sort	_	_	_	_	_	_
+_	музыку	_	O	_	_	_	_	_	_
+_	димы	_	B-artist	_	_	_	_	_	_
+_	билана	_	I-artist	_	_	_	_	_	_
+
+# id: test_403
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	альбом	_	B-music_item	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	плей	_	O	_	_	_	_	_	_
+_	листе	_	O	_	_	_	_	_	_
+_	русские	_	B-playlist	_	_	_	_	_	_
+_	инди	_	I-playlist	_	_	_	_	_	_
+_	рок	_	I-playlist	_	_	_	_	_	_
+
+# id: test_406
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	этому	_	B-object_select	_	_	_	_	_	_
+_	альбому	_	O	_	_	_	_	_	_
+_	одной	_	O	_	_	_	_	_	_
+_	звезду	_	O	_	_	_	_	_	_
+
+# id: test_399
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	B-restaurant_type	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	вечеринку	_	B-restaurant_type	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	трёх	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	баре	_	O	_	_	_	_	_	_
+_	уфе	_	B-location	_	_	_	_	_	_
+
+# id: test_405
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	саундтрэк	_	B-music_item	_	_	_	_	_	_
+_	шестидесятых	_	B-datetime	_	_	_	_	_	_
+
+# id: test_414
+# intent = SearchScreeningEvent
+_	расписание	_	O	_	_	_	_	_	_
+_	сеансов	_	O	_	_	_	_	_	_
+_	анимационных	_	B-movie_type	_	_	_	_	_	_
+_	фильмов	_	I-movie_type	_	_	_	_	_	_
+_	рядом	_	B-location	_	_	_	_	_	_
+
+# id: test_412
+# intent = SearchCreativeWork
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	послушать	_	O	_	_	_	_	_	_
+_	что	_	O	_	_	_	_	_	_
+_	он	_	O	_	_	_	_	_	_
+_	проект	_	O	_	_	_	_	_	_
+_	наверное	_	O	_	_	_	_	_	_
+_	сможете	_	O	_	_	_	_	_	_
+_	найти	_	O	_	_	_	_	_	_
+_	уж	_	O	_	_	_	_	_	_
+_	помпилиус	_	O	_	_	_	_	_	_
+
+# id: test_413
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	доцента	_	B-cuisine	_	_	_	_	_	_
+_	первое	_	B-datetime	_	_	_	_	_	_
+_	что	_	O	_	_	_	_	_	_
+_	я	_	O	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	пять	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	сахалине	_	B-location	_	_	_	_	_	_
+
+# id: test_401
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	наутилус	_	B-entity_name	_	_	_	_	_	_
+_	помпилиус	_	I-artist	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	про	_	B-playlist	_	_	_	_	_	_
+_	плелись	_	I-playlist	_	_	_	_	_	_
+_	брат	_	I-playlist	_	_	_	_	_	_
+
+# id: test_415
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	боярского	_	B-entity_name	_	_	_	_	_	_
+_	мы	_	I-playlist	_	_	_	_	_	_
+_	плэй	_	I-playlist	_	_	_	_	_	_
+_	лист	_	O	_	_	_	_	_	_
+_	русские	_	B-playlist	_	_	_	_	_	_
+_	легенды	_	I-playlist	_	_	_	_	_	_
+
+# id: test_410
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	оценку	_	O	_	_	_	_	_	_
+_	два	_	B-rating_value	_	_	_	_	_	_
+_	асе	_	O	_	_	_	_	_	_
+
+# id: test_163
+# intent = weather/find
+_	на	_	O	_	_	_	_	_	_
+_	улицу	_	B-location	_	_	_	_	_	_
+_	ветрено	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_409
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	мисс	_	B-object_name	_	_	_	_	_	_
+_	сайт	_	I-object_name	_	_	_	_	_	_
+
+# id: test_408
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	матвей	_	B-location	_	_	_	_	_	_
+_	иском	_	I-location	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	окрестностях	_	B-location	_	_	_	_	_	_
+
+# id: test_481
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	русский	_	B-playlist	_	_	_	_	_	_
+_	рок	_	I-playlist	_	_	_	_	_	_
+
+# id: test_411
+# intent = weather/find
+_	поставь	_	O	_	_	_	_	_	_
+_	ноль	_	B-datetime	_	_	_	_	_	_
+_	звёзд	_	O	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	футляре	_	O	_	_	_	_	_	_
+
+# id: test_164
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	температура	_	B-weather/attribute	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+
+# id: test_416
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	ресторанная	_	O	_	_	_	_	_	_
+_	пять	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	михайлович	_	B-datetime	_	_	_	_	_	_
+
+# id: test_162
+# intent = weather/find
+_	сколько	_	O	_	_	_	_	_	_
+_	снега	_	B-weather/attribute	_	_	_	_	_	_
+_	проанализируйте	_	O	_	_	_	_	_	_
+
+# id: test_499
+# intent = SearchScreeningEvent
+_	покажи	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	фильмы	_	O	_	_	_	_	_	_
+_	в	_	B-location	_	_	_	_	_	_
+_	пяти	_	B-location	_	_	_	_	_	_
+_	верстах	_	I-location	_	_	_	_	_	_
+
+# id: test_496
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	этот	_	O	_	_	_	_	_	_
+_	альбом	_	B-music_item	_	_	_	_	_	_
+_	к	_	O	_	_	_	_	_	_
+_	в	_	B-playlist	_	_	_	_	_	_
+_	узком	_	I-playlist	_	_	_	_	_	_
+_	уроку	_	I-playlist	_	_	_	_	_	_
+_	от	_	I-playlist	_	_	_	_	_	_
+_	арии	_	I-playlist	_	_	_	_	_	_
+_	да	_	I-playlist	_	_	_	_	_	_
+_	кино	_	I-playlist	_	_	_	_	_	_
+
+# id: test_497
+# intent = SearchCreativeWork
+_	найти	_	O	_	_	_	_	_	_
+_	тв	_	O	_	_	_	_	_	_
+_	сериал	_	I-object_type	_	_	_	_	_	_
+_	ивановы	_	B-object_name	_	_	_	_	_	_
+_	ивановы	_	I-object_name	_	_	_	_	_	_
+
+# id: test_498
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	девять	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	популярном	_	O	_	_	_	_	_	_
+_	барри	_	B-cuisine	_	_	_	_	_	_
+_	возле	_	B-location	_	_	_	_	_	_
+_	метро	_	B-location	_	_	_	_	_	_
+_	тургеневская	_	I-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	шесть	_	B-datetime	_	_	_	_	_	_
+_	месяцев	_	I-datetime	_	_	_	_	_	_
+_	перед	_	I-datetime	_	_	_	_	_	_
+
+# id: test_500
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	бегемотик	_	B-cuisine	_	_	_	_	_	_
+_	в	_	B-location	_	_	_	_	_	_
+_	том	_	B-location	_	_	_	_	_	_
+_	же	_	I-location	_	_	_	_	_	_
+_	районе	_	I-location	_	_	_	_	_	_
+_	что	_	O	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	стейк	_	B-cuisine	_	_	_	_	_	_
+_	хаус	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_495
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	китайской	_	B-location	_	_	_	_	_	_
+_	грамоте	_	I-location	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	москве	_	B-location	_	_	_	_	_	_
+_	недалеко	_	B-location	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	чистых	_	B-location	_	_	_	_	_	_
+_	прудов	_	I-location	_	_	_	_	_	_
+
+# id: test_494
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	популярные	_	B-cuisine	_	_	_	_	_	_
+_	ресторан	_	B-restaurant_type	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	пять	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+
+# id: test_492
+# intent = SearchCreativeWork
+_	найти	_	O	_	_	_	_	_	_
+_	книгу	_	O	_	_	_	_	_	_
+_	война	_	B-object_name	_	_	_	_	_	_
+_	и	_	I-object_name	_	_	_	_	_	_
+_	мир	_	I-object_name	_	_	_	_	_	_
+
+# id: test_491
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	тв	_	B-object_type	_	_	_	_	_	_
+_	шоу	_	I-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	битва	_	B-object_name	_	_	_	_	_	_
+_	экстрасенсов	_	I-object_name	_	_	_	_	_	_
+
+# id: test_489
+# intent = PlayMusic
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	послушать	_	O	_	_	_	_	_	_
+_	песни	_	O	_	_	_	_	_	_
+_	исполнителя	_	O	_	_	_	_	_	_
+_	мияги	_	B-artist	_	_	_	_	_	_
+
+# id: test_493
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	саша	_	B-party_size_description	_	_	_	_	_	_
+_	и	_	I-party_size_description	_	_	_	_	_	_
+_	таня	_	I-party_size_description	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	ресторане	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	пять	_	B-datetime	_	_	_	_	_	_
+_	месяцев	_	I-datetime	_	_	_	_	_	_
+_	вперёд	_	I-datetime	_	_	_	_	_	_
+
+# id: test_490
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	анне	_	B-object_name	_	_	_	_	_	_
+_	карениной	_	I-object_name	_	_	_	_	_	_
+_	пять	_	B-rating_value	_	_	_	_	_	_
+_	звёзд	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_484
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	здесь	_	B-location	_	_	_	_	_	_
+_	метель	_	B-weather/attribute	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	пять	_	B-datetime	_	_	_	_	_	_
+_	вечера	_	I-datetime	_	_	_	_	_	_
+
+# id: test_483
+# intent = SearchScreeningEvent
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	камеди	_	B-movie_name	_	_	_	_	_	_
+_	клаб	_	I-movie_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	тнт	_	I-movie_name	_	_	_	_	_	_
+
+# id: test_485
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	хали	_	B-artist	_	_	_	_	_	_
+_	гали	_	I-artist	_	_	_	_	_	_
+_	пора	_	I-entity_name	_	_	_	_	_	_
+_	трупе	_	I-entity_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плэй	_	B-playlist	_	_	_	_	_	_
+_	лист	_	I-playlist	_	_	_	_	_	_
+_	девяностые	_	I-playlist	_	_	_	_	_	_
+
+# id: test_482
+# intent = SearchScreeningEvent
+_	показывают	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	машу	_	B-movie_name	_	_	_	_	_	_
+_	и	_	I-movie_name	_	_	_	_	_	_
+_	медведя	_	I-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кино	_	B-object_location_type	_	_	_	_	_	_
+_	максим	_	O	_	_	_	_	_	_
+
+# id: test_481_1
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	русский	_	B-playlist	_	_	_	_	_	_
+_	рок	_	I-playlist	_	_	_	_	_	_
+
+# id: test_488
+# intent = AddToPlaylist
+_	плейлиста	_	O	_	_	_	_	_	_
+_	русский	_	B-playlist	_	_	_	_	_	_
+_	шансон	_	I-playlist	_	_	_	_	_	_
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	добавь	_	O	_	_	_	_	_	_
+_	эту	_	O	_	_	_	_	_	_
+_	песню	_	B-music_item	_	_	_	_	_	_
+_	михаила	_	B-artist	_	_	_	_	_	_
+_	круга	_	I-artist	_	_	_	_	_	_
+
+# id: test_486
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	песню	_	B-music_item	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	золото	_	B-playlist	_	_	_	_	_	_
+_	эпоху	_	I-playlist	_	_	_	_	_	_
+_	русской	_	I-playlist	_	_	_	_	_	_
+_	музыки	_	I-playlist	_	_	_	_	_	_
+
+# id: test_487
+# intent = SearchCreativeWork
+_	можешь	_	O	_	_	_	_	_	_
+_	найти	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	тв	_	B-object_name	_	_	_	_	_	_
+_	шоу	_	I-object_name	_	_	_	_	_	_
+_	уральские	_	I-reminder/todo	_	_	_	_	_	_
+_	пельмени	_	I-object_name	_	_	_	_	_	_
+
+# id: test_479
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	махачкалы	_	B-location	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	дагестан	_	B-location	_	_	_	_	_	_
+
+# id: test_480
+# intent = SearchScreeningEvent
+_	покажи	_	O	_	_	_	_	_	_
+_	расписание	_	B-object_type	_	_	_	_	_	_
+_	фильма	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	северном	_	B-location	_	_	_	_	_	_
+_	бутово	_	I-location	_	_	_	_	_	_
+
+# id: test_476
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	шоколаднице	_	B-restaurant_type	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	петербурге	_	B-location	_	_	_	_	_	_
+
+# id: test_477
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	здесь	_	B-location	_	_	_	_	_	_
+_	два	_	B-datetime	_	_	_	_	_	_
+_	часа	_	I-datetime	_	_	_	_	_	_
+_	ночи	_	I-datetime	_	_	_	_	_	_
+
+# id: test_478
+# intent = SearchScreeningEvent
+_	найти	_	O	_	_	_	_	_	_
+_	расписание	_	B-object_type	_	_	_	_	_	_
+_	фильмов	_	O	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	коров	_	O	_	_	_	_	_	_
+_	восемь	_	B-datetime	_	_	_	_	_	_
+_	салаир	_	B-location	_	_	_	_	_	_
+_	рис	_	I-location	_	_	_	_	_	_
+
+# id: test_475
+# intent = SearchScreeningEvent
+_	какие	_	O	_	_	_	_	_	_
+_	фильмы	_	B-movie_type	_	_	_	_	_	_
+_	показывают	_	O	_	_	_	_	_	_
+_	поблизости	_	B-location	_	_	_	_	_	_
+
+# id: test_474
+# intent = SearchScreeningEvent
+_	какие	_	O	_	_	_	_	_	_
+_	будут	_	O	_	_	_	_	_	_
+_	сеансы	_	B-movie_type	_	_	_	_	_	_
+_	а	_	O	_	_	_	_	_	_
+_	норы	_	B-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кинотеатре	_	O	_	_	_	_	_	_
+
+# id: test_472
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	басков	_	B-entity_name	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плэй	_	B-playlist	_	_	_	_	_	_
+_	лист	_	O	_	_	_	_	_	_
+_	русская	_	B-playlist	_	_	_	_	_	_
+_	душа	_	I-playlist	_	_	_	_	_	_
+
+# id: test_473
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	текущие	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	романа	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	ноль	_	B-rating_value	_	_	_	_	_	_
+_	шести	_	B-best_rating	_	_	_	_	_	_
+
+# id: test_471
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	преступление	_	O	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	наказание	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	три	_	B-rating_value	_	_	_	_	_	_
+_	шести	_	B-best_rating	_	_	_	_	_	_
+
+# id: test_313_1
+# intent = weather/find
+_	погода	_	O	_	_	_	_	_	_
+_	через	_	B-datetime	_	_	_	_	_	_
+_	два	_	I-datetime	_	_	_	_	_	_
+_	часа	_	I-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	ельцин	_	B-location	_	_	_	_	_	_
+
+# id: test_476_1
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	уроки	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	петербурге	_	B-location	_	_	_	_	_	_
+
+# id: test_430_1
+# intent = alarm/set_alarm
+_	включи	_	O	_	_	_	_	_	_
+_	сжечь	_	O	_	_	_	_	_	_
+_	электричество	_	O	_	_	_	_	_	_
+_	относимся	_	O	_	_	_	_	_	_
+
+# id: test_229
+# intent = reminder/cancel_reminder
+_	удали	_	O	_	_	_	_	_	_
+_	последняя	_	O	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+
+# id: test_228
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+
+# id: test_230
+# intent = alarm/time_left_on_alarm
+_	сколько	_	O	_	_	_	_	_	_
+_	времени	_	O	_	_	_	_	_	_
+_	осталось	_	O	_	_	_	_	_	_
+_	до	_	O	_	_	_	_	_	_
+_	будильника	_	O	_	_	_	_	_	_
+
+# id: test_269_1
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	немецкий	_	B-cuisine	_	_	_	_	_	_
+_	ресторанов	_	B-rating_unit	_	_	_	_	_	_
+_	туле	_	B-location	_	_	_	_	_	_
+
+# id: test_259_1
+# intent = weather/find
+_	есть	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	гроза	_	B-weather/attribute	_	_	_	_	_	_
+_	сейчас	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	елизаветы	_	B-location	_	_	_	_	_	_
+
+# id: test_428_2
+# intent = alarm/set_alarm
+_	включи	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	у	_	I-playlist	_	_	_	_	_	_
+_	комин	_	O	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	одной	_	O	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	эм	_	O	_	_	_	_	_	_
+_	си	_	I-playlist	_	_	_	_	_	_
+
+# id: test_428_1
+# intent = BookRestaurant
+_	включи	_	O	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	все	_	O	_	_	_	_	_	_
+_	дома	_	O	_	_	_	_	_	_
+_	одной	_	O	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	им	_	O	_	_	_	_	_	_
+_	си	_	O	_	_	_	_	_	_
+
+# id: test_366_1
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	жарко	_	B-weather/attribute	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	находки	_	B-location	_	_	_	_	_	_
+_	шестнадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_226
+# intent = alarm/cancel_alarm
+_	отмени	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	будильники	_	O	_	_	_	_	_	_
+
+# id: test_227
+# intent = weather/find
+_	надвигается	_	O	_	_	_	_	_	_
+_	гроза	_	B-weather/attribute	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	мой	_	B-location	_	_	_	_	_	_
+_	район	_	I-location	_	_	_	_	_	_
+
+# id: test_225
+# intent = reminder/show_reminders
+_	покажи	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	текущее	_	O	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+
+# id: test_224
+# intent = alarm/show_alarms
+_	покажи	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	текущие	_	O	_	_	_	_	_	_
+_	будильники	_	O	_	_	_	_	_	_
+
+# id: test_217
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	сентябрь	_	B-datetime	_	_	_	_	_	_
+
+# id: test_218
+# intent = weather/find
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	холодно	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_219
+# intent = reminder/cancel_reminder
+_	отмени	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+
+# id: test_223
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	уровень	_	O	_	_	_	_	_	_
+_	снега	_	B-weather/attribute	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+
+# id: test_216
+# intent = reminder/show_reminders
+_	покажи	_	O	_	_	_	_	_	_
+_	текущее	_	O	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+
+# id: test_214
+# intent = weather/find
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	пойдёт	_	O	_	_	_	_	_	_
+_	ливень	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_215
+# intent = weather/find
+_	должен	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	я	_	O	_	_	_	_	_	_
+_	надеть	_	O	_	_	_	_	_	_
+_	термобелье	_	B-weather/attribute	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+
+# id: test_222
+# intent = alarm/set_alarm
+_	поставь	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	два	_	B-datetime	_	_	_	_	_	_
+_	часа	_	I-datetime	_	_	_	_	_	_
+_	ночи	_	I-datetime	_	_	_	_	_	_
+
+# id: test_220
+# intent = weather/find
+_	жарко	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_221
+# intent = alarm/set_alarm
+_	поставь	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	выходные	_	B-datetime	_	_	_	_	_	_
+_	в	_	I-datetime	_	_	_	_	_	_
+_	два	_	I-datetime	_	_	_	_	_	_
+_	часа	_	I-datetime	_	_	_	_	_	_
+_	дня	_	I-datetime	_	_	_	_	_	_
+
+# id: test_213
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	солнечно	_	B-weather/attribute	_	_	_	_	_	_
+_	в	_	B-datetime	_	_	_	_	_	_
+_	четверг	_	B-datetime	_	_	_	_	_	_
+
+# id: test_208
+# intent = reminder/set_reminder
+_	напомни	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	забрать	_	B-reminder/todo	_	_	_	_	_	_
+_	лизу	_	I-reminder/todo	_	_	_	_	_	_
+
+# id: test_207
+# intent = alarm/cancel_alarm
+_	отмени	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	будильники	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	понедельник	_	B-datetime	_	_	_	_	_	_
+
+# id: test_205
+# intent = reminder/cancel_reminder
+_	отмени	_	O	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+_	о	_	O	_	_	_	_	_	_
+_	сегодняшние	_	B-reminder/todo	_	_	_	_	_	_
+_	вечерние	_	B-reminder/todo	_	_	_	_	_	_
+_	игре	_	I-reminder/todo	_	_	_	_	_	_
+
+# id: test_206
+# intent = alarm/set_alarm
+_	поставь	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	три	_	B-datetime	_	_	_	_	_	_
+_	часа	_	I-datetime	_	_	_	_	_	_
+_	ночи	_	I-datetime	_	_	_	_	_	_
+
+# id: test_209
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	максимальная	_	B-weather/attribute	_	_	_	_	_	_
+_	температура	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_212
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	вологде	_	B-location	_	_	_	_	_	_
+
+# id: test_211
+# intent = reminder/set_reminder
+_	напомним	_	O	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	позже	_	I-datetime	_	_	_	_	_	_
+
+# id: test_210
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	град	_	B-weather/attribute	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	озёрске	_	B-location	_	_	_	_	_	_
+
+# id: test_203
+# intent = weather/find
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	туман	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_204
+# intent = alarm/cancel_alarm
+_	отменить	_	O	_	_	_	_	_	_
+_	текущей	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	пять	_	B-datetime	_	_	_	_	_	_
+_	пятнадцать	_	I-datetime	_	_	_	_	_	_
+_	утра	_	I-datetime	_	_	_	_	_	_
+_	во	_	I-datetime	_	_	_	_	_	_
+_	вторник	_	I-datetime	_	_	_	_	_	_
+
+# id: test_202
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+
+# id: test_201
+# intent = alarm/show_alarms
+_	на	_	O	_	_	_	_	_	_
+_	какое	_	O	_	_	_	_	_	_
+_	время	_	O	_	_	_	_	_	_
+_	установлен	_	O	_	_	_	_	_	_
+_	текущей	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+
+# id: test_200
+# intent = weather/find
+_	насколько	_	O	_	_	_	_	_	_
+_	облачно	_	B-weather/attribute	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+
+# id: test_194
+# intent = reminder/cancel_reminder
+_	удали	_	O	_	_	_	_	_	_
+_	два	_	O	_	_	_	_	_	_
+_	последних	_	O	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	моем	_	O	_	_	_	_	_	_
+_	списке	_	O	_	_	_	_	_	_
+
+# id: test_193
+# intent = alarm/set_alarm
+_	поставь	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	каждый	_	I-recurring_datetime	_	_	_	_	_	_
+_	девять	_	I-recurring_datetime	_	_	_	_	_	_
+_	минут	_	I-recurring_datetime	_	_	_	_	_	_
+
+# id: test_191_4
+# intent = weather/find
+_	арктические	_	O	_	_	_	_	_	_
+_	штормовом	_	O	_	_	_	_	_	_
+_	море	_	I-location	_	_	_	_	_	_
+_	лаптевых	_	O	_	_	_	_	_	_
+
+# id: test_195
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+
+# id: test_199
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	эти	_	B-datetime	_	_	_	_	_	_
+_	выходные	_	I-datetime	_	_	_	_	_	_
+_	снег	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_197
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	влажность	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_196
+# intent = alarm/set_alarm
+_	включи	_	O	_	_	_	_	_	_
+_	текущей	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+
+# id: test_191_3
+# intent = weather/find
+_	арктические	_	O	_	_	_	_	_	_
+_	штормов	_	O	_	_	_	_	_	_
+_	карского	_	B-location	_	_	_	_	_	_
+_	моря	_	I-location	_	_	_	_	_	_
+
+# id: test_198
+# intent = reminder/set_reminder
+_	напомним	_	O	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	поставить	_	I-reminder/todo	_	_	_	_	_	_
+_	будильник	_	I-reminder/todo	_	_	_	_	_	_
+
+# id: test_191_2
+# intent = weather/find
+_	арктический	_	B-weather/attribute	_	_	_	_	_	_
+_	шторма	_	I-weather/attribute	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	охотском	_	B-location	_	_	_	_	_	_
+_	море	_	I-location	_	_	_	_	_	_
+
+# id: test_191_1
+# intent = weather/find
+_	муссонный	_	O	_	_	_	_	_	_
+_	шторма	_	B-weather/attribute	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	японском	_	B-location	_	_	_	_	_	_
+_	море	_	I-location	_	_	_	_	_	_
+
+# id: test_269_3
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	места	_	O	_	_	_	_	_	_
+_	рестораны	_	B-rating_unit	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	алатыря	_	B-location	_	_	_	_	_	_
+
+# id: test_273_1
+# intent = weather/find
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	гурьевск	_	B-location	_	_	_	_	_	_
+_	россия	_	B-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	двадцать	_	B-datetime	_	_	_	_	_	_
+_	седьмое	_	I-datetime	_	_	_	_	_	_
+_	ноль	_	I-datetime	_	_	_	_	_	_
+_	первая	_	I-datetime	_	_	_	_	_	_
+_	две	_	I-datetime	_	_	_	_	_	_
+_	тысячи	_	I-datetime	_	_	_	_	_	_
+_	двадцать	_	I-datetime	_	_	_	_	_	_
+_	пятая	_	I-datetime	_	_	_	_	_	_
+
+# id: test_259_3
+# intent = weather/find
+_	есть	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	гроза	_	B-weather/attribute	_	_	_	_	_	_
+_	сейчас	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	алейска	_	B-location	_	_	_	_	_	_
+
+# id: test_259_4
+# intent = weather/find
+_	есть	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	солнце	_	B-weather/attribute	_	_	_	_	_	_
+_	сейчас	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кировске	_	B-location	_	_	_	_	_	_
+
+# id: test_253_9
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	группы	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	чудики	_	B-object_name	_	_	_	_	_	_
+
+# id: test_253_7
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	группы	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	чёрная	_	B-object_name	_	_	_	_	_	_
+_	к	_	I-object_name	_	_	_	_	_	_
+_	ним	_	I-object_name	_	_	_	_	_	_
+
+# id: test_264_1
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	итальянский	_	B-restaurant_type	_	_	_	_	_	_
+_	бар	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	то	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	нижнем	_	B-location	_	_	_	_	_	_
+_	новгороде	_	I-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	трёх	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	двадцатая	_	B-datetime	_	_	_	_	_	_
+_	пятая	_	I-datetime	_	_	_	_	_	_
+_	две	_	I-datetime	_	_	_	_	_	_
+_	тысячи	_	I-datetime	_	_	_	_	_	_
+_	двадцать	_	I-datetime	_	_	_	_	_	_
+_	пятая	_	I-datetime	_	_	_	_	_	_
+
+# id: test_253_8
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	видим	_	O	_	_	_	_	_	_
+_	группы	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	чёрная	_	B-object_name	_	_	_	_	_	_
+_	молния	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_2
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	блицкриг	_	B-object_name	_	_	_	_	_	_
+_	пылающий	_	I-object_name	_	_	_	_	_	_
+_	горизонт	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_19
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	видео	_	B-object_type	_	_	_	_	_	_
+_	группы	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	смерть	_	B-object_name	_	_	_	_	_	_
+_	шпионам	_	I-object_name	_	_	_	_	_	_
+_	момент	_	I-object_name	_	_	_	_	_	_
+_	истины	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_18
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	группы	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	саботаж	_	B-object_name	_	_	_	_	_	_
+_	кулак	_	I-object_name	_	_	_	_	_	_
+_	империи	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_3
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	метро	_	B-object_name	_	_	_	_	_	_
+_	два	_	O	_	_	_	_	_	_
+
+# id: test_253_6
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	видел	_	O	_	_	_	_	_	_
+_	игру	_	B-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	царевна	_	B-object_name	_	_	_	_	_	_
+_	древнерусские	_	I-object_name	_	_	_	_	_	_
+_	приключения	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_4
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	тургор	_	B-object_name	_	_	_	_	_	_
+
+# id: test_253_17
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	группы	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	противостояние	_	B-object_name	_	_	_	_	_	_
+_	принуждения	_	O	_	_	_	_	_	_
+_	к	_	O	_	_	_	_	_	_
+_	миру	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_15
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	противостояния	_	O	_	_	_	_	_	_
+_	азия	_	I-object_name	_	_	_	_	_	_
+_	в	_	I-object_name	_	_	_	_	_	_
+_	огне	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_5
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	видео	_	B-object_type	_	_	_	_	_	_
+_	игру	_	I-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	фобос	_	B-object_name	_	_	_	_	_	_
+_	тысяча	_	B-datetime	_	_	_	_	_	_
+_	девятьсот	_	I-datetime	_	_	_	_	_	_
+_	пятьдесят	_	I-datetime	_	_	_	_	_	_
+_	три	_	I-datetime	_	_	_	_	_	_
+
+# id: test_253_16
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	видел	_	O	_	_	_	_	_	_
+_	игру	_	B-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	противостояния	_	B-object_name	_	_	_	_	_	_
+_	война	_	B-object_name	_	_	_	_	_	_
+_	в	_	I-object_name	_	_	_	_	_	_
+_	заливе	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_14
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	группы	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	провинциальной	_	B-entity_name	_	_	_	_	_	_
+_	игрок	_	I-entity_name	_	_	_	_	_	_
+_	два	_	I-entity_name	_	_	_	_	_	_
+_	возвращение	_	O	_	_	_	_	_	_
+_	игрока	_	I-entity_name	_	_	_	_	_	_
+
+# id: test_253_12
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	подземелья	_	B-object_name	_	_	_	_	_	_
+_	кремля	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_13
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	приключения	_	B-object_name	_	_	_	_	_	_
+_	капитана	_	I-object_name	_	_	_	_	_	_
+_	блада	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_1
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	видео	_	B-object_type	_	_	_	_	_	_
+_	игру	_	I-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	альфа	_	B-object_name	_	_	_	_	_	_
+_	антитеррор	_	I-object_name	_	_	_	_	_	_
+
+# id: test_253_11
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	видел	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	пираты	_	B-object_name	_	_	_	_	_	_
+_	штурм	_	I-object_name	_	_	_	_	_	_
+_	небес	_	I-object_name	_	_	_	_	_	_
+
+# id: test_217_1
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	февраль	_	B-datetime	_	_	_	_	_	_
+
+# id: test_217_2
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	март	_	B-datetime	_	_	_	_	_	_
+
+# id: test_253_10
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	петька	_	B-object_name	_	_	_	_	_	_
+_	восемь	_	I-object_name	_	_	_	_	_	_
+_	покорения	_	I-object_name	_	_	_	_	_	_
+_	рима	_	I-object_name	_	_	_	_	_	_
+
+# id: test_212_1
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	углегорска	_	B-location	_	_	_	_	_	_
+
+# id: test_208_1
+# intent = reminder/set_reminder
+_	напомним	_	O	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	забрать	_	I-reminder/todo	_	_	_	_	_	_
+_	александра	_	I-reminder/todo	_	_	_	_	_	_
+
+# id: test_208_2
+# intent = reminder/set_reminder
+_	напомни	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	забрать	_	B-reminder/todo	_	_	_	_	_	_
+_	илью	_	I-reminder/todo	_	_	_	_	_	_
+
+# id: test_212_2
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	об	_	O	_	_	_	_	_	_
+_	долине	_	I-location	_	_	_	_	_	_
+
+# id: test_208_3
+# intent = reminder/set_reminder
+_	напомни	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	забрать	_	B-reminder/todo	_	_	_	_	_	_
+_	никиту	_	I-reminder/todo	_	_	_	_	_	_
+
+# id: test_177_2
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	ветер	_	B-weather/attribute	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	этой	_	B-datetime	_	_	_	_	_	_
+_	неделе	_	I-datetime	_	_	_	_	_	_
+
+# id: test_186_1
+# intent = weather/find
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	град	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_186_2
+# intent = weather/find
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	туман	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_186_3
+# intent = weather/find
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	гололёд	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_177_1
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	ветер	_	B-weather/attribute	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	этой	_	B-datetime	_	_	_	_	_	_
+_	неделе	_	I-datetime	_	_	_	_	_	_
+
+# id: test_175_4
+# intent = weather/find
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	ливень	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_175_1
+# intent = weather/find
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	метель	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_175_2
+# intent = weather/find
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	ливень	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_189_1
+# intent = weather/find
+_	субботу	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	туман	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_175_3
+# intent = weather/find
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	метель	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_286_6
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	серию	_	O	_	_	_	_	_	_
+_	бушующей	_	B-object_name	_	_	_	_	_	_
+_	стихии	_	I-object_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	три	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_286_7
+# intent = RateBook
+_	оценить	_	O	_	_	_	_	_	_
+_	серию	_	B-object_name	_	_	_	_	_	_
+_	огонь	_	B-object_name	_	_	_	_	_	_
+_	и	_	I-object_name	_	_	_	_	_	_
+_	лёд	_	I-object_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	две	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_291_1
+# intent = SearchScreeningEvent
+_	были	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	кровавую	_	B-movie_name	_	_	_	_	_	_
+_	барыню	_	I-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	семь	_	B-datetime	_	_	_	_	_	_
+_	вечера	_	I-datetime	_	_	_	_	_	_
+
+# id: test_291_4
+# intent = SearchScreeningEvent
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	маню	_	B-movie_name	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	семь	_	I-datetime	_	_	_	_	_	_
+_	вечера	_	I-datetime	_	_	_	_	_	_
+
+# id: test_291_2
+# intent = SearchScreeningEvent
+_	будут	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	невского	_	B-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	семь	_	B-datetime	_	_	_	_	_	_
+_	вечера	_	I-datetime	_	_	_	_	_	_
+
+# id: test_285_9
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	драники	_	B-served_dish	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	кабачка	_	B-served_dish	_	_	_	_	_	_
+_	из	_	I-served_dish	_	_	_	_	_	_
+_	форелью	_	I-served_dish	_	_	_	_	_	_
+_	слабый	_	I-served_dish	_	_	_	_	_	_
+_	соли	_	I-served_dish	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	творожным	_	B-location	_	_	_	_	_	_
+_	сыром	_	I-location	_	_	_	_	_	_
+
+# id: test_285_7
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	вареники	_	B-served_dish	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	черёмуха	_	B-served_dish	_	_	_	_	_	_
+_	вы	_	I-served_dish	_	_	_	_	_	_
+_	муки	_	I-served_dish	_	_	_	_	_	_
+_	с	_	I-served_dish	_	_	_	_	_	_
+_	вишней	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_6
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	капустные	_	B-served_dish	_	_	_	_	_	_
+_	кочаны	_	I-served_dish	_	_	_	_	_	_
+_	рыжков	_	O	_	_	_	_	_	_
+_	грибами	_	O	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	черным	_	B-reminder/todo	_	_	_	_	_	_
+_	чесноком	_	I-location	_	_	_	_	_	_
+
+# id: test_285_43
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируем	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	медовик	_	B-served_dish	_	_	_	_	_	_
+
+# id: test_285_8
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	карамельной	_	B-served_dish	_	_	_	_	_	_
+_	яблок	_	I-served_dish	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	печи	_	I-location	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	кедровым	_	B-cuisine	_	_	_	_	_	_
+_	печеньем	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_5
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируем	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	картофель	_	B-served_dish	_	_	_	_	_	_
+_	с	_	I-served_dish	_	_	_	_	_	_
+_	грибами	_	I-served_dish	_	_	_	_	_	_
+_	по-домашнему	_	B-sort	_	_	_	_	_	_
+
+# id: test_285_39
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	пожарского	_	B-served_dish	_	_	_	_	_	_
+_	котлету	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_37
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	сомы	_	B-served_dish	_	_	_	_	_	_
+_	из	_	I-reminder/todo	_	_	_	_	_	_
+_	печи	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_38
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	корейского	_	B-served_dish	_	_	_	_	_	_
+_	судака	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_42
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	сырники	_	B-served_dish	_	_	_	_	_	_
+
+# id: test_285_40
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	говядина	_	B-served_dish	_	_	_	_	_	_
+_	по	_	I-reminder/todo	_	_	_	_	_	_
+_	строганова	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_41
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подай	_	O	_	_	_	_	_	_
+_	берёзу	_	B-served_dish	_	_	_	_	_	_
+
+# id: test_285_4
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	вёшенки	_	B-served_dish	_	_	_	_	_	_
+_	из	_	I-reminder/todo	_	_	_	_	_	_
+_	печи	_	I-served_dish	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	кукурузной	_	I-served_dish	_	_	_	_	_	_
+_	каши	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_36
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	вареники	_	B-served_dish	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	картофелем	_	I-served_dish	_	_	_	_	_	_
+_	с	_	I-served_dish	_	_	_	_	_	_
+_	грибным	_	I-served_dish	_	_	_	_	_	_
+_	соусом	_	I-location	_	_	_	_	_	_
+
+# id: test_285_34
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	картофель	_	B-served_dish	_	_	_	_	_	_
+_	по-домашнему	_	I-served_dish	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	лесными	_	I-served_dish	_	_	_	_	_	_
+_	грибами	_	I-reminder/todo	_	_	_	_	_	_
+
+# id: test_285_33
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируем	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	топлёного	_	B-served_dish	_	_	_	_	_	_
+_	козлёнка	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_31
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	гречневую	_	B-served_dish	_	_	_	_	_	_
+_	кашу	_	I-served_dish	_	_	_	_	_	_
+_	по	_	O	_	_	_	_	_	_
+_	купеческие	_	B-cuisine	_	_	_	_	_	_
+
+# id: test_285_35
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	сибирские	_	B-served_dish	_	_	_	_	_	_
+_	пельмени	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_32
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	хвост	_	B-served_dish	_	_	_	_	_	_
+_	резки	_	I-served_dish	_	_	_	_	_	_
+_	солодова	_	I-served_dish	_	_	_	_	_	_
+_	соусом	_	O	_	_	_	_	_	_
+
+# id: test_285_27
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	грибную	_	B-served_dish	_	_	_	_	_	_
+_	похлёбку	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_26
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	сельдь	_	B-served_dish	_	_	_	_	_	_
+_	под	_	I-served_dish	_	_	_	_	_	_
+_	шубой	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_25
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	салат	_	B-restaurant_type	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	дальневосточных	_	B-sort	_	_	_	_	_	_
+_	морепродуктов	_	O	_	_	_	_	_	_
+
+# id: test_285_30
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	кедровую	_	B-served_dish	_	_	_	_	_	_
+_	кашу	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_29
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	борщ	_	B-served_dish	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	бородинский	_	B-cuisine	_	_	_	_	_	_
+_	гренками	_	I-served_dish	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	салом	_	B-location	_	_	_	_	_	_
+
+# id: test_285_28
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	суточные	_	B-served_dish	_	_	_	_	_	_
+_	щи	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_24
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	оливье	_	B-served_dish	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	фазанов	_	B-served_dish	_	_	_	_	_	_
+
+# id: test_285_23
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	пирожки	_	B-served_dish	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	говяжьим	_	B-served_dish	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	щёчками	_	I-party_size_description	_	_	_	_	_	_
+
+# id: test_285_3
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируем	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	суп	_	B-served_dish	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	кореньев	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_22
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	грудь	_	B-served_dish	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	сметане	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_21
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	холодец	_	B-served_dish	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	языка	_	O	_	_	_	_	_	_
+
+# id: test_285_2
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируем	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	винегрет	_	B-served_dish	_	_	_	_	_	_
+
+# id: test_285_20
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	жареные	_	B-served_dish	_	_	_	_	_	_
+_	пончики	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_14
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	ушной	_	B-served_dish	_	_	_	_	_	_
+_	из	_	I-served_dish	_	_	_	_	_	_
+_	язычков	_	I-location	_	_	_	_	_	_
+_	ягнёнка	_	I-served_dish	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	овощами	_	B-served_dish	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	редькой	_	I-party_size_description	_	_	_	_	_	_
+
+# id: test_285_13
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	кулебяку	_	B-served_dish	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	говядиной	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_15
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	кадис	_	B-served_dish	_	_	_	_	_	_
+_	тремя	_	B-datetime	_	_	_	_	_	_
+_	видами	_	O	_	_	_	_	_	_
+_	рыб	_	B-facility	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	расти	_	O	_	_	_	_	_	_
+_	гаем	_	O	_	_	_	_	_	_
+
+# id: test_285_19
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	там	_	O	_	_	_	_	_	_
+_	лен	_	B-served_dish	_	_	_	_	_	_
+_	и	_	I-party_size_description	_	_	_	_	_	_
+_	медовый	_	I-served_dish	_	_	_	_	_	_
+_	сыр	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_17
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	холодец	_	B-served_dish	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	яблок	_	B-served_dish	_	_	_	_	_	_
+
+# id: test_285_16
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	верещал	_	B-served_dish	_	_	_	_	_	_
+_	кусок	_	O	_	_	_	_	_	_
+_	говяжья	_	I-served_dish	_	_	_	_	_	_
+_	грудинка	_	I-served_dish	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+
+# id: test_285_12
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	страсбургский	_	B-cuisine	_	_	_	_	_	_
+_	пирог	_	B-served_dish	_	_	_	_	_	_
+
+# id: test_285_10
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируем	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	деревенский	_	B-served_dish	_	_	_	_	_	_
+_	завтра	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_18
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	поедают	_	O	_	_	_	_	_	_
+_	дают	_	O	_	_	_	_	_	_
+_	вари	_	B-served_dish	_	_	_	_	_	_
+_	нет	_	O	_	_	_	_	_	_
+
+# id: test_285_11
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	манник	_	B-served_dish	_	_	_	_	_	_
+_	заварным	_	I-served_dish	_	_	_	_	_	_
+_	кремом	_	I-served_dish	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	сметанным	_	B-cuisine	_	_	_	_	_	_
+_	мороженым	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_285_1
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	салат	_	B-restaurant_type	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	яблоками	_	B-served_dish	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	маринованными	_	O	_	_	_	_	_	_
+_	коли	_	B-served_dish	_	_	_	_	_	_
+_	раби	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_273_2
+# intent = weather/find
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	александровский	_	B-location	_	_	_	_	_	_
+_	россия	_	B-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	двадцать	_	B-datetime	_	_	_	_	_	_
+_	седьмой	_	I-datetime	_	_	_	_	_	_
+_	ноль	_	I-datetime	_	_	_	_	_	_
+_	первая	_	O	_	_	_	_	_	_
+_	детей	_	O	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	двадцать	_	I-datetime	_	_	_	_	_	_
+_	пятое	_	I-datetime	_	_	_	_	_	_
+
+# id: test_286_8
+# intent = RateBook
+_	а	_	O	_	_	_	_	_	_
+_	ты	_	O	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	серию	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	хемуль	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	четыре	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_269_2
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	немецкой	_	B-cuisine	_	_	_	_	_	_
+_	ресторан	_	B-restaurant_type	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	абакане	_	B-location	_	_	_	_	_	_
+
+# id: test_274_1
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	ресторан	_	B-restaurant_type	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	нас	_	B-party_size_number	_	_	_	_	_	_
+_	тестем	_	I-party_size_description	_	_	_	_	_	_
+_	а	_	O	_	_	_	_	_	_
+_	позови	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	год	_	B-datetime	_	_	_	_	_	_
+_	вперёд	_	I-datetime	_	_	_	_	_	_
+
+# id: test_402_1
+# intent = weather/find
+_	насколько	_	O	_	_	_	_	_	_
+_	холоднее	_	B-weather/attribute	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	недалеко	_	B-location	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	алексеевке	_	B-location	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	три	_	B-datetime	_	_	_	_	_	_
+_	часа	_	I-datetime	_	_	_	_	_	_
+_	ночи	_	I-datetime	_	_	_	_	_	_
+
+# id: test_399_2
+# intent = BookRestaurant
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	вечеринку	_	B-restaurant_type	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	трёх	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	баре	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	алапаевске	_	B-location	_	_	_	_	_	_
+
+# id: test_393_6
+# intent = BookRestaurant
+_	нужен	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	где-нибудь	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	братска	_	B-location	_	_	_	_	_	_
+_	улицы	_	I-location	_	_	_	_	_	_
+_	через	_	B-datetime	_	_	_	_	_	_
+_	четырнадцать	_	I-datetime	_	_	_	_	_	_
+_	часов	_	I-datetime	_	_	_	_	_	_
+
+# id: test_399_1
+# intent = BookRestaurant
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	вечеринку	_	B-restaurant_type	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	трёх	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	а	_	O	_	_	_	_	_	_
+_	лагеря	_	I-location	_	_	_	_	_	_
+
+# id: test_382_8
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	сериал	_	B-object_type	_	_	_	_	_	_
+_	бригада	_	I-object_name	_	_	_	_	_	_
+_	две	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_393_1
+# intent = BookRestaurant
+_	нужен	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	нибудь	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	хлебобулочных	_	B-rating_unit	_	_	_	_	_	_
+_	проезде	_	B-location	_	_	_	_	_	_
+_	через	_	B-datetime	_	_	_	_	_	_
+_	шестьсот	_	I-datetime	_	_	_	_	_	_
+_	четырнадцать	_	I-datetime	_	_	_	_	_	_
+_	часов	_	I-datetime	_	_	_	_	_	_
+
+# id: test_393_2
+# intent = weather/find
+_	нужен	_	O	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	нибудь	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	улица	_	O	_	_	_	_	_	_
+_	боженко	_	B-location	_	_	_	_	_	_
+_	через	_	B-datetime	_	_	_	_	_	_
+_	четырнадцать	_	I-datetime	_	_	_	_	_	_
+_	часов	_	I-datetime	_	_	_	_	_	_
+
+# id: test_393_5
+# intent = weather/find
+_	нужен	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	нибудь	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	братиславская	_	B-location	_	_	_	_	_	_
+_	улицы	_	I-location	_	_	_	_	_	_
+_	через	_	B-datetime	_	_	_	_	_	_
+_	четырнадцать	_	I-datetime	_	_	_	_	_	_
+_	часов	_	I-datetime	_	_	_	_	_	_
+
+# id: test_393_3
+# intent = BookRestaurant
+_	нужен	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	где-нибудь	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	бойцовой	_	B-location	_	_	_	_	_	_
+_	улицы	_	I-location	_	_	_	_	_	_
+_	через	_	B-datetime	_	_	_	_	_	_
+_	четырнадцать	_	I-datetime	_	_	_	_	_	_
+_	часов	_	I-datetime	_	_	_	_	_	_
+
+# id: test_382_6
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	сериала	_	B-object_name	_	_	_	_	_	_
+_	екатерины	_	B-object_name	_	_	_	_	_	_
+_	четыре	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_382_7
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	реалу	_	B-object_name	_	_	_	_	_	_
+_	диверсанты	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	две	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_382_4
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	сериал	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	смешарики	_	I-object_name	_	_	_	_	_	_
+_	новый	_	B-datetime	_	_	_	_	_	_
+_	сезон	_	I-object_name	_	_	_	_	_	_
+_	пять	_	B-rating_value	_	_	_	_	_	_
+_	звёзд	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_393_4
+# intent = weather/find
+_	нужен	_	O	_	_	_	_	_	_
+_	столь	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	нибудь	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	болотная	_	B-location	_	_	_	_	_	_
+_	набережная	_	I-location	_	_	_	_	_	_
+_	через	_	B-datetime	_	_	_	_	_	_
+_	четырнадцать	_	I-datetime	_	_	_	_	_	_
+_	часов	_	I-datetime	_	_	_	_	_	_
+
+# id: test_382_5
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	сериалу	_	O	_	_	_	_	_	_
+_	консультант	_	B-object_name	_	_	_	_	_	_
+_	четыре	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_382_3
+# intent = BookRestaurant
+_	поставь	_	O	_	_	_	_	_	_
+_	сериала	_	O	_	_	_	_	_	_
+_	отель	_	B-restaurant_type	_	_	_	_	_	_
+_	элеон	_	I-object_name	_	_	_	_	_	_
+_	десять	_	B-datetime	_	_	_	_	_	_
+_	звёзд	_	O	_	_	_	_	_	_
+
+# id: test_382_1
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	сериала	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	вампиры	_	B-object_name	_	_	_	_	_	_
+_	средней	_	I-object_name	_	_	_	_	_	_
+_	полосы	_	I-object_name	_	_	_	_	_	_
+_	четыре	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_366_4
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	жарко	_	B-weather/attribute	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	алдане	_	B-location	_	_	_	_	_	_
+_	шестнадцатая	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_366_5
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	жарко	_	B-weather/attribute	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	александров	_	B-location	_	_	_	_	_	_
+_	сахалинском	_	I-location	_	_	_	_	_	_
+_	шестнадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_382_2
+# intent = RateBook
+_	поставь	_	O	_	_	_	_	_	_
+_	сериал	_	B-object_type	_	_	_	_	_	_
+_	трекер	_	I-object_name	_	_	_	_	_	_
+_	четыре	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_366_2
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	жарко	_	B-weather/attribute	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	грозном	_	B-location	_	_	_	_	_	_
+_	шестнадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_366_3
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	жаркого	_	B-weather/attribute	_	_	_	_	_	_
+_	бийске	_	B-location	_	_	_	_	_	_
+_	шестнадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_363_2
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	коптева	_	B-location	_	_	_	_	_	_
+_	москва	_	I-location	_	_	_	_	_	_
+
+# id: test_363_1
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	коньково	_	B-location	_	_	_	_	_	_
+_	москва	_	I-location	_	_	_	_	_	_
+
+# id: test_372_3
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	воды	_	O	_	_	_	_	_	_
+_	действия	_	O	_	_	_	_	_	_
+
+# id: test_366_6
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	жарко	_	B-weather/attribute	_	_	_	_	_	_
+_	вообще	_	O	_	_	_	_	_	_
+_	руанский	_	B-location	_	_	_	_	_	_
+_	шестнадцатого	_	B-datetime	_	_	_	_	_	_
+_	апреля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_363_3
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кунцево	_	B-location	_	_	_	_	_	_
+_	москва	_	I-location	_	_	_	_	_	_
+
+# id: test_380_1
+# intent = AddToPlaylist
+_	давай	_	O	_	_	_	_	_	_
+_	этот	_	O	_	_	_	_	_	_
+_	альбом	_	B-music_item	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	плей	_	B-playlist	_	_	_	_	_	_
+_	лист	_	I-playlist	_	_	_	_	_	_
+_	мёртв	_	B-playlist	_	_	_	_	_	_
+_	внутри	_	I-playlist	_	_	_	_	_	_
+
+# id: test_345_7
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	этого	_	O	_	_	_	_	_	_
+_	сериал	_	B-object_type	_	_	_	_	_	_
+_	угадай	_	O	_	_	_	_	_	_
+_	мелодию	_	O	_	_	_	_	_	_
+
+# id: test_345_5
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	этого	_	O	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	сериал	_	B-object_type	_	_	_	_	_	_
+_	тайны	_	B-object_name	_	_	_	_	_	_
+_	чапман	_	I-object_name	_	_	_	_	_	_
+
+# id: test_345_3
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	этого	_	O	_	_	_	_	_	_
+_	сериал	_	B-object_type	_	_	_	_	_	_
+_	центральное	_	O	_	_	_	_	_	_
+_	телевидение	_	I-location	_	_	_	_	_	_
+
+# id: test_345_4
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	тв	_	B-object_name	_	_	_	_	_	_
+_	сериал	_	I-object_type	_	_	_	_	_	_
+_	открытие	_	B-object_name	_	_	_	_	_	_
+_	китая	_	I-object_name	_	_	_	_	_	_
+
+# id: test_345_6
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	тв	_	B-object_name	_	_	_	_	_	_
+_	сериал	_	I-object_name	_	_	_	_	_	_
+_	пусть	_	O	_	_	_	_	_	_
+_	говорят	_	O	_	_	_	_	_	_
+
+# id: test_345_2
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	этого	_	O	_	_	_	_	_	_
+_	сериал	_	B-object_type	_	_	_	_	_	_
+_	звезды	_	B-object_name	_	_	_	_	_	_
+_	в	_	I-object_name	_	_	_	_	_	_
+_	африки	_	O	_	_	_	_	_	_
+
+# id: test_345_1
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	тв	_	O	_	_	_	_	_	_
+_	сериал	_	I-object_type	_	_	_	_	_	_
+_	маска	_	O	_	_	_	_	_	_
+
+# id: test_325
+# intent = SearchScreeningEvent
+_	какие	_	O	_	_	_	_	_	_
+_	фильмы	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	каро	_	B-location	_	_	_	_	_	_
+_	семь	_	I-location	_	_	_	_	_	_
+_	атриум	_	I-location	_	_	_	_	_	_
+
+# id: test_321_2
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	в	_	B-datetime	_	_	_	_	_	_
+_	ноябре	_	B-datetime	_	_	_	_	_	_
+_	п	_	B-location	_	_	_	_	_	_
+_	оксане	_	B-location	_	_	_	_	_	_
+
+# id: test_321_1
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	в	_	B-datetime	_	_	_	_	_	_
+_	ноябре	_	I-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	о	_	O	_	_	_	_	_	_
+_	гибели	_	O	_	_	_	_	_	_
+
+# id: test_311_1
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	меня	_	O	_	_	_	_	_	_
+_	столиков	_	O	_	_	_	_	_	_
+_	пиццерии	_	B-restaurant_type	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	парковкой	_	B-served_dish	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	красносельский	_	B-location	_	_	_	_	_	_
+
+# id: test_321_3
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	январе	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	гатчине	_	B-location	_	_	_	_	_	_
+
+# id: test_313_2
+# intent = weather/find
+_	погоды	_	O	_	_	_	_	_	_
+_	через	_	B-datetime	_	_	_	_	_	_
+_	два	_	I-datetime	_	_	_	_	_	_
+_	часа	_	I-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	гагарина	_	B-location	_	_	_	_	_	_
+
+# id: test_295_2
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	боец	_	B-location	_	_	_	_	_	_
+_	ком	_	I-location	_	_	_	_	_	_
+_	проезде	_	I-location	_	_	_	_	_	_
+_	двадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_295_4
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	братиславская	_	B-location	_	_	_	_	_	_
+_	улице	_	I-location	_	_	_	_	_	_
+_	двадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_295_3
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	болотная	_	B-location	_	_	_	_	_	_
+_	улица	_	I-location	_	_	_	_	_	_
+_	двадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_295_5
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	братское	_	B-location	_	_	_	_	_	_
+_	улице	_	I-location	_	_	_	_	_	_
+_	двадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_310_2
+# intent = weather/find
+_	когда	_	O	_	_	_	_	_	_
+_	ожидается	_	O	_	_	_	_	_	_
+_	более	_	O	_	_	_	_	_	_
+_	жаркая	_	B-weather/attribute	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	александрове	_	B-location	_	_	_	_	_	_
+
+# id: test_295_6
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	брянской	_	B-location	_	_	_	_	_	_
+_	улицы	_	I-location	_	_	_	_	_	_
+_	двадцатое	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_295_1
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	улицы	_	B-location	_	_	_	_	_	_
+_	академика	_	B-location	_	_	_	_	_	_
+_	пиццы	_	I-location	_	_	_	_	_	_
+_	двадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_291_6
+# intent = SearchScreeningEvent
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	интернет	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	шесть	_	B-datetime	_	_	_	_	_	_
+_	вечера	_	I-datetime	_	_	_	_	_	_
+
+# id: test_310_1
+# intent = weather/find
+_	когда	_	O	_	_	_	_	_	_
+_	ожидается	_	O	_	_	_	_	_	_
+_	более	_	O	_	_	_	_	_	_
+_	жаркая	_	B-weather/attribute	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	азнакаево	_	B-location	_	_	_	_	_	_
+
+# id: test_291_7
+# intent = SearchScreeningEvent
+_	будут	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	самку	_	B-movie_name	_	_	_	_	_	_
+_	богомола	_	I-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	шесть	_	B-datetime	_	_	_	_	_	_
+_	вечера	_	I-datetime	_	_	_	_	_	_
+
+# id: test_291_5
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	эти	_	O	_	_	_	_	_	_
+_	глаза	_	O	_	_	_	_	_	_
+_	напротив	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	пять	_	B-datetime	_	_	_	_	_	_
+_	вечера	_	I-datetime	_	_	_	_	_	_
+
+# id: test_291_3
+# intent = SearchScreeningEvent
+_	будут	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	трудных	_	B-movie_name	_	_	_	_	_	_
+_	параллель	_	I-movie_name	_	_	_	_	_	_
+_	подростков	_	O	_	_	_	_	_	_
+_	семь	_	B-datetime	_	_	_	_	_	_
+_	вечера	_	I-datetime	_	_	_	_	_	_
+
+# id: test_493_1
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	максима	_	B-party_size_description	_	_	_	_	_	_
+_	и	_	I-party_size_description	_	_	_	_	_	_
+_	алексеев	_	I-party_size_description	_	_	_	_	_	_
+_	ресторане	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	пять	_	B-datetime	_	_	_	_	_	_
+_	месяцев	_	I-datetime	_	_	_	_	_	_
+_	вперёд	_	I-datetime	_	_	_	_	_	_
+
+# id: test_489_1
+# intent = PlayMusic
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	послушать	_	O	_	_	_	_	_	_
+_	песни	_	O	_	_	_	_	_	_
+_	исполнителя	_	O	_	_	_	_	_	_
+_	руки	_	B-playlist	_	_	_	_	_	_
+_	вверх	_	I-album	_	_	_	_	_	_
+
+# id: test_459_2
+# intent = SearchScreeningEvent
+_	будут	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	полицейского	_	B-movie_name	_	_	_	_	_	_
+_	с	_	I-movie_name	_	_	_	_	_	_
+_	рублёвки	_	I-reminder/todo	_	_	_	_	_	_
+_	без	_	I-movie_name	_	_	_	_	_	_
+_	четверти	_	I-movie_name	_	_	_	_	_	_
+_	шесть	_	B-datetime	_	_	_	_	_	_
+
+# id: test_458_3
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	стейк	_	B-served_dish	_	_	_	_	_	_
+_	хаус	_	I-served_dish	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	рядом	_	B-location	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	охотном	_	B-location	_	_	_	_	_	_
+_	рядом	_	I-location	_	_	_	_	_	_
+
+# id: test_489_2
+# intent = PlayMusic
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	послушать	_	O	_	_	_	_	_	_
+_	песни	_	O	_	_	_	_	_	_
+_	исполнителя	_	O	_	_	_	_	_	_
+_	джонни	_	B-artist	_	_	_	_	_	_
+
+# id: test_459_1
+# intent = SearchScreeningEvent
+_	будут	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	мажоры	_	B-movie_name	_	_	_	_	_	_
+_	без	_	I-movie_name	_	_	_	_	_	_
+_	четверти	_	I-movie_name	_	_	_	_	_	_
+_	шесть	_	B-datetime	_	_	_	_	_	_
+
+# id: test_458_2
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	стейк	_	B-served_dish	_	_	_	_	_	_
+_	хаус	_	B-restaurant_type	_	_	_	_	_	_
+_	рядом	_	B-location	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	черкизовская	_	B-location	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+
+# id: test_456_1
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	поесть	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	маруси	_	B-cuisine	_	_	_	_	_	_
+
+# id: test_455_1
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	шоу	_	O	_	_	_	_	_	_
+_	в	_	I-object_name	_	_	_	_	_	_
+_	мире	_	I-object_name	_	_	_	_	_	_
+_	животных	_	I-object_name	_	_	_	_	_	_
+
+# id: test_453_3
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	итальянский	_	O	_	_	_	_	_	_
+_	ресторан	_	B-restaurant_type	_	_	_	_	_	_
+_	следующем	_	B-datetime	_	_	_	_	_	_
+_	году	_	I-datetime	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	большой	_	B-location	_	_	_	_	_	_
+_	андро	_	I-location	_	_	_	_	_	_
+_	и	_	I-location	_	_	_	_	_	_
+_	невской	_	B-location	_	_	_	_	_	_
+_	улице	_	I-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	троих	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+
+# id: test_455_2
+# intent = RateBook
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	шоу	_	B-object_name	_	_	_	_	_	_
+_	голос	_	I-object_name	_	_	_	_	_	_
+_	висят	_	I-object_name	_	_	_	_	_	_
+_	плюс	_	O	_	_	_	_	_	_
+
+# id: test_458_1
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	хаус	_	B-served_dish	_	_	_	_	_	_
+_	рядом	_	B-location	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	черкизовский	_	B-location	_	_	_	_	_	_
+
+# id: test_453_2
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	итальянский	_	O	_	_	_	_	_	_
+_	ресторан	_	B-restaurant_type	_	_	_	_	_	_
+_	следующем	_	B-datetime	_	_	_	_	_	_
+_	году	_	I-datetime	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	болотной	_	B-location	_	_	_	_	_	_
+_	площади	_	I-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	троих	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+
+# id: test_449_3
+# intent = alarm/set_alarm
+_	включи	_	O	_	_	_	_	_	_
+_	максим	_	O	_	_	_	_	_	_
+
+# id: test_449_1
+# intent = alarm/set_alarm
+_	включи	_	O	_	_	_	_	_	_
+_	татьяну	_	O	_	_	_	_	_	_
+_	курт	_	O	_	_	_	_	_	_
+_	у	_	O	_	_	_	_	_	_
+_	кого	_	O	_	_	_	_	_	_
+
+# id: test_442_3
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	ак	_	B-location	_	_	_	_	_	_
+_	довураке	_	I-location	_	_	_	_	_	_
+_	девятого	_	B-datetime	_	_	_	_	_	_
+_	мая	_	I-datetime	_	_	_	_	_	_
+
+# id: test_442_1
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	весь	_	O	_	_	_	_	_	_
+_	вязьме	_	B-location	_	_	_	_	_	_
+_	девятого	_	B-datetime	_	_	_	_	_	_
+_	мая	_	I-datetime	_	_	_	_	_	_
+
+# id: test_449_2
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	сергея	_	B-artist	_	_	_	_	_	_
+_	лазарева	_	I-artist	_	_	_	_	_	_
+
+# id: test_442_2
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	огрызок	_	B-location	_	_	_	_	_	_
+_	девятого	_	B-datetime	_	_	_	_	_	_
+_	мая	_	I-datetime	_	_	_	_	_	_
+
+# id: test_424_1
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	что-нибудь	_	O	_	_	_	_	_	_
+_	новое	_	B-music_item	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	егора	_	B-artist	_	_	_	_	_	_
+_	крида	_	I-artist	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	яндекс	_	B-service	_	_	_	_	_	_
+_	музыке	_	O	_	_	_	_	_	_
+
+# id: test_417_4
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	телевизионное	_	O	_	_	_	_	_	_
+_	шоу	_	I-object_type	_	_	_	_	_	_
+_	снимите	_	O	_	_	_	_	_	_
+_	это	_	O	_	_	_	_	_	_
+_	немедленно	_	O	_	_	_	_	_	_
+
+# id: test_423_1
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	диму	_	B-artist	_	_	_	_	_	_
+_	билана	_	I-artist	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плейлисты	_	O	_	_	_	_	_	_
+_	русский	_	B-playlist	_	_	_	_	_	_
+_	поп	_	I-playlist	_	_	_	_	_	_
+
+# id: test_434_2
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	альфи	_	B-location	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	петербурге	_	B-location	_	_	_	_	_	_
+
+# id: test_434_3
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мечте	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	петербурге	_	B-location	_	_	_	_	_	_
+
+# id: test_424_2
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	что-нибудь	_	O	_	_	_	_	_	_
+_	новое	_	B-sort	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	бьянки	_	B-artist	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	яндекс	_	B-service	_	_	_	_	_	_
+_	музыки	_	I-service	_	_	_	_	_	_
+
+# id: test_417_3
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	телевизионное	_	O	_	_	_	_	_	_
+_	шоу	_	I-object_type	_	_	_	_	_	_
+_	экстрасенсы	_	B-object_name	_	_	_	_	_	_
+_	ведут	_	I-object_name	_	_	_	_	_	_
+_	расследование	_	I-object_name	_	_	_	_	_	_
+
+# id: test_417_1
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	телевизионное	_	O	_	_	_	_	_	_
+_	шоу	_	I-object_type	_	_	_	_	_	_
+_	камеди	_	B-object_name	_	_	_	_	_	_
+_	клаб	_	I-object_name	_	_	_	_	_	_
+
+# id: test_440
+# intent = RateBook
+_	дай	_	O	_	_	_	_	_	_
+_	текущее	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	книги	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	пять	_	B-rating_value	_	_	_	_	_	_
+_	баллов	_	B-rating_unit	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	шести	_	B-best_rating	_	_	_	_	_	_
+
+# id: test_417_2
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	телевизионное	_	O	_	_	_	_	_	_
+_	шоу	_	I-object_type	_	_	_	_	_	_
+_	холостяк	_	B-object_name	_	_	_	_	_	_
+
+# id: test_416_1
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	рестораны	_	B-rating_unit	_	_	_	_	_	_
+_	пять	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	геленджике	_	B-location	_	_	_	_	_	_
+
+# id: test_409_9
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	хроники	_	B-object_name	_	_	_	_	_	_
+_	тар	_	I-object_name	_	_	_	_	_	_
+_	страже	_	I-object_name	_	_	_	_	_	_
+_	пограничья	_	I-object_name	_	_	_	_	_	_
+
+# id: test_415_3
+# intent = alarm/snooze_alarm
+_	давай	_	O	_	_	_	_	_	_
+_	боярская	_	O	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плэй	_	O	_	_	_	_	_	_
+_	лист	_	O	_	_	_	_	_	_
+_	разбитое	_	O	_	_	_	_	_	_
+_	сердце	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_4
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	B-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	русы	_	B-object_name	_	_	_	_	_	_
+_	против	_	I-object_name	_	_	_	_	_	_
+_	ящеров	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_3
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	поле	_	B-object_name	_	_	_	_	_	_
+_	чудес	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_5
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	санитары	_	B-object_name	_	_	_	_	_	_
+_	подземелий	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_25
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	B-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	смерть	_	B-object_name	_	_	_	_	_	_
+_	шпионам	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_24
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	санитары	_	B-object_name	_	_	_	_	_	_
+_	подземелий	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_22
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	ретро	_	B-playlist	_	_	_	_	_	_
+_	тачки	_	I-playlist	_	_	_	_	_	_
+_	советский	_	I-playlist	_	_	_	_	_	_
+_	апокалипсис	_	I-album	_	_	_	_	_	_
+
+# id: test_409_8
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	хроники	_	B-object_name	_	_	_	_	_	_
+_	тар	_	I-object_name	_	_	_	_	_	_
+_	призраки	_	I-object_name	_	_	_	_	_	_
+_	звёзд	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_6
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	тук-тук-тук	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_7
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	ра	_	B-object_name	_	_	_	_	_	_
+_	горе	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_23
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	B-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	русы	_	B-object_name	_	_	_	_	_	_
+_	против	_	I-object_name	_	_	_	_	_	_
+_	ящеров	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_21
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	противостояния	_	O	_	_	_	_	_	_
+_	три	_	B-datetime	_	_	_	_	_	_
+_	перезагрузка	_	O	_	_	_	_	_	_
+
+# id: test_409_2
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	алёша	_	B-movie_name	_	_	_	_	_	_
+_	попович	_	I-movie_name	_	_	_	_	_	_
+_	и	_	I-movie_name	_	_	_	_	_	_
+_	тугарин	_	I-movie_name	_	_	_	_	_	_
+_	змей	_	I-movie_name	_	_	_	_	_	_
+
+# id: test_409_18
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	проклятые	_	B-object_name	_	_	_	_	_	_
+_	земли	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_17
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	провинциальный	_	B-object_name	_	_	_	_	_	_
+_	игрок	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_20
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	противостояния	_	O	_	_	_	_	_	_
+
+# id: test_409_19
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	проклятые	_	I-object_name	_	_	_	_	_	_
+_	земли	_	I-movie_name	_	_	_	_	_	_
+_	затерянные	_	I-object_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	астрале	_	I-movie_name	_	_	_	_	_	_
+
+# id: test_409_15
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	полная	_	B-object_name	_	_	_	_	_	_
+_	труба	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_16
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	правда	_	B-object_name	_	_	_	_	_	_
+_	о	_	I-object_name	_	_	_	_	_	_
+_	девятой	_	I-object_name	_	_	_	_	_	_
+_	роте	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_13
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	пластилиновый	_	B-object_name	_	_	_	_	_	_
+_	сон	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_10
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	чёрные	_	B-object_name	_	_	_	_	_	_
+_	бушлаты	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_12
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	B-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	человека	_	B-object_name	_	_	_	_	_	_
+_	лось	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_14
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	поле	_	B-object_name	_	_	_	_	_	_
+_	чудес	_	I-object_name	_	_	_	_	_	_
+
+# id: test_409_11
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	шарики	_	B-object_name	_	_	_	_	_	_
+
+# id: test_407_1
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	лучшую	_	B-sort	_	_	_	_	_	_
+_	музыку	_	O	_	_	_	_	_	_
+_	ко	_	B-artist	_	_	_	_	_	_
+_	люся	_	B-artist	_	_	_	_	_	_
+_	чеботина	_	I-artist	_	_	_	_	_	_
+
+# id: test_408_1
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	берега	_	B-location	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	окрестностях	_	I-location	_	_	_	_	_	_
+
+# id: test_404_1
+# intent = BookRestaurant
+_	через	_	B-datetime	_	_	_	_	_	_
+_	тринадцать	_	I-datetime	_	_	_	_	_	_
+_	часов	_	I-datetime	_	_	_	_	_	_
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	тебя	_	O	_	_	_	_	_	_
+_	деликатесов	_	O	_	_	_	_	_	_
+_	французская	_	B-cuisine	_	_	_	_	_	_
+_	кухня	_	I-location	_	_	_	_	_	_
+
+# id: test_409_1
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	игру	_	B-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	братья	_	B-object_name	_	_	_	_	_	_
+_	пилоты	_	I-object_name	_	_	_	_	_	_
+_	дело	_	I-object_name	_	_	_	_	_	_
+_	серийном	_	I-object_name	_	_	_	_	_	_
+_	ники	_	I-object_name	_	_	_	_	_	_
+
+# id: test_408_3
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	капот	_	B-location	_	_	_	_	_	_
+_	не	_	I-location	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	окрестностях	_	I-location	_	_	_	_	_	_
+
+# id: test_408_2
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	братеево	_	B-location	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	окрестностях	_	B-location	_	_	_	_	_	_
+
+# id: test_403_2
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	альбом	_	B-music_item	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	плейлист	_	O	_	_	_	_	_	_
+_	медленное	_	B-playlist	_	_	_	_	_	_
+_	эху	_	I-playlist	_	_	_	_	_	_
+
+# id: test_400_1
+# intent = PlayMusic
+_	мне	_	O	_	_	_	_	_	_
+_	нужно	_	O	_	_	_	_	_	_
+_	давай	_	O	_	_	_	_	_	_
+_	произведений	_	O	_	_	_	_	_	_
+_	сергея	_	B-artist	_	_	_	_	_	_
+_	шнуров	_	I-artist	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плейлист	_	O	_	_	_	_	_	_
+_	светлая	_	B-playlist	_	_	_	_	_	_
+_	грусть	_	I-playlist	_	_	_	_	_	_
+
+# id: test_408_4
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	клюква	_	B-location	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	окрестностях	_	I-location	_	_	_	_	_	_
+
+# id: test_497_2
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	тв	_	O	_	_	_	_	_	_
+_	сериал	_	I-object_type	_	_	_	_	_	_
+_	игра	_	O	_	_	_	_	_	_
+
+# id: test_498_1
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	девять	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	популярном	_	O	_	_	_	_	_	_
+_	барри	_	B-cuisine	_	_	_	_	_	_
+_	возле	_	B-location	_	_	_	_	_	_
+_	метро	_	O	_	_	_	_	_	_
+_	чистые	_	B-location	_	_	_	_	_	_
+_	пруды	_	I-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	шесть	_	B-datetime	_	_	_	_	_	_
+_	месяцев	_	I-datetime	_	_	_	_	_	_
+_	вперёд	_	I-datetime	_	_	_	_	_	_
+
+# id: test_497_1
+# intent = SearchScreeningEvent
+_	найди	_	O	_	_	_	_	_	_
+_	тв	_	O	_	_	_	_	_	_
+_	сериал	_	I-object_type	_	_	_	_	_	_
+_	однажды	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	россии	_	O	_	_	_	_	_	_
+
+# id: test_493_2
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	михаила	_	B-party_size_description	_	_	_	_	_	_
+_	и	_	I-party_size_description	_	_	_	_	_	_
+_	артёмов	_	I-party_size_description	_	_	_	_	_	_
+_	ресторане	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	пять	_	B-datetime	_	_	_	_	_	_
+_	месяцев	_	I-datetime	_	_	_	_	_	_
+_	вперёд	_	I-datetime	_	_	_	_	_	_
+
+# id: test_474_1
+# intent = SearchScreeningEvent
+_	какие	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	сеанса	_	O	_	_	_	_	_	_
+_	добрыня	_	B-movie_name	_	_	_	_	_	_
+_	никитич	_	I-movie_name	_	_	_	_	_	_
+_	и	_	I-movie_name	_	_	_	_	_	_
+_	змей	_	I-movie_name	_	_	_	_	_	_
+_	горыныч	_	I-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кинотеатре	_	O	_	_	_	_	_	_
+
+# id: test_459_3
+# intent = weather/find
+_	будут	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	слово	_	O	_	_	_	_	_	_
+_	пацана	_	O	_	_	_	_	_	_
+_	кровь	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	асфальте	_	O	_	_	_	_	_	_
+_	без	_	O	_	_	_	_	_	_
+_	четверти	_	O	_	_	_	_	_	_
+_	шесть	_	I-datetime	_	_	_	_	_	_
+
+# id: test_459_4
+# intent = SearchScreeningEvent
+_	будут	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывать	_	O	_	_	_	_	_	_
+_	кухня	_	B-movie_name	_	_	_	_	_	_
+_	без	_	I-reminder/todo	_	_	_	_	_	_
+_	четверти	_	I-movie_name	_	_	_	_	_	_
+_	шесть	_	B-datetime	_	_	_	_	_	_
+
+# id: test_476_3
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	самовар	_	B-served_dish	_	_	_	_	_	_
+_	самовары	_	I-served_dish	_	_	_	_	_	_
+_	до	_	O	_	_	_	_	_	_
+_	утка	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	петербурге	_	B-location	_	_	_	_	_	_
+
+# id: test_493_3
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	ивана	_	B-party_size_description	_	_	_	_	_	_
+_	и	_	I-party_size_description	_	_	_	_	_	_
+_	дарьи	_	I-party_size_description	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	ресторане	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	пять	_	B-datetime	_	_	_	_	_	_
+_	месяцев	_	I-datetime	_	_	_	_	_	_
+_	вперёд	_	I-datetime	_	_	_	_	_	_
+
+# id: test_495_1
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	домино	_	B-served_dish	_	_	_	_	_	_
+_	москве	_	B-location	_	_	_	_	_	_
+_	недалеко	_	B-location	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	чистых	_	B-location	_	_	_	_	_	_
+_	прудов	_	I-location	_	_	_	_	_	_
+
+# id: test_476_2
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кардамона	_	B-location	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	петербурге	_	B-location	_	_	_	_	_	_
+
+# id: test_472_1
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	баскова	_	B-entity_name	_	_	_	_	_	_
+_	мы	_	I-playlist	_	_	_	_	_	_
+_	плэй	_	I-playlist	_	_	_	_	_	_
+_	лист	_	I-playlist	_	_	_	_	_	_
+_	мёртв	_	I-playlist	_	_	_	_	_	_
+_	внутри	_	I-playlist	_	_	_	_	_	_
+
+# id: test_415_1
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	боярского	_	B-entity_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мы	_	B-playlist	_	_	_	_	_	_
+_	плэй	_	I-playlist	_	_	_	_	_	_
+_	лист	_	I-playlist	_	_	_	_	_	_
+_	медленное	_	B-playlist	_	_	_	_	_	_
+_	эхо	_	I-playlist	_	_	_	_	_	_
+
+# id: test_415_2
+# intent = AddToPlaylist
+_	в	_	O	_	_	_	_	_	_
+_	добавь	_	B-entity_name	_	_	_	_	_	_
+_	боярского	_	B-entity_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плэй	_	B-playlist	_	_	_	_	_	_
+_	лист	_	O	_	_	_	_	_	_
+_	весна	_	B-playlist	_	_	_	_	_	_
+_	в	_	I-playlist	_	_	_	_	_	_
+_	стиле	_	I-playlist	_	_	_	_	_	_
+_	ретро	_	I-playlist	_	_	_	_	_	_
+
+# id: test_422_1
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	песню	_	B-music_item	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плэй	_	B-playlist	_	_	_	_	_	_
+_	лист	_	I-playlist	_	_	_	_	_	_
+_	разбитое	_	B-playlist	_	_	_	_	_	_
+_	сердце	_	I-playlist	_	_	_	_	_	_
+
+# id: test_434_1
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	старом	_	B-location	_	_	_	_	_	_
+_	амбаре	_	B-restaurant_type	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	петербурге	_	B-location	_	_	_	_	_	_
+
+# id: test_453_1
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	итальянский	_	O	_	_	_	_	_	_
+_	ресторан	_	B-restaurant_type	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	следующем	_	B-datetime	_	_	_	_	_	_
+_	году	_	I-datetime	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	абрам	_	B-location	_	_	_	_	_	_
+_	царской	_	I-location	_	_	_	_	_	_
+_	улице	_	I-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	троих	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+
+# id: test_403_1
+# intent = AddToPlaylist
+_	альбом	_	B-music_item	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	плейлист	_	O	_	_	_	_	_	_
+_	лист	_	O	_	_	_	_	_	_
+_	музыка	_	B-playlist	_	_	_	_	_	_
+_	для	_	I-playlist	_	_	_	_	_	_
+_	музея	_	I-playlist	_	_	_	_	_	_
+
+# id: test_385_4
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	картину	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	явление	_	B-object_name	_	_	_	_	_	_
+_	христа	_	I-object_name	_	_	_	_	_	_
+_	народу	_	I-object_name	_	_	_	_	_	_
+
+# id: test_385_3
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	картину	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	алёнушка	_	B-object_name	_	_	_	_	_	_
+
+# id: test_385_1
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	ради	_	O	_	_	_	_	_	_
+_	картину	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	бурлаки	_	B-object_name	_	_	_	_	_	_
+_	на	_	I-object_name	_	_	_	_	_	_
+_	волге	_	I-object_name	_	_	_	_	_	_
+
+# id: test_385_5
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найти	_	O	_	_	_	_	_	_
+_	картину	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	девочка	_	B-object_name	_	_	_	_	_	_
+_	с	_	I-object_name	_	_	_	_	_	_
+_	персиками	_	I-object_name	_	_	_	_	_	_
+
+# id: test_385_2
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	картину	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	чёрный	_	B-object_name	_	_	_	_	_	_
+_	квадрат	_	I-object_name	_	_	_	_	_	_
+
+# id: test_259_2
+# intent = weather/find
+_	есть	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	гроза	_	B-weather/attribute	_	_	_	_	_	_
+_	сейчас	_	B-datetime	_	_	_	_	_	_
+_	турецки	_	B-location	_	_	_	_	_	_
+
+# id: test_286_1
+# intent = RateBook
+_	оценки	_	O	_	_	_	_	_	_
+_	серию	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	пустые	_	B-object_name	_	_	_	_	_	_
+_	земли	_	I-object_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	четыре	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_213_1
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	солнечных	_	B-weather/attribute	_	_	_	_	_	_
+_	четверг	_	B-datetime	_	_	_	_	_	_
+
+# id: test_286_5
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	серия	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	битва	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	залез	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	четыре	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_286_3
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	серию	_	O	_	_	_	_	_	_
+_	снайпер	_	B-object_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	две	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_286_2
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	серию	_	O	_	_	_	_	_	_
+_	слепой	_	B-object_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	три	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_204_1
+# intent = alarm/cancel_alarm
+_	отменить	_	O	_	_	_	_	_	_
+_	текущей	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	пять	_	B-datetime	_	_	_	_	_	_
+_	пятнадцать	_	I-datetime	_	_	_	_	_	_
+_	утра	_	I-datetime	_	_	_	_	_	_
+_	в	_	I-datetime	_	_	_	_	_	_
+_	понедельник	_	I-datetime	_	_	_	_	_	_
+
+# id: test_286_4
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	серию	_	O	_	_	_	_	_	_
+_	стать	_	B-object_name	_	_	_	_	_	_
+_	диким	_	I-object_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	две	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_190
+# intent = alarm/set_alarm
+_	можешь	_	O	_	_	_	_	_	_
+_	настроить	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	так	_	O	_	_	_	_	_	_
+_	чтобы	_	O	_	_	_	_	_	_
+_	он	_	O	_	_	_	_	_	_
+_	звенел	_	O	_	_	_	_	_	_
+_	каждую	_	I-recurring_datetime	_	_	_	_	_	_
+_	минуту	_	I-recurring_datetime	_	_	_	_	_	_
+_	в	_	I-recurring_datetime	_	_	_	_	_	_
+_	течение	_	I-recurring_datetime	_	_	_	_	_	_
+_	двадцати	_	I-recurring_datetime	_	_	_	_	_	_
+_	минут	_	I-recurring_datetime	_	_	_	_	_	_
+
+# id: test_187
+# intent = reminder/set_reminder
+_	напомним	_	O	_	_	_	_	_	_
+_	меня	_	O	_	_	_	_	_	_
+_	позвонить	_	B-reminder/todo	_	_	_	_	_	_
+_	маме	_	I-reminder/todo	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	вечером	_	I-datetime	_	_	_	_	_	_
+
+# id: test_179
+# intent = alarm/cancel_alarm
+_	отмене	_	O	_	_	_	_	_	_
+_	будильники	_	O	_	_	_	_	_	_
+
+# id: test_181
+# intent = alarm/show_alarms
+_	покажи	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	предустановленной	_	O	_	_	_	_	_	_
+_	будильники	_	O	_	_	_	_	_	_
+
+# id: test_182
+# intent = alarm/set_alarm
+_	поставь	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	каждую	_	I-recurring_datetime	_	_	_	_	_	_
+_	минуту	_	I-recurring_datetime	_	_	_	_	_	_
+_	в	_	I-recurring_datetime	_	_	_	_	_	_
+_	течение	_	I-recurring_datetime	_	_	_	_	_	_
+_	двадцати	_	I-recurring_datetime	_	_	_	_	_	_
+_	минут	_	I-recurring_datetime	_	_	_	_	_	_
+
+# id: test_180
+# intent = alarm/cancel_alarm
+_	отключи	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	будильники	_	O	_	_	_	_	_	_
+
+# id: test_186
+# intent = weather/find
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	снег	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_185
+# intent = alarm/set_alarm
+_	мне	_	O	_	_	_	_	_	_
+_	нужен	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+
+# id: test_184
+# intent = alarm/cancel_alarm
+_	отмени	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	завтра	_	B-datetime	_	_	_	_	_	_
+
+# id: test_183
+# intent = reminder/show_reminders
+_	какие	_	O	_	_	_	_	_	_
+_	у	_	O	_	_	_	_	_	_
+_	меня	_	B-reference	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+
+# id: test_178
+# intent = reminder/show_reminders
+_	покажи	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+
+# id: test_177
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	дождь	_	B-weather/attribute	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	этой	_	B-datetime	_	_	_	_	_	_
+_	неделе	_	I-datetime	_	_	_	_	_	_
+
+# id: test_176
+# intent = alarm/set_alarm
+_	поставь	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	десять	_	B-datetime	_	_	_	_	_	_
+_	утра	_	I-datetime	_	_	_	_	_	_
+
+# id: test_175
+# intent = weather/find
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	дождь	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_174
+# intent = weather/find
+_	могу	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	я	_	O	_	_	_	_	_	_
+_	надеюсь	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	шорты	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_168
+# intent = weather/find
+_	погода	_	O	_	_	_	_	_	_
+
+# id: test_166
+# intent = reminder/show_reminders
+_	покажи	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	текущие	_	O	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+
+# id: test_170
+# intent = weather/find
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	град	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_167
+# intent = reminder/set_reminder
+_	поставь	_	O	_	_	_	_	_	_
+_	еженедельное	_	O	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+_	о	_	O	_	_	_	_	_	_
+_	покупках	_	B-reminder/todo	_	_	_	_	_	_
+
+# id: test_169
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	дождь	_	B-weather/attribute	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	тебя	_	B-location	_	_	_	_	_	_
+_	весь	_	B-datetime	_	_	_	_	_	_
+_	день	_	I-datetime	_	_	_	_	_	_
+
+# id: test_173
+# intent = alarm/cancel_alarm
+_	отмене	_	O	_	_	_	_	_	_
+_	текущие	_	O	_	_	_	_	_	_
+_	будильники	_	O	_	_	_	_	_	_
+
+# id: test_172
+# intent = alarm/cancel_alarm
+_	удали	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+
+# id: test_171
+# intent = reminder/set_reminder
+_	напомним	_	O	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	ответить	_	I-reminder/todo	_	_	_	_	_	_
+_	на	_	I-reminder/todo	_	_	_	_	_	_
+_	рабочие	_	I-reminder/todo	_	_	_	_	_	_
+_	письма	_	I-reminder/todo	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	вечером	_	I-datetime	_	_	_	_	_	_
+
+# id: test_165
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	красноярске	_	B-location	_	_	_	_	_	_
+
+# id: test_192
+# intent = alarm/cancel_alarm
+_	отмени	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	будильники	_	O	_	_	_	_	_	_
+
+# id: test_191
+# intent = weather/find
+_	арктические	_	B-weather/attribute	_	_	_	_	_	_
+_	штормов	_	O	_	_	_	_	_	_
+_	карибском	_	B-location	_	_	_	_	_	_
+_	море	_	I-location	_	_	_	_	_	_
+
+# id: test_189
+# intent = weather/find
+_	субботу	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	мороз	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_188
+# intent = weather/find
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	дождь	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_106
+# intent = reminder/set_reminder
+_	напомним	_	O	_	_	_	_	_	_
+_	нет	_	O	_	_	_	_	_	_
+_	вести	_	B-reminder/todo	_	_	_	_	_	_
+_	собаку	_	I-reminder/todo	_	_	_	_	_	_
+_	гру	_	I-reminder/todo	_	_	_	_	_	_
+_	мир	_	I-reminder/todo	_	_	_	_	_	_
+_	во	_	B-datetime	_	_	_	_	_	_
+_	вторник	_	B-datetime	_	_	_	_	_	_
+_	в	_	I-datetime	_	_	_	_	_	_
+_	три	_	I-datetime	_	_	_	_	_	_
+_	часа	_	I-datetime	_	_	_	_	_	_
+_	дня	_	I-datetime	_	_	_	_	_	_
+
+# id: test_371
+# intent = SearchScreeningEvent
+_	какие	_	O	_	_	_	_	_	_
+_	расписание	_	B-object_type	_	_	_	_	_	_
+_	сеансов	_	O	_	_	_	_	_	_
+
+# id: test_369_2
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	лучшим	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+
+# id: test_372_1
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	грозным	_	B-location	_	_	_	_	_	_
+
+# id: test_370
+# intent = RateBook
+_	оценить	_	O	_	_	_	_	_	_
+_	текущей	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	учебник	_	B-object_type	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	один	_	B-rating_value	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	шести	_	B-best_rating	_	_	_	_	_	_
+
+# id: test_374_2
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	B-restaurant_type	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	нас	_	O	_	_	_	_	_	_
+_	малышами	_	O	_	_	_	_	_	_
+
+# id: test_374_1
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	B-restaurant_type	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	нас	_	O	_	_	_	_	_	_
+_	малышами	_	O	_	_	_	_	_	_
+
+# id: test_372_2
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	калининграде	_	B-location	_	_	_	_	_	_
+
+# id: test_369_1
+# intent = BookRestaurant
+_	бронирования	_	O	_	_	_	_	_	_
+_	столика	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	баре	_	O	_	_	_	_	_	_
+
+# id: test_373
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	этого	_	O	_	_	_	_	_	_
+_	исполнителя	_	B-music_item	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	музыку	_	B-playlist	_	_	_	_	_	_
+_	русских	_	I-playlist	_	_	_	_	_	_
+_	мелодрам	_	I-playlist	_	_	_	_	_	_
+
+# id: test_367
+# intent = AddToPlaylist
+_	хочу	_	O	_	_	_	_	_	_
+_	добавить	_	O	_	_	_	_	_	_
+_	евгения	_	B-artist	_	_	_	_	_	_
+_	мартынова	_	I-artist	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	плели	_	B-playlist	_	_	_	_	_	_
+_	советская	_	I-playlist	_	_	_	_	_	_
+_	музыка	_	I-playlist	_	_	_	_	_	_
+
+# id: test_366
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	жарко	_	B-weather/attribute	_	_	_	_	_	_
+_	вообще	_	O	_	_	_	_	_	_
+_	ирландский	_	B-location	_	_	_	_	_	_
+_	шестнадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_365
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	чайном	_	O	_	_	_	_	_	_
+_	домике	_	B-restaurant_type	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	нас	_	B-party_size_description	_	_	_	_	_	_
+_	племянницы	_	I-party_size_description	_	_	_	_	_	_
+
+# id: test_330
+# intent = RateBook
+_	да	_	O	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	одну	_	O	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+_	текущей	_	O	_	_	_	_	_	_
+_	книги	_	B-object_type	_	_	_	_	_	_
+
+# id: test_356
+# intent = SearchScreeningEvent
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	видеть	_	O	_	_	_	_	_	_
+_	лет	_	B-movie_name	_	_	_	_	_	_
+_	три	_	I-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	ближайшем	_	B-location	_	_	_	_	_	_
+_	кинотеатре	_	O	_	_	_	_	_	_
+
+# id: test_357
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	мастер	_	O	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	маргарита	_	I-object_name	_	_	_	_	_	_
+
+# id: test_345
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	тиви	_	B-object_name	_	_	_	_	_	_
+_	сериал	_	B-object_type	_	_	_	_	_	_
+_	триггер	_	I-object_name	_	_	_	_	_	_
+
+# id: test_363
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	северном	_	B-location	_	_	_	_	_	_
+_	бутово	_	I-location	_	_	_	_	_	_
+_	москва	_	I-location	_	_	_	_	_	_
+
+# id: test_360
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	центре	_	O	_	_	_	_	_	_
+_	ставрополя	_	B-location	_	_	_	_	_	_
+_	пятого	_	B-datetime	_	_	_	_	_	_
+_	декабря	_	I-datetime	_	_	_	_	_	_
+
+# id: test_321
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	B-datetime	_	_	_	_	_	_
+_	ноябре	_	I-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	гатчине	_	B-location	_	_	_	_	_	_
+
+# id: test_315
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	восемь	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	лопатина	_	B-location	_	_	_	_	_	_
+_	московская	_	B-location	_	_	_	_	_	_
+_	область	_	I-location	_	_	_	_	_	_
+
+# id: test_314
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	фильм	_	B-object_type	_	_	_	_	_	_
+_	брат	_	O	_	_	_	_	_	_
+
+# id: test_316
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	далеко	_	B-location	_	_	_	_	_	_
+_	отсюда	_	B-location	_	_	_	_	_	_
+
+# id: test_313
+# intent = weather/find
+_	погода	_	O	_	_	_	_	_	_
+_	через	_	B-datetime	_	_	_	_	_	_
+_	два	_	I-datetime	_	_	_	_	_	_
+_	часа	_	I-datetime	_	_	_	_	_	_
+_	волгограде	_	B-location	_	_	_	_	_	_
+
+# id: test_301
+# intent = RateBook
+_	включи	_	O	_	_	_	_	_	_
+_	миллион	_	O	_	_	_	_	_	_
+_	голосов	_	O	_	_	_	_	_	_
+
+# id: test_299
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	мёртвые	_	B-object_name	_	_	_	_	_	_
+_	души	_	I-object_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	ноль	_	B-rating_value	_	_	_	_	_	_
+
+# id: test_304
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	музыку	_	O	_	_	_	_	_	_
+_	навыка	_	O	_	_	_	_	_	_
+_	музыки	_	O	_	_	_	_	_	_
+
+# id: test_295
+# intent = weather/find
+_	какой	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	дворцовой	_	B-location	_	_	_	_	_	_
+_	площади	_	I-location	_	_	_	_	_	_
+_	двадцатого	_	B-datetime	_	_	_	_	_	_
+_	февраля	_	I-datetime	_	_	_	_	_	_
+
+# id: test_312
+# intent = PlayMusic
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	послушать	_	O	_	_	_	_	_	_
+_	саунтрек	_	B-music_item	_	_	_	_	_	_
+_	семидесятых	_	B-datetime	_	_	_	_	_	_
+
+# id: test_311
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируй	_	O	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	меня	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	пиццерия	_	B-restaurant_type	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	парковка	_	B-served_dish	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	тургеневская	_	B-location	_	_	_	_	_	_
+
+# id: test_310
+# intent = weather/find
+_	когда	_	O	_	_	_	_	_	_
+_	ожидается	_	O	_	_	_	_	_	_
+_	более	_	O	_	_	_	_	_	_
+_	жаркая	_	B-weather/attribute	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	национальном	_	B-location	_	_	_	_	_	_
+_	парке	_	I-location	_	_	_	_	_	_
+_	лосиный	_	B-location	_	_	_	_	_	_
+_	остров	_	I-location	_	_	_	_	_	_
+
+# id: test_305
+# intent = SearchCreativeWork
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	увидеть	_	O	_	_	_	_	_	_
+_	холопа	_	B-object_name	_	_	_	_	_	_
+
+# id: test_291
+# intent = SearchScreeningEvent
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывает	_	O	_	_	_	_	_	_
+_	воронина	_	B-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	семь	_	B-datetime	_	_	_	_	_	_
+_	вечера	_	I-datetime	_	_	_	_	_	_
+
+# id: test_286
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	серию	_	O	_	_	_	_	_	_
+_	комбат	_	B-object_name	_	_	_	_	_	_
+_	и	_	I-object_name	_	_	_	_	_	_
+_	тополь	_	I-object_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	четыре	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_274
+# intent = BookRestaurant
+_	что	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	ресторан	_	B-restaurant_type	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	нас	_	B-location	_	_	_	_	_	_
+_	действием	_	O	_	_	_	_	_	_
+_	ярославле	_	B-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	год	_	B-datetime	_	_	_	_	_	_
+_	вперёд	_	I-datetime	_	_	_	_	_	_
+
+# id: test_288
+# intent = SearchScreeningEvent
+_	доверие	_	O	_	_	_	_	_	_
+_	специально	_	O	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	последнего	_	B-movie_name	_	_	_	_	_	_
+_	богатыря	_	I-movie_name	_	_	_	_	_	_
+_	два	_	I-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	ближайшем	_	B-location	_	_	_	_	_	_
+_	кинотеатре	_	O	_	_	_	_	_	_
+
+# id: test_285
+# intent = BookRestaurant
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	забронируйте	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кафе	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	подают	_	O	_	_	_	_	_	_
+_	осетрина	_	B-served_dish	_	_	_	_	_	_
+_	по-царски	_	B-location	_	_	_	_	_	_
+
+# id: test_257
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	самую	_	B-sort	_	_	_	_	_	_
+_	новую	_	B-music_item	_	_	_	_	_	_
+_	песню	_	B-music_item	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	яндекс	_	B-service	_	_	_	_	_	_
+_	музыки	_	O	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	клавы	_	B-artist	_	_	_	_	_	_
+_	коки	_	I-artist	_	_	_	_	_	_
+
+# id: test_258
+# intent = weather/find
+_	проверь	_	O	_	_	_	_	_	_
+_	прогноз	_	O	_	_	_	_	_	_
+_	погоды	_	O	_	_	_	_	_	_
+_	новосибирске	_	B-location	_	_	_	_	_	_
+
+# id: test_253
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	виде	_	O	_	_	_	_	_	_
+_	геру	_	O	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	умник	_	I-object_name	_	_	_	_	_	_
+_	харт	_	I-object_name	_	_	_	_	_	_
+
+# id: test_248
+# intent = alarm/set_alarm
+_	поставь	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	семь	_	O	_	_	_	_	_	_
+
+# id: test_264
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	французский	_	B-restaurant_type	_	_	_	_	_	_
+_	бар	_	B-restaurant_type	_	_	_	_	_	_
+_	где	_	O	_	_	_	_	_	_
+_	то	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	нижнем	_	B-location	_	_	_	_	_	_
+_	новгороде	_	I-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	трёх	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	двадцатая	_	B-datetime	_	_	_	_	_	_
+_	пятая	_	I-datetime	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+
+# id: test_269
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	немецкие	_	B-rating_unit	_	_	_	_	_	_
+_	ресторан	_	B-restaurant_type	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	петербурге	_	B-location	_	_	_	_	_	_
+
+# id: test_273
+# intent = weather/find
+_	погода	_	O	_	_	_	_	_	_
+_	воронеже	_	B-location	_	_	_	_	_	_
+_	россия	_	B-location	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	двадцать	_	I-datetime	_	_	_	_	_	_
+_	ноль	_	I-datetime	_	_	_	_	_	_
+_	ноль	_	I-datetime	_	_	_	_	_	_
+_	первая	_	I-datetime	_	_	_	_	_	_
+_	вещей	_	O	_	_	_	_	_	_
+_	двадцать	_	B-datetime	_	_	_	_	_	_
+_	пятый	_	I-datetime	_	_	_	_	_	_
+
+# id: test_259
+# intent = weather/find
+_	если	_	O	_	_	_	_	_	_
+_	гроза	_	B-weather/attribute	_	_	_	_	_	_
+_	сейчас	_	B-datetime	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	кировский	_	B-location	_	_	_	_	_	_
+
+# id: test_247
+# intent = alarm/set_alarm
+_	поставь	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+_	в	_	I-datetime	_	_	_	_	_	_
+_	пять	_	I-datetime	_	_	_	_	_	_
+_	вечера	_	I-datetime	_	_	_	_	_	_
+
+# id: test_150
+# intent = reminder/show_reminders
+_	покажи	_	O	_	_	_	_	_	_
+_	все	_	B-reference	_	_	_	_	_	_
+_	мои	_	B-reference	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+
+# id: test_111
+# intent = weather/find
+_	нужно	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	взять	_	O	_	_	_	_	_	_
+_	дождевик	_	B-weather/attribute	_	_	_	_	_	_
+
+# id: test_109
+# intent = reminder/set_reminder
+_	напомни	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	завтра	_	B-datetime	_	_	_	_	_	_
+_	записаться	_	I-reminder/todo	_	_	_	_	_	_
+_	к	_	I-reminder/todo	_	_	_	_	_	_
+_	врачу	_	I-reminder/todo	_	_	_	_	_	_
+
+# id: test_105
+# intent = reminder/cancel_reminder
+_	отмени	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	напоминание	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	следующей	_	B-datetime	_	_	_	_	_	_
+_	неделе	_	I-datetime	_	_	_	_	_	_
+
+# id: test_103
+# intent = alarm/cancel_alarm
+_	отмени	_	O	_	_	_	_	_	_
+_	следующий	_	O	_	_	_	_	_	_
+_	будильник	_	O	_	_	_	_	_	_
+
+# id: test_104
+# intent = reminder/set_reminder
+_	напомни	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	сходить	_	B-reminder/todo	_	_	_	_	_	_
+_	продуктовый	_	I-reminder/todo	_	_	_	_	_	_
+_	магазин	_	I-reminder/todo	_	_	_	_	_	_
+_	сегодня	_	B-datetime	_	_	_	_	_	_
+
+# id: test_107
+# intent = reminder/set_reminder
+_	напомним	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	забрать	_	B-reminder/todo	_	_	_	_	_	_
+_	цветы	_	I-reminder/todo	_	_	_	_	_	_
+_	для	_	I-reminder/todo	_	_	_	_	_	_
+_	наташа	_	I-reminder/todo	_	_	_	_	_	_
+_	на	_	I-reminder/todo	_	_	_	_	_	_
+_	нашу	_	I-reminder/todo	_	_	_	_	_	_
+_	годовщину	_	I-reminder/todo	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	двадцать	_	B-datetime	_	_	_	_	_	_
+_	восьмое	_	I-datetime	_	_	_	_	_	_
+
+# id: test_469
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	этот	_	B-object_select	_	_	_	_	_	_
+_	альбом	_	B-object_type	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	пять	_	B-rating_value	_	_	_	_	_	_
+_	баллов	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_463
+# intent = SearchCreativeWork
+_	можешь	_	O	_	_	_	_	_	_
+_	найти	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	трейлер	_	B-object_name	_	_	_	_	_	_
+_	ёлок	_	I-object_name	_	_	_	_	_	_
+_	девять	_	O	_	_	_	_	_	_
+
+# id: test_470
+# intent = SearchScreeningEvent
+_	показывает	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	лет	_	B-movie_name	_	_	_	_	_	_
+_	три	_	I-movie_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	ближайшем	_	O	_	_	_	_	_	_
+_	кинотеатров	_	I-location	_	_	_	_	_	_
+_	полдень	_	B-datetime	_	_	_	_	_	_
+
+# id: test_464
+# intent = RateBook
+_	дай	_	O	_	_	_	_	_	_
+_	две	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+_	шести	_	B-best_rating	_	_	_	_	_	_
+_	гарри	_	B-object_name	_	_	_	_	_	_
+_	поттер	_	I-object_name	_	_	_	_	_	_
+_	и	_	I-object_name	_	_	_	_	_	_
+_	принц	_	I-object_name	_	_	_	_	_	_
+_	полукровка	_	I-object_name	_	_	_	_	_	_
+
+# id: test_462
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	что-нибудь	_	O	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	русская	_	B-playlist	_	_	_	_	_	_
+_	поп-музыка	_	I-playlist	_	_	_	_	_	_
+_	девяностых	_	B-datetime	_	_	_	_	_	_
+
+# id: test_461
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	этот	_	O	_	_	_	_	_	_
+_	трек	_	B-music_item	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плейлист	_	O	_	_	_	_	_	_
+_	русская	_	B-playlist	_	_	_	_	_	_
+_	эстрада	_	I-playlist	_	_	_	_	_	_
+
+# id: test_455
+# intent = SearchScreeningEvent
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	шоу	_	O	_	_	_	_	_	_
+_	что	_	O	_	_	_	_	_	_
+_	было	_	O	_	_	_	_	_	_
+_	дальше	_	O	_	_	_	_	_	_
+
+# id: test_454
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	дождь	_	B-weather/attribute	_	_	_	_	_	_
+_	люблино	_	B-location	_	_	_	_	_	_
+
+# id: test_453
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	итальянский	_	O	_	_	_	_	_	_
+_	ресторан	_	B-restaurant_type	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	следующем	_	B-datetime	_	_	_	_	_	_
+_	году	_	I-datetime	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	патриарших	_	B-cuisine	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	троих	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+
+# id: test_452
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	что-нибудь	_	O	_	_	_	_	_	_
+_	отвали	_	B-album	_	_	_	_	_	_
+_	рек	_	I-album	_	_	_	_	_	_
+_	учительского	_	I-album	_	_	_	_	_	_
+_	семидесятых	_	B-datetime	_	_	_	_	_	_
+
+# id: test_460
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	место	_	O	_	_	_	_	_	_
+_	для	_	O	_	_	_	_	_	_
+_	девятерых	_	B-datetime	_	_	_	_	_	_
+
+# id: test_456
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	поесть	_	O	_	_	_	_	_	_
+_	рынки	_	I-reminder/todo	_	_	_	_	_	_
+
+# id: test_451
+# intent = SearchCreativeWork
+_	можешь	_	O	_	_	_	_	_	_
+_	найти	_	O	_	_	_	_	_	_
+_	книгу	_	O	_	_	_	_	_	_
+_	горе	_	B-object_name	_	_	_	_	_	_
+_	от	_	I-object_name	_	_	_	_	_	_
+_	ума	_	I-object_name	_	_	_	_	_	_
+
+# id: test_459
+# intent = SearchScreeningEvent
+_	будут	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	показывает	_	O	_	_	_	_	_	_
+_	реальных	_	B-object_name	_	_	_	_	_	_
+_	пацанов	_	I-object_name	_	_	_	_	_	_
+_	без	_	I-object_name	_	_	_	_	_	_
+_	четверти	_	I-object_name	_	_	_	_	_	_
+_	шесть	_	B-datetime	_	_	_	_	_	_
+
+# id: test_458
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	стейк	_	B-served_dish	_	_	_	_	_	_
+_	хаус	_	B-restaurant_type	_	_	_	_	_	_
+_	рядом	_	B-location	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	белорусской	_	B-location	_	_	_	_	_	_
+
+# id: test_457
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	песни	_	O	_	_	_	_	_	_
+_	диана	_	B-artist	_	_	_	_	_	_
+_	арбенина	_	I-artist	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	плей	_	B-playlist	_	_	_	_	_	_
+_	лист	_	I-playlist	_	_	_	_	_	_
+_	ночные	_	B-playlist	_	_	_	_	_	_
+_	снайперы	_	I-playlist	_	_	_	_	_	_
+
+# id: test_450
+# intent = RateBook
+_	оценить	_	O	_	_	_	_	_	_
+_	текущей	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	роман	_	B-object_type	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	три	_	B-rating_value	_	_	_	_	_	_
+_	звезды	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_449
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	сергея	_	B-artist	_	_	_	_	_	_
+_	лазарева	_	I-artist	_	_	_	_	_	_
+
+# id: test_448
+# intent = SearchScreeningEvent
+_	хочу	_	O	_	_	_	_	_	_
+_	видеть	_	O	_	_	_	_	_	_
+_	майора	_	B-movie_name	_	_	_	_	_	_
+_	грома	_	I-movie_name	_	_	_	_	_	_
+_	игра	_	O	_	_	_	_	_	_
+_	кинотеатре	_	O	_	_	_	_	_	_
+
+# id: test_444
+# intent = SearchCreativeWork
+_	найти	_	O	_	_	_	_	_	_
+_	тв	_	O	_	_	_	_	_	_
+_	шоу	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	ножах	_	O	_	_	_	_	_	_
+
+# id: test_442
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	москве	_	B-location	_	_	_	_	_	_
+_	девятого	_	B-datetime	_	_	_	_	_	_
+_	мая	_	I-datetime	_	_	_	_	_	_
+
+# id: test_445
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	песни	_	O	_	_	_	_	_	_
+_	седая	_	B-object_name	_	_	_	_	_	_
+_	ночь	_	I-object_name	_	_	_	_	_	_
+
+# id: test_443
+# intent = SearchScreeningEvent
+_	не	_	O	_	_	_	_	_	_
+_	нужен	_	O	_	_	_	_	_	_
+_	список	_	O	_	_	_	_	_	_
+_	сеансы	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	киномакс	_	B-location	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+
+# id: test_447
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	произведения	_	O	_	_	_	_	_	_
+_	счастливая	_	B-object_name	_	_	_	_	_	_
+_	москва	_	I-object_name	_	_	_	_	_	_
+
+# id: test_446
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	лучшие	_	O	_	_	_	_	_	_
+_	песни	_	O	_	_	_	_	_	_
+_	двухтысячного	_	B-playlist	_	_	_	_	_	_
+_	быка	_	I-playlist	_	_	_	_	_	_
+_	музыки	_	O	_	_	_	_	_	_
+
+# id: test_441
+# intent = BookRestaurant
+_	мне	_	O	_	_	_	_	_	_
+_	нужен	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	четверых	_	B-party_size_number	_	_	_	_	_	_
+_	рядом	_	B-location	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	красной	_	B-location	_	_	_	_	_	_
+_	площади	_	I-location	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	дэб	_	B-location	_	_	_	_	_	_
+
+# id: test_438
+# intent = PlayMusic
+_	давай	_	O	_	_	_	_	_	_
+_	послушаем	_	O	_	_	_	_	_	_
+_	что	_	O	_	_	_	_	_	_
+_	нибудь	_	O	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	леонид	_	B-artist	_	_	_	_	_	_
+_	агутин	_	I-artist	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+
+# id: test_437
+# intent = RateBook
+_	оценить	_	O	_	_	_	_	_	_
+_	текущие	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	сына	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	ноль	_	B-rating_value	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	шести	_	B-best_rating	_	_	_	_	_	_
+_	звёзд	_	O	_	_	_	_	_	_
+
+# id: test_439
+# intent = SearchScreeningEvent
+_	найди	_	O	_	_	_	_	_	_
+_	анимационные	_	B-movie_type	_	_	_	_	_	_
+_	фильмы	_	I-object_type	_	_	_	_	_	_
+_	рядом	_	B-location	_	_	_	_	_	_
+
+# id: test_436
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	песню	_	B-music_item	_	_	_	_	_	_
+_	хиты	_	B-playlist	_	_	_	_	_	_
+_	максим	_	I-playlist	_	_	_	_	_	_
+
+# id: test_428
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	дулю	_	O	_	_	_	_	_	_
+_	смаком	_	O	_	_	_	_	_	_
+_	отчаянием	_	O	_	_	_	_	_	_
+
+# id: test_431
+# intent = RateBook
+_	да	_	O	_	_	_	_	_	_
+_	евгению	_	B-object_name	_	_	_	_	_	_
+_	онегину	_	I-object_name	_	_	_	_	_	_
+_	пять	_	B-rating_value	_	_	_	_	_	_
+_	звёзд	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_430
+# intent = AddToPlaylist
+_	включи	_	O	_	_	_	_	_	_
+_	актриса	_	B-playlist	_	_	_	_	_	_
+_	весна	_	I-playlist	_	_	_	_	_	_
+_	из	_	I-entity_name	_	_	_	_	_	_
+_	для	_	I-entity_name	_	_	_	_	_	_
+_	тут	_	I-entity_name	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+
+# id: test_429
+# intent = SearchScreeningEvent
+_	включи	_	O	_	_	_	_	_	_
+_	симфонии	_	B-playlist	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	две	_	B-datetime	_	_	_	_	_	_
+_	тысячи	_	I-datetime	_	_	_	_	_	_
+_	тринадцатого	_	I-datetime	_	_	_	_	_	_
+
+# id: test_435
+# intent = SearchScreeningEvent
+_	идёт	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	присутствия	_	O	_	_	_	_	_	_
+
+# id: test_434
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	карл	_	B-party_size_description	_	_	_	_	_	_
+_	и	_	I-party_size_description	_	_	_	_	_	_
+_	фридрих	_	I-party_size_description	_	_	_	_	_	_
+_	к	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	петербурге	_	B-location	_	_	_	_	_	_
+
+# id: test_432
+# intent = RateBook
+_	дай	_	O	_	_	_	_	_	_
+_	ноль	_	B-rating_value	_	_	_	_	_	_
+_	звёзд	_	B-rating_unit	_	_	_	_	_	_
+_	этом	_	B-object_select	_	_	_	_	_	_
+_	учебнику	_	B-object_type	_	_	_	_	_	_
+
+# id: test_427
+# intent = RateBook
+_	оценить	_	O	_	_	_	_	_	_
+_	текущей	_	B-object_part_of_series_type	_	_	_	_	_	_
+_	роман	_	B-object_type	_	_	_	_	_	_
+_	двумя	_	B-rating_value	_	_	_	_	_	_
+_	баллами	_	B-rating_unit	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	шести	_	B-best_rating	_	_	_	_	_	_
+
+# id: test_433
+# intent = RateBook
+_	оценить	_	O	_	_	_	_	_	_
+_	текущую	_	B-object_select	_	_	_	_	_	_
+_	сессию	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	четыре	_	B-rating_value	_	_	_	_	_	_
+_	баллов	_	B-rating_unit	_	_	_	_	_	_
+
+# id: test_426
+# intent = BookRestaurant
+_	забронируй	_	O	_	_	_	_	_	_
+_	столик	_	O	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	девять	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	пабе	_	B-restaurant_type	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	майку	_	B-location	_	_	_	_	_	_
+
+# id: test_425
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	бедная	_	B-object_name	_	_	_	_	_	_
+_	лиза	_	I-object_name	_	_	_	_	_	_
+_	одним	_	B-rating_value	_	_	_	_	_	_
+_	баллом	_	O	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	шести	_	B-best_rating	_	_	_	_	_	_
+
+# id: test_424
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	что-нибудь	_	O	_	_	_	_	_	_
+_	новое	_	B-music_item	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	инстасамка	_	B-artist	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	яндекс	_	B-service	_	_	_	_	_	_
+_	музыки	_	I-service	_	_	_	_	_	_
+
+# id: test_419
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	ресторан	_	B-restaurant_type	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	десять	_	B-party_size_number	_	_	_	_	_	_
+_	человек	_	O	_	_	_	_	_	_
+
+# id: test_418
+# intent = weather/find
+_	будет	_	O	_	_	_	_	_	_
+_	ли	_	O	_	_	_	_	_	_
+_	похолодания	_	B-weather/attribute	_	_	_	_	_	_
+_	здесь	_	B-location	_	_	_	_	_	_
+_	начиная	_	O	_	_	_	_	_	_
+_	с	_	O	_	_	_	_	_	_
+_	первого	_	B-datetime	_	_	_	_	_	_
+_	мая	_	I-datetime	_	_	_	_	_	_
+
+# id: test_421
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	тани	_	B-object_name	_	_	_	_	_	_
+_	гроттер	_	I-artist	_	_	_	_	_	_
+_	и	_	O	_	_	_	_	_	_
+_	магических	_	I-entity_name	_	_	_	_	_	_
+_	контрабас	_	I-entity_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	два	_	B-rating_value	_	_	_	_	_	_
+
+# id: test_420
+# intent = PlayMusic
+_	включи	_	O	_	_	_	_	_	_
+_	что-нибудь	_	O	_	_	_	_	_	_
+_	от	_	O	_	_	_	_	_	_
+_	вески	_	O	_	_	_	_	_	_
+_	а	_	O	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	семидесятых	_	B-datetime	_	_	_	_	_	_
+
+# id: test_423
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	оксимирон	_	B-artist	_	_	_	_	_	_
+_	а	_	I-artist	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плейлисты	_	O	_	_	_	_	_	_
+_	русский	_	B-playlist	_	_	_	_	_	_
+_	рэп	_	I-playlist	_	_	_	_	_	_
+
+# id: test_422
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	песню	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	лист	_	O	_	_	_	_	_	_
+_	песенки	_	B-playlist	_	_	_	_	_	_
+_	из	_	I-playlist	_	_	_	_	_	_
+_	мультик	_	I-playlist	_	_	_	_	_	_
+
+# id: test_417
+# intent = SearchCreativeWork
+_	пожалуйста	_	O	_	_	_	_	_	_
+_	найди	_	O	_	_	_	_	_	_
+_	телевизионное	_	O	_	_	_	_	_	_
+_	шоу	_	I-object_type	_	_	_	_	_	_
+_	давай	_	B-object_name	_	_	_	_	_	_
+_	поженимся	_	I-object_name	_	_	_	_	_	_
+
+# id: test_376
+# intent = RateBook
+_	оцени	_	O	_	_	_	_	_	_
+_	идиоты	_	B-object_name	_	_	_	_	_	_
+_	пятью	_	B-rating_value	_	_	_	_	_	_
+_	баллами	_	B-rating_unit	_	_	_	_	_	_
+_	шести	_	B-best_rating	_	_	_	_	_	_
+
+# id: test_377
+# intent = RateBook
+_	хроника	_	B-object_name	_	_	_	_	_	_
+_	воспоминания	_	I-object_name	_	_	_	_	_	_
+_	анди	_	O	_	_	_	_	_	_
+_	японских	_	I-object_name	_	_	_	_	_	_
+_	партизан	_	I-object_name	_	_	_	_	_	_
+_	заслуживает	_	O	_	_	_	_	_	_
+_	ноль	_	B-rating_value	_	_	_	_	_	_
+_	баллов	_	B-rating_unit	_	_	_	_	_	_
+_	из	_	O	_	_	_	_	_	_
+_	шести	_	B-best_rating	_	_	_	_	_	_
+
+# id: test_392
+# intent = BookRestaurant
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	забронировать	_	O	_	_	_	_	_	_
+_	массаж	_	B-served_dish	_	_	_	_	_	_
+_	спа	_	I-served_dish	_	_	_	_	_	_
+
+# id: test_375
+# intent = weather/find
+_	какая	_	O	_	_	_	_	_	_
+_	погода	_	O	_	_	_	_	_	_
+_	будет	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	астраханского	_	B-location	_	_	_	_	_	_
+_	заповедника	_	I-location	_	_	_	_	_	_
+_	двадцать	_	B-datetime	_	_	_	_	_	_
+_	первая	_	I-datetime	_	_	_	_	_	_
+_	августа	_	I-datetime	_	_	_	_	_	_
+_	две	_	I-datetime	_	_	_	_	_	_
+_	тысячи	_	I-datetime	_	_	_	_	_	_
+_	тридцать	_	I-datetime	_	_	_	_	_	_
+_	пятого	_	I-datetime	_	_	_	_	_	_
+_	года	_	I-datetime	_	_	_	_	_	_
+
+# id: test_467
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	хочешь	_	B-entity_name	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	мой	_	B-reference	_	_	_	_	_	_
+_	плыли	_	B-playlist	_	_	_	_	_	_
+_	земфира	_	I-playlist	_	_	_	_	_	_
+
+# id: test_466
+# intent = AddToPlaylist
+_	добавь	_	O	_	_	_	_	_	_
+_	в	_	O	_	_	_	_	_	_
+_	группу	_	O	_	_	_	_	_	_
+_	тату	_	B-playlist	_	_	_	_	_	_
+_	в	_	I-playlist	_	_	_	_	_	_
+_	плэй	_	I-playlist	_	_	_	_	_	_
+_	лист	_	I-playlist	_	_	_	_	_	_
+_	нас	_	I-playlist	_	_	_	_	_	_
+_	не	_	I-playlist	_	_	_	_	_	_
+_	догонят	_	I-playlist	_	_	_	_	_	_
+
+# id: test_468
+# intent = SearchCreativeWork
+_	найди	_	O	_	_	_	_	_	_
+_	мне	_	O	_	_	_	_	_	_
+_	роман	_	B-object_type	_	_	_	_	_	_
+_	под	_	O	_	_	_	_	_	_
+_	названием	_	O	_	_	_	_	_	_
+_	евгений	_	B-object_name	_	_	_	_	_	_
+_	онегин	_	I-object_name	_	_	_	_	_	_
+
+# id: test_465
+# intent = SearchScreeningEvent
+_	я	_	O	_	_	_	_	_	_
+_	хочу	_	O	_	_	_	_	_	_
+_	не	_	O	_	_	_	_	_	_
+_	моцион	_	I-movie_name	_	_	_	_	_	_
+_	на	_	O	_	_	_	_	_	_
+_	ефимов	_	B-movie_name	_	_	_	_	_	_
+_	кара	_	I-movie_name	_	_	_	_	_	_
+_	семь	_	I-movie_name	_	_	_	_	_	_
+_	атриум	_	I-movie_name	_	_	_	_	_	_

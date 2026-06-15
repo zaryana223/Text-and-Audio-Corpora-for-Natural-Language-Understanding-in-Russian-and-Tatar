@@ -1,0 +1,3801 @@
+# annotator: Angelina
+# text EN: Will it be snowy at the current position by March 3 ?
+# text RU: Будет ли снег в текущем местоположении в Марте 3 ?
+# intent: weather/find
+# slots: 10:13:condition_description, 17:38:location, 42:48:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	снег	weather/find	B-condition_description
+4	в	weather/find	O
+5	текущем	weather/find	B-location
+6	местоположении	weather/find	I-location
+7	в	weather/find	O
+8	Марте	weather/find	B-datetime
+9	3	weather/find	I-datetime
+10	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Find me a table for 8 somewhee in Hollenberg in nine weeks
+# text RU: Найди мне стол для 8, где-нибудь в Холленберге через девять недель
+# intent: BookRestaurant
+# slots: 20:20:party_size_number, 36:46:location, 48:66:datetime
+1	Найди	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	стол	BookRestaurant	O
+4	для	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	,	BookRestaurant	O
+7	где-нибудь	BookRestaurant	O
+8	в	BookRestaurant	O
+9	Холленберге	BookRestaurant	B-location
+10	через	BookRestaurant	B-datetime
+11	девять	BookRestaurant	I-datetime
+12	недель	BookRestaurant	I-datetime
+
+# annotator: Angelina
+# text EN: play a track from 2004
+# text RU: включи трек из 2004
+# intent: PlayMusic
+# slots: 8:11:music_item, 16:19:datetime
+1	включи	PlayMusic	O
+2	трек	PlayMusic	B-music_item
+3	из	PlayMusic	O
+4	2004	PlayMusic	B-datetime
+
+# annotator: Angelina
+# text EN: Tell me what films are currently playing at AMC Theaters
+# text RU: Скажи мне, какие фильмы сейчас покказывают в AMC Theaters
+# intent: SearchScreeningEvent
+# slots: 18:23:movie_type, 46:57:location
+1	Скажи	SearchScreeningEvent	O
+2	мне	SearchScreeningEvent	O
+3	,	SearchScreeningEvent	O
+4	какие	SearchScreeningEvent	O
+5	фильмы	SearchScreeningEvent	B-movie_type
+6	сейчас	SearchScreeningEvent	O
+7	показывают	SearchScreeningEvent	O
+8	в	SearchScreeningEvent	O
+9	AMC	SearchScreeningEvent	B-location
+10	Theaters	SearchScreeningEvent	I-location
+
+# annotator: Angelina
+# text EN: Show me the TV show Limit of Love: Umizaru
+# text RU: Покажи мне телешоу Limit of Love: Umizaru
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:41:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Limit	SearchCreativeWork	B-object_name
+5	of	SearchCreativeWork	I-object_name
+6	Love:	SearchCreativeWork	I-object_name
+7	Umizaru	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: Show me the photograph Rock You Baby
+# text RU: Покажи мне фотографию Rock You Baby
+# intent: SearchCreativeWork
+# slots: 12:21:object_type, 23:35:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	фотографию	SearchCreativeWork	B-object_type
+4	Rock	SearchCreativeWork	B-object_name
+5	You	SearchCreativeWork	I-object_name
+6	Baby	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: is Tarzan of the Apes playing at Cobb Theatres
+# text RU: есть ли показ Тарзан. Приемышь обезьян в Cobb Theatres
+# intent: SearchScreeningEvent
+# slots: 15:38:movie_name, 42:54:location
+1	есть	SearchScreeningEvent	O
+2	ли	SearchScreeningEvent	O
+3	показ	SearchScreeningEvent	O
+4	Тарзан.	SearchScreeningEvent	B-movie_name
+5	Приемышь	SearchScreeningEvent	I-movie_name
+6	обезьян	SearchScreeningEvent	I-movie_name
+7	в	SearchScreeningEvent	O
+8	Cobb	SearchScreeningEvent	B-location
+9	Theatres	SearchScreeningEvent	I-location
+
+# annotator: Angelina
+# text EN: put Kan Mikami on Pre-Party R&B Jams
+# text RU: добавь Kan Mikami в Pre-Party R&B Jams
+# intent: AddToPlaylist
+# slots: 8:17:artist, 21:38:playlist
+1	добавь	AddToPlaylist	O
+2	Kan	AddToPlaylist	B-artist
+3	Mikami	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	Pre-Party	AddToPlaylist	B-playlist
+6	R&B	AddToPlaylist	I-playlist
+7	Jams	AddToPlaylist	I-playlist
+
+# annotator: Angelina
+# text EN: is it going to blizzard at my current position
+# text RU:  будет ли метель в моем текущем местоположении
+# intent: weather/find
+# slots: 10:15:condition_description, 24:45:location
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	метель	weather/find	B-condition_description
+4	в	weather/find	O
+5	моем	weather/find	O
+6	текущем	weather/find	B-location
+7	местоположении	weather/find	I-location
+
+# annotator: Angelina
+# text EN: book a table for me and my step uncle in Malta at a cafeteria
+# text RU: забронируй столик для меня и моего свобдного дяди в Мальте в кафетерии
+# intent: BookRestaurant
+# slots: 23:49:party_size_description, 53:58:location, 62:70:restaurant_type
+1	забронируй	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	для	BookRestaurant	O
+4	меня	BookRestaurant	B-party_size_description
+5	и	BookRestaurant	I-party_size_description
+6	моего	BookRestaurant	I-party_size_description
+7	сводного	BookRestaurant	I-party_size_description
+8	дяди	BookRestaurant	I-party_size_description
+9	в	BookRestaurant	O
+10	Мальте	BookRestaurant	B-location
+11	в	BookRestaurant	O
+12	кафетерии	BookRestaurant	B-restaurant_type
+
+# annotator: Angelina
+# text EN: Play the most popular twenties record from Leland Sklar
+# text RU: Включи самые популярные записи двадцатых от Leland Sklar
+# intent: PlayMusic
+# slots: 8:23:sort, 25:30:music_item, 32:40:datetime, 45:56:artist
+1	Включи	PlayMusic	O
+2	самые	PlayMusic	B-sort
+3	популярные	PlayMusic	I-sort
+4	записи	PlayMusic	B-music_item
+5	двадцатых	PlayMusic	B-datetime
+6	от	PlayMusic	O
+7	Leland	PlayMusic	B-artist
+8	Sklar	PlayMusic	I-artist
+
+# annotator: Angelina
+# text EN: Show me the forecast for Wisconsin
+# text RU: Покажи мне прогноз для Висконсина
+# intent: weather/find
+# slots: 24:33:location
+1	Покажи	weather/find	O
+2	мне	weather/find	O
+3	прогноз	weather/find	O
+4	для	weather/find	O
+5	Висконсина	weather/find	B-location
+
+# annotator: Angelina
+# text EN: find a photograph called Between the Days
+# text RU: найди фотографию названную Between the Days
+# intent: SearchCreativeWork
+# slots: 7:16:object_type, 28:43:object_name
+1	найди	SearchCreativeWork	O
+2	фотографию	SearchCreativeWork	B-object_type
+3	названную	SearchCreativeWork	O
+4	Between	SearchCreativeWork	B-object_name
+5	the	SearchCreativeWork	I-object_name
+6	Days	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: book at The Halal Guys on Oct. 17
+# text RU: забронируй The Halal Guys на октябрь 17
+# intent: BookRestaurant
+# slots: 12:25:restaurant_name, 30:39:datetime
+1	забронируй	BookRestaurant	O
+2	The	BookRestaurant	B-restaurant_name
+3	Halal	BookRestaurant	I-restaurant_name
+4	Guys	BookRestaurant	I-restaurant_name
+5	на	BookRestaurant	O
+6	октябрь	BookRestaurant	B-datetime
+7	17	BookRestaurant	I-datetime
+
+# annotator: Angelina
+# text EN: Please tell me the forecast for Guinea-Bissau
+# text RU: Пожалуйста, скажи мне прогноз для Гвинеи-Бисау
+# intent: weather/find
+# slots: 35:46:location
+1	Пожалуйста	weather/find	O
+2	,	weather/find	O
+3	скажи	weather/find	O
+4	мне	weather/find	O
+5	прогноз	weather/find	O
+6	для	weather/find	O
+7	Гвинеи-Бисау	weather/find	B-location
+
+# annotator: Angelina
+# text EN: Add this song to my the perfect italian dinner playlist
+# text RU: Добавь эту песню в мой the perfect italian dinner плейлист
+# intent: AddToPlaylist
+# slots: 12:16:music_item, 20:22:reference, 24:49:playlist
+1	Добавь	AddToPlaylist	O
+2	эту	AddToPlaylist	O
+3	песню	AddToPlaylist	B-music_item
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	the	AddToPlaylist	B-playlist
+7	perfect	AddToPlaylist	I-playlist
+8	italian	AddToPlaylist	I-playlist
+9	dinner	AddToPlaylist	I-playlist
+10	плейлист	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: weather in Tioga Colorado
+# text RU: погода в Тиоге, Колорадо
+# intent: weather/find
+# slots: 10:15:location, 17:24:location
+1	погода	weather/find	O
+2	в	weather/find	O
+3	Тиоге,	weather/find	B-location
+4	Колорадо	weather/find	B-location
+
+# annotator: Angelina
+# text EN: I want to listen to the Music of Ghost in the Shell: Stand Alone Complex
+# text RU: Я хочу послушать Music of Ghost in the Shell: Stand Alone Complex
+# intent: SearchCreativeWork
+# slots: 18:65:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	послушать	SearchCreativeWork	O
+4	Music	SearchCreativeWork	B-object_name
+5	of	SearchCreativeWork	I-object_name
+6	Ghost	SearchCreativeWork	I-object_name
+7	in	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Shell:	SearchCreativeWork	I-object_name
+10	Stand	SearchCreativeWork	I-object_name
+11	Alone	SearchCreativeWork	I-object_name
+12	Complex	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: Show me Happiness Was Free .
+# text RU: Покажи мне Happiness Was Free .
+# intent: SearchCreativeWork
+# slots: 12:29:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	Happiness	SearchCreativeWork	B-object_name
+4	Was	SearchCreativeWork	I-object_name
+5	Free	SearchCreativeWork	I-object_name
+6	.	SearchCreativeWork	O
+
+# annotator: Angelina
+# text EN: Is it supposed to rain nearby my current location at 0 o'clock ?
+# text RU: Должен ли быть дождь рядом моей текущей локации в 0 часов ?
+# intent: weather/find
+# slots: 16:20:condition_description, 22:26:location, 33:47:location, 51:57:datetime
+1	Должен	weather/find	O
+2	ли	weather/find	O
+3	быть	weather/find	O
+4	дождь	weather/find	B-condition_description
+5	рядом	weather/find	B-location
+6	моей	weather/find	O
+7	текущей	weather/find	B-location
+8	локации	weather/find	I-location
+9	в	weather/find	O
+10	0	weather/find	B-datetime
+11	часов	weather/find	I-datetime
+12	?	weather/find	O
+
+# annotator: Angelina
+# text EN: book a table in Fairview neighboring the area
+# text RU: забронируй стол в Fairview по-соседству
+# intent: BookRestaurant
+# slots: 19:26:location, 28:39:location
+1	забронируй	BookRestaurant	O
+2	стол	BookRestaurant	O
+3	в	BookRestaurant	O
+4	Fairview	BookRestaurant	B-location
+5	по-соседству	BookRestaurant	B-location
+
+# annotator: Angelina
+# text EN: what is the forecast for 15:04 in Georgia for overcast conditions in Valley View
+# text RU: какой прогноз на 15:04 в Джорджии в связи с облачностью в Вэлли-Вью 
+# intent: weather/find
+# slots: 18:22:datetime, 26:33:location, 45:55:condition_description, 59:67:location
+1	какой	weather/find	O
+2	прогноз	weather/find	O
+3	на	weather/find	O
+4	15:04	weather/find	B-datetime
+5	в	weather/find	O
+6	Джорджии	weather/find	B-location
+7	в	weather/find	O
+8	связи	weather/find	O
+9	с	weather/find	O
+10	облачностью	weather/find	B-condition_description
+11	в	weather/find	O
+12	Вэлли-Вью	weather/find	B-location
+
+# annotator: Angelina
+# text EN: Can I see the movie schedules ?
+# text RU: Могу я увидеть расписание фильмов ?
+# intent: SearchScreeningEvent
+# slots: 16:33:object_type
+1	Могу	SearchScreeningEvent	O
+2	я	SearchScreeningEvent	O
+3	увидеть	SearchScreeningEvent	O
+4	расписание	SearchScreeningEvent	B-object_type
+5	фильмов	SearchScreeningEvent	I-object_type
+6	?	SearchScreeningEvent	O
+
+# annotator: Angelina
+# text EN: find a movie house closest showing Operation: Kingdom
+# text RU: найди ближайщий кинотеатр, показывающий Королевство
+# intent: SearchScreeningEvent
+# slots: 7:15:location, 17:25:object_location_type, 41:51:movie_name
+1	найди	SearchScreeningEvent	O
+2	a	SearchScreeningEvent	O
+3	ближайщий	SearchScreeningEvent	B-location
+4	кинотеатр	SearchScreeningEvent	B-object_location_type
+5	,	SearchScreeningEvent	O
+6	показывающий	SearchScreeningEvent	O
+7	Королевство	SearchScreeningEvent	B-movie_name
+
+# annotator: Angelina
+# text EN: Find a trailer called Storm Center .
+# text RU: Найди трейлер под названием Storm Center .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:40:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Storm	SearchCreativeWork	B-object_name
+6	Center	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# annotator: Angelina
+# text EN: put this album on my dubstep dangles dirty playlist
+# text RU: добавь этот альбом в мой dubstep dangles dirty плейлист
+# intent: AddToPlaylist
+# slots: 13:18:music_item, 22:24:reference, 26:46:playlist
+1	добавь	AddToPlaylist	O
+2	этот	AddToPlaylist	O
+3	альбом	AddToPlaylist	B-music_item
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	dubstep	AddToPlaylist	B-playlist
+7	dangles	AddToPlaylist	I-playlist
+8	dirty	AddToPlaylist	I-playlist
+9	плейлист	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: What are the movie schedules
+# text RU: Какое расписание фильмов
+# intent: SearchScreeningEvent
+# slots: 7:24:object_type
+1	Какое	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	фильмов	SearchScreeningEvent	I-object_type
+
+# annotator: Angelina
+# text EN: Play a song by Juanes on Last Fm
+# text RU: Включи песню Juanes на Last Fm
+# intent: PlayMusic
+# slots: 8:12:music_item, 14:19:artist, 24:30:service
+1	Включи	PlayMusic	O
+2	песню	PlayMusic	B-music_item
+3	Juanes	PlayMusic	B-artist
+4	на	PlayMusic	O
+5	Last	PlayMusic	B-service
+6	Fm	PlayMusic	I-service
+
+# annotator: Angelina
+# text EN: Assign 0 points out of 6 to The Gate of Worlds
+# text RU: Присвой 0 баллов из 6 для The Gate of Worlds
+# intent: RateBook
+# slots: 9:9:rating_value, 11:16:rating_unit, 21:21:best_rating, 27:44:object_name
+1	Присвой	RateBook	O
+2	0	RateBook	B-rating_value
+3	баллов	RateBook	B-rating_unit
+4	из	RateBook	O
+5	6	RateBook	B-best_rating
+6	для	RateBook	O
+7	The	RateBook	B-object_name
+8	Gate	RateBook	I-object_name
+9	of	RateBook	I-object_name
+10	Worlds	RateBook	I-object_name
+
+# annotator: Angelina
+# text EN: Play some David Mallett on last fm
+# text RU: Включи что-то Дэвида Маллета на last fm
+# intent: PlayMusic
+# slots: 15:28:artist, 33:39:service
+1	Включи	PlayMusic	O
+2	что-то	PlayMusic	O
+3	Дэвида	PlayMusic	B-artist
+4	Маллета	PlayMusic	I-artist
+5	на	PlayMusic	O
+6	last	PlayMusic	B-service
+7	fm	PlayMusic	I-service
+
+# annotator: Angelina
+# text EN: Find me the movie times
+# text RU: Найди мне расписание фильмов
+# intent: SearchScreeningEvent
+# slots: 11:28:object_type
+1	Найди	SearchScreeningEvent	O
+2	мне	SearchScreeningEvent	O
+3	расписание	SearchScreeningEvent	B-object_type
+4	фильмов	SearchScreeningEvent	I-object_type
+
+# annotator: Angelina
+# text EN: Will it be windy at 4 PM in NY ?
+# text RU: Будет ли ветренно в 4 дня в Нью-Йорке ?
+# intent: weather/find
+# slots: 10:17:condition_description, 21:25:datetime, 29:37:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	ветренно	weather/find	B-condition_description
+4	в	weather/find	O
+5	4	weather/find	B-datetime
+6	дня	weather/find	I-datetime
+7	в	weather/find	O
+8	Нью-Йорке	weather/find	B-location
+9	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Book me a restaurant for nine in Statham
+# text RU: Забронируй мне ресторан на 9-х в Statham
+# intent: BookRestaurant
+# slots: 16:23:restaurant_type, 28:30:party_size_number, 34:40:location
+1	Забронируй	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	ресторан	BookRestaurant	B-restaurant_type
+4	на	BookRestaurant	O
+5	9-х	BookRestaurant	B-party_size_number
+6	в	BookRestaurant	O
+7	Statham	BookRestaurant	B-location
+
+# annotator: Angelina
+# text EN: find a video game called IBM Program temporary fix
+# text RU: найди видео-игру с названием IBM Program temporary fix
+# intent: SearchCreativeWork
+# slots: 7:16:object_type, 30:54:object_name
+1	найди	SearchCreativeWork	O
+2	видео-игру	SearchCreativeWork	B-object_type
+3	с	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	IBM	SearchCreativeWork	B-object_name
+6	Program	SearchCreativeWork	I-object_name
+7	temporary	SearchCreativeWork	I-object_name
+8	fix	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: Find a table for one at a popular churrascaria for three weeks from now
+# text RU: Найди столик на одного в популярном чурраскария-месте через три недели 
+# intent: BookRestaurant
+# slots: 17:22:party_size_number, 26:35:sort, 37:53:restaurant_type, 61:70:datetime
+1	Найди	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	на	BookRestaurant	O
+4	одного	BookRestaurant	B-party_size_number
+5	в	BookRestaurant	O
+6	популярном	BookRestaurant	B-sort
+7	чурраскария-месте	BookRestaurant	B-restaurant_type
+8	через	BookRestaurant	O
+9	три	BookRestaurant	B-datetime
+10	недели	BookRestaurant	I-datetime
+
+# annotator: Angelina
+# text EN: For Mirrorshades I rate it three stars
+# text RU:  Для Mirrorshades я ставлю три звезды
+# intent: RateBook
+# slots: 5:16:object_name, 27:29:rating_value, 31:36:rating_unit
+1	Для	RateBook	O
+2	Mirrorshades	RateBook	B-object_name
+3	я	RateBook	O
+4	ставлю	RateBook	O
+5	три	RateBook	B-rating_value
+6	звезды	RateBook	B-rating_unit
+
+# annotator: Angelina
+# text EN: Book a restaurant that serves agnolotti in Colorado City Idaho .
+# text RU: Забронируй ресторан, в котором подают альолотти в Колорадо, Айдахо. 
+# intent: BookRestaurant
+# slots: 12:19:restaurant_type, 39:47:served_dish, 51:58:location, 61:66:location
+1	Забронируй	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	котором	BookRestaurant	O
+5	подают	BookRestaurant	O
+6	альолотти	BookRestaurant	B-served_dish
+7	в	BookRestaurant	O
+8	Колорадо	BookRestaurant	B-location
+9	,	BookRestaurant	O
+10	Айдахо	BookRestaurant	B-location
+11	.	BookRestaurant	O
+
+# annotator: Angelina
+# text EN: Add bright and breezy to my This Is Gucci Mane playlist
+# text RU: Добавь bright and breezy в мой This Is Gucci Mane плейлист
+# intent: AddToPlaylist
+# slots: 8:24:entity_name, 28:30:reference, 32:49:playlist
+1	Добавь	AddToPlaylist	O
+2	bright	AddToPlaylist	B-entity_name
+3	and	AddToPlaylist	I-entity_name
+4	breezy	AddToPlaylist	I-entity_name
+5	в	AddToPlaylist	O
+6	мой	AddToPlaylist	B-reference
+7	This	AddToPlaylist	B-playlist
+8	Is	AddToPlaylist	I-playlist
+9	Gucci	AddToPlaylist	I-playlist
+10	Mane	AddToPlaylist	I-playlist
+11	плейлист	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: Can you give me the weather for here
+# text RU: Можешь показать мне погоду здесь 
+# intent: weather/find
+# slots: 28:32:location
+1	Можешь	weather/find	O
+2	показать	weather/find	O
+3	мне	weather/find	O
+4	погоду	weather/find	O
+5	здесь	weather/find	B-location
+
+# annotator: Angelina
+# text EN: Add Ashley McIsaac to my r&b party classics playlist
+# text RU: Добавь Ashley McIsaac в мой r&b party classics плейлист
+# intent: AddToPlaylist
+# slots: 8:21:artist, 25:27:reference, 29:46:playlist
+1	Добавь	AddToPlaylist	O
+2	Ashley	AddToPlaylist	B-artist
+3	McIsaac	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	r&b	AddToPlaylist	B-playlist
+7	party	AddToPlaylist	I-playlist
+8	classics	AddToPlaylist	I-playlist
+9	плейлист	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: I'd like to see the saga 12 Soulful Nights of Christmas
+# text RU: Я хочу увидеть сагу 12 Soulful Nights of Christmas
+# intent: SearchCreativeWork
+# slots: 16:19:object_type, 21:50:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	увидеть	SearchCreativeWork	O
+4	сагу	SearchCreativeWork	B-object_type
+5	12	SearchCreativeWork	B-object_name
+6	Soulful	SearchCreativeWork	I-object_name
+7	Nights	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	Christmas	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: I need a reservation for 6 PM. with a party of 10 at Sand Lake
+# text RU: Мне нужно бронирование на 6 вечера, на 10 персон в Sand Lake
+# intent: BookRestaurant
+# slots: 27:35:datetime, 40:41:party_size_number, 52:60:location
+1	Мне	BookRestaurant	O
+2	нужно	BookRestaurant	O
+3	бронирование	BookRestaurant	O
+4	на	BookRestaurant	O
+5	6	BookRestaurant	B-datetime
+6	вечера,	BookRestaurant	I-datetime
+7	на	BookRestaurant	O
+8	10	BookRestaurant	B-party_size_number
+8	персон	BookRestaurant	O
+10	в	BookRestaurant	O
+11	Sand	BookRestaurant	B-location
+12	Lake	BookRestaurant	I-location
+
+# annotator: Angelina
+# text EN: Use Groove Shark to play music from the eighties
+# text RU: Используй Groove Shark для воспроизведения музыки из восьмидесятых
+# intent: PlayMusic
+# slots: 11:22:service, 54:66:datetime
+1	Используй	PlayMusic	O
+2	Groove	PlayMusic	B-service
+3	Shark	PlayMusic	I-service
+4	для	PlayMusic	O
+5	воспроизведения	PlayMusic	O
+6	музыки	PlayMusic	O
+7	из	PlayMusic	O
+8	восьмидесятых	PlayMusic	B-datetime
+
+# annotator: Angelina
+# text EN: find soundtrack titled The House of the Yellow Carpet
+# text RU: найди саундтрек с названием The House of the Yellow Carpet
+# intent: SearchCreativeWork
+# slots: 7:14:object_type, 28:57:object_name
+1	найди	SearchCreativeWork	O
+2	саундтрек	SearchCreativeWork	B-object_type
+3	с	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	The	SearchCreativeWork	B-object_name
+6	House	SearchCreativeWork	I-object_name
+7	of	SearchCreativeWork	I-object_name
+8	the	SearchCreativeWork	I-object_name
+9	Yellow	SearchCreativeWork	I-object_name
+10	Carpet	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: Which is the nearest cinema showing movies that start in nineteen seconds ?
+# text RU: Какой из ближайших кинотеатров показывает фильмы, которые начинаются через девятнадцать секунд ?
+# intent: SearchScreeningEvent
+# slots: 10:18:location, 20:30:object_location_type, 43:48:movie_type, 70:94:datetime
+1	Какой	SearchScreeningEvent	O
+2	из	SearchScreeningEvent	O
+3	ближайших	SearchScreeningEvent	B-location
+4	кинотеатров	SearchScreeningEvent	B-object_location_type
+5	показывает	SearchScreeningEvent	O
+6	фильмы	SearchScreeningEvent	B-movie_type
+7	,	SearchScreeningEvent	O
+8	которые	SearchScreeningEvent	O
+9	начинаются	SearchScreeningEvent	O
+10	через	SearchScreeningEvent	B-datetime
+11	девятнадцать	SearchScreeningEvent	I-datetime
+12	секунд	SearchScreeningEvent	I-datetime
+13	?	SearchScreeningEvent	O
+
+# annotator: Angelina
+# text EN: Add morten harket to this is puccini
+# text RU: Добавь morten harket в this is puccini
+# intent: AddToPlaylist
+# slots: 8:20:artist, 24:38:playlist
+1	Добавь	AddToPlaylist	O
+2	morten	AddToPlaylist	B-artist
+3	harket	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	this	AddToPlaylist	B-playlist
+6	is	AddToPlaylist	I-playlist
+7	puccini	AddToPlaylist	I-playlist
+
+# annotator: Angelina
+# text EN: Open Spotify and play a song from the twenties by Richard Harvey
+# text RU: Открой Spotify и включи песню из двадцатых от Richard Harvey
+# intent: PlayMusic
+# slots: 8:14:service, 25:29:music_item, 34:42:datetime, 47:60:artist
+1	Открой	PlayMusic	O
+2	Spotify	PlayMusic	B-service
+3	и	PlayMusic	O
+4	включи	PlayMusic	O
+5	песню	PlayMusic	B-music_item
+6	из	PlayMusic	O
+7	двадцатых	PlayMusic	B-datetime
+8	от	PlayMusic	O
+9	Richard	PlayMusic	B-artist
+10	Harvey	PlayMusic	I-artist
+
+# annotator: Angelina
+# text EN: I want to book a restaurant
+# text RU: Я хочу забронировать ресторан
+# intent: BookRestaurant
+# slots: 22:29:restaurant_type
+1	Я	BookRestaurant	O
+2	хочу	BookRestaurant	O
+3	забронировать	BookRestaurant	O
+4	ресторан	BookRestaurant	B-restaurant_type
+
+# annotator: Angelina
+# text EN: Play the album Vibrations by Marion Elise Raven
+# text RU: Включи альбом Vibrations от Marion Elise Raven
+# intent: PlayMusic
+# slots: 8:13:music_item, 15:24:album, 29:46:artist
+1	Включи	PlayMusic	O
+2	альбом	PlayMusic	B-music_item
+3	Vibrations	PlayMusic	B-album
+4	от	PlayMusic	O
+5	Marion	PlayMusic	B-artist
+6	Elise	PlayMusic	I-artist
+7	Raven	PlayMusic	I-artist
+
+# annotator: Angelina
+# text EN: add this artist to my Jazz playlist
+# text RU: добавь этого артиста в мой Jazz плейлист
+# intent: AddToPlaylist
+# slots: 14:20:music_item, 24:26:reference, 28:31:playlist
+1	добавь	AddToPlaylist	O
+2	этого	AddToPlaylist	O
+3	артиста	AddToPlaylist	B-music_item
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	Jazz	AddToPlaylist	B-playlist
+7	плейлист	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: I want to find the show From Where to Eternity .
+# text RU: Я хочу наути шоу From Where to Eternity .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:39:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	From	SearchCreativeWork	B-object_name
+6	Where	SearchCreativeWork	I-object_name
+7	to	SearchCreativeWork	I-object_name
+8	Eternity	SearchCreativeWork	I-object_name
+9	.	SearchCreativeWork	O
+
+# annotator: Angelina
+# text EN: play the top-twenty songs by The Kleptones on Spotify
+# text RU: включи 20-лучших песен The Kleptones на Spotify
+# intent: PlayMusic
+# slots: 8:16:sort, 24:36:artist, 41:47:service
+1	включи	PlayMusic	O
+2	20-лучших	PlayMusic	B-sort
+3	песен	PlayMusic	O
+4	The	PlayMusic	B-artist
+5	Kleptones	PlayMusic	I-artist
+6	на	PlayMusic	O
+7	Spotify	PlayMusic	B-service
+
+# annotator: Angelina
+# text EN: How will the weather be in six minutes close to Moosic
+# text RU: Какая будет погода через 6 минут близко к Моосике
+# intent: weather/find
+# slots: 20:32:datetime, 34:39:location, 43:49:location
+1	Какая	weather/find	O
+2	будет	weather/find	O
+3	погода	weather/find	O
+4	через	weather/find	B-datetime
+5	6	weather/find	I-datetime
+6	минут	weather/find	I-datetime
+7	близко	weather/find	B-location
+8	к	weather/find	O
+9	Моосике	weather/find	B-location
+
+# annotator: Angelina
+# text EN: I wish to listen to some fifties music.
+# text RU: Я хочу послушать какую-нибудь музыку пятьтидесятых.
+# intent: PlayMusic
+# slots: 38:51:datetime
+1	Я	PlayMusic	O
+2	хочу	PlayMusic	O
+3	послушать	PlayMusic	O
+4	какую-нибудь	PlayMusic	O
+5	музыку	PlayMusic	O
+6	пятьтидесятых.	PlayMusic	B-datetime
+
+# annotator: Angelina
+# text EN: what time is Utamaro and His Five Women showing at Alamo Drafthouse Cinema
+# text RU: в какое время Utamaro and His Five Women показывают в Alamo Drafthouse Cinema
+# intent: SearchScreeningEvent
+# slots: 15:40:movie_name, 55:77:location
+1	в	SearchScreeningEvent	O
+2	какое	SearchScreeningEvent	O
+3	время	SearchScreeningEvent	O
+4	Utamaro	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	His	SearchScreeningEvent	I-movie_name
+7	Five	SearchScreeningEvent	I-movie_name
+8	Women	SearchScreeningEvent	I-movie_name
+9	показывают	SearchScreeningEvent	O
+10	в	SearchScreeningEvent	O
+11	Alamo	SearchScreeningEvent	B-location
+12	Drafthouse	SearchScreeningEvent	I-location
+13	Cinema	SearchScreeningEvent	I-location
+
+# annotator: Angelina
+# text EN: Find a photograph of Adventure Time: The Secret of the Nameless Kingdom
+# text RU: Найди фотографию из Adventure Time: The Secret of the Nameless Kingdom
+# intent: SearchCreativeWork
+# slots: 7:16:object_type, 21:70:object_name
+1	Найди	SearchCreativeWork	O
+2	фотографию	SearchCreativeWork	B-object_type
+3	из	SearchCreativeWork	O
+4	Adventure	SearchCreativeWork	B-object_name
+5	Time:	SearchCreativeWork	I-object_name
+6	The	SearchCreativeWork	I-object_name
+7	Secret	SearchCreativeWork	I-object_name
+8	of	SearchCreativeWork	I-object_name
+9	the	SearchCreativeWork	I-object_name
+10	Nameless	SearchCreativeWork	I-object_name
+11	Kingdom	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: put Do You Love Me on my acoustic soul playlist
+# text RU: добавь Do You Love Me в мой acoustic soul плейлист
+# intent: AddToPlaylist
+# slots: 8:21:entity_name, 25:27:reference, 29:41:playlist
+1	добавь	AddToPlaylist	O
+2	Do	AddToPlaylist	B-entity_name
+3	You	AddToPlaylist	I-entity_name
+4	Love	AddToPlaylist	I-entity_name
+5	Me	AddToPlaylist	I-entity_name
+6	в	AddToPlaylist	O
+7	мой	AddToPlaylist	B-reference
+8	acoustic	AddToPlaylist	B-playlist
+9	soul	AddToPlaylist	I-playlist
+10	плейлист	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: Play me the best Charles Neidich song
+# text RU: Включи мне лучшую песню Charles Neidich
+# intent: PlayMusic
+# slots: 12:17:sort, 19:23:music_item, 25:39:artist
+1	Включи	PlayMusic	O
+2	мне	PlayMusic	O
+3	лучшую	PlayMusic	B-sort
+4	песню	PlayMusic	B-music_item
+5	Charles	PlayMusic	B-artist
+6	Neidich	PlayMusic	I-artist
+
+# annotator: Angelina
+# text EN: On may the thirteenth, 2037 what will it be like in Wilderville , Montenegro
+# text RU: В мае тринадцатого, 2037, какого будет в Уайлдервилле, Черногории
+# intent: weather/find
+# slots: 3:25:datetime, 42:53:location, 56:65:location
+1	В	weather/find	O
+2	мае	weather/find	B-datetime
+3	тринадцатого,	weather/find	I-datetime
+4	2037,	weather/find	I-datetime
+5	какого	weather/find	O
+6	будет	weather/find	O
+7	в	weather/find	O
+8	Уайлдервилле	weather/find	B-location
+9	,	weather/find	O
+10	Черногории	weather/find	B-location
+
+# annotator: Angelina
+# text EN: Find movie schedules for ArcLight Hollywood .
+# text RU: Найди расписание фильмов в ArcLight Hollywood .
+# intent: SearchScreeningEvent
+# slots: 7:24:object_type, 28:45:location
+1	Найди	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	фильмов	SearchScreeningEvent	I-object_type
+4	в	SearchScreeningEvent	O
+5	ArcLight	SearchScreeningEvent	B-location
+6	Hollywood	SearchScreeningEvent	I-location
+7	.	SearchScreeningEvent	O
+
+# annotator: Angelina
+# text EN: Find a TV series called Church of the Truly Warped .
+# text RU: Найди телешоу с названием Church of the Truly Warped .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 27:52:object_name
+1	Найди	SearchCreativeWork	O
+2	телешоу	SearchCreativeWork	B-object_type
+3	с	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Church	SearchCreativeWork	B-object_name
+6	of	SearchCreativeWork	I-object_name
+7	the	SearchCreativeWork	I-object_name
+8	Truly	SearchCreativeWork	I-object_name
+9	Warped	SearchCreativeWork	I-object_name
+10	.	SearchCreativeWork	O
+
+# annotator: Angelina
+# text EN: what is the forecast for in eighteen minutes here for colder temps
+# text RU: какой прогноз через 18 минут здесь для холодных температур
+# intent: weather/find
+# slots: 15:28:datetime, 30:34:location, 40:47:condition_temperature
+1	какой	weather/find	O
+2	прогноз	weather/find	O
+3	через	weather/find	B-datetime
+4	18	weather/find	I-datetime
+5	минут	weather/find	I-datetime
+6	здесь	weather/find	B-location
+7	для	weather/find	O
+8	холодных	weather/find	B-condition_temperature
+9	температур	weather/find	O
+
+# annotator: Angelina
+# text EN: Book a restaurant at sixteen o'clock in SC
+# text RU: Забронируй ресторан на 16 часов в SC
+# intent: BookRestaurant
+# slots: 12:19:restaurant_type, 24:31:datetime, 35:36:location
+1	Забронируй	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	на	BookRestaurant	O
+4	16	BookRestaurant	B-datetime
+5	часов	BookRestaurant	I-datetime
+6	в	BookRestaurant	O
+7	SC	BookRestaurant	B-location
+
+# annotator: Angelina
+# text EN: stacy watson and adriana want to go to the best osteria in Hallowell Minnesota this afternoon
+# text RU: Стейси Ватсон и Адриана хотят пойти в лучшую остерию в Хэллоуэлл, Миннесота этим вечером
+# intent: BookRestaurant
+# slots: 1:23:party_size_description, 39:44:sort, 46:52:restaurant_type, 56:65:location, 67:75:location, 82:88:datetime
+1	Стейси	BookRestaurant	B-party_size_description
+2	Ватсон	BookRestaurant	I-party_size_description
+3	и	BookRestaurant	I-party_size_description
+4	Адриана	BookRestaurant	I-party_size_description
+5	хотят	BookRestaurant	O
+6	пойти	BookRestaurant	O
+7	в	BookRestaurant	O
+8	лучшую	BookRestaurant	B-sort
+9	остерию	BookRestaurant	B-restaurant_type
+10	в	BookRestaurant	O
+11	Хэллоуэлл,	BookRestaurant	B-location
+12	Миннесота	BookRestaurant	B-location
+13	этим	BookRestaurant	O
+14	вечером	BookRestaurant	B-datetime
+
+# annotator: Angelina
+# text EN: is it going to be chilly in Western Sahara in 13 hours
+# text RU:  будет ли прохладно в Западной Сахаре через 13 часов
+# intent: weather/find
+# slots: 10:18:condition_temperature, 22:36:location, 44:51:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	прохладно	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Западной	weather/find	B-location
+6	Сахаре	weather/find	I-location
+7	через	weather/find	O
+8	13	weather/find	B-datetime
+9	часов	weather/find	I-datetime
+
+# annotator: Angelina
+# text EN: add Armen Movsessian to this is skepta playlist
+# text RU: добавь Armen Movsessian в this is skepta плейлист
+# intent: AddToPlaylist
+# slots: 8:23:artist, 27:40:playlist
+1	добавь	AddToPlaylist	O
+2	Armen	AddToPlaylist	B-artist
+3	Movsessian	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	this	AddToPlaylist	B-playlist
+6	is	AddToPlaylist	I-playlist
+7	skepta	AddToPlaylist	I-playlist
+8	плейлист	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: Rate this current essay three out of 6 stars
+# text RU: Оцени текущее эссе на три из 6 звезд
+# intent: RateBook
+# slots: 7:13:object_select, 15:18:object_type, 23:25:rating_value, 30:30:best_rating, 32:36:rating_unit
+1	Оцени	RateBook	O
+2	текущее	RateBook	B-object_select
+3	эссе	RateBook	B-object_type
+4	на	RateBook	O
+5	три	RateBook	B-rating_value
+6	из	RateBook	O
+7	6	RateBook	B-best_rating
+8	звезд	RateBook	B-rating_unit
+
+# annotator: Angelina
+# text EN: Find a reservation for three at a top-rated restaurant
+# text RU: Найди бронирование на троих в высоко-оцененном ресторане
+# intent: BookRestaurant
+# slots: 23:27:party_size_number, 31:46:sort, 48:56:restaurant_type
+1	Найди	BookRestaurant	O
+2	бронирование	BookRestaurant	O
+3	на	BookRestaurant	O
+4	троих	BookRestaurant	B-party_size_number
+5	в	BookRestaurant	O
+6	высоко-оцененном	BookRestaurant	B-sort
+7	ресторане	BookRestaurant	B-restaurant_type
+
+# annotator: Angelina
+# text EN: rate the current novel 0 of 6
+# text RU: оцени текущий роман 0 из 6
+# intent: RateBook
+# slots: 7:13:object_select, 15:19:object_type, 21:21:rating_value, 26:26:best_rating
+1	оцени	RateBook	O
+2	текущий	RateBook	B-object_select
+3	роман	RateBook	B-object_type
+4	на	RateBook	O
+5	0	RateBook	B-rating_value
+6	из	RateBook	O
+7	6	RateBook	B-best_rating
+
+# annotator: Angelina
+# text EN: I'd like to see the showtimes for Silly Movie 2.0 at the movie house
+# text RU: Я хочу увидеть распасние Silly Movie 2.0 в кинотеатре
+# intent: SearchScreeningEvent
+# slots: 26:40:movie_name, 44:53:object_location_type
+1	Я	SearchScreeningEvent	O
+2	хочу	SearchScreeningEvent	O
+3	увидеть	SearchScreeningEvent	O
+4	расписание	SearchScreeningEvent	O
+5	Silly	SearchScreeningEvent	B-movie_name
+6	Movie	SearchScreeningEvent	I-movie_name
+7	2.0	SearchScreeningEvent	I-movie_name
+8	в	SearchScreeningEvent	O
+9	кинотеатре	SearchScreeningEvent	B-object_location_type
+
+# annotator: Angelina
+# text EN: Will it get chillier in Sinclair in 8 hours
+# text RU: Будет ли прохладнее в Синклере через 8 часов
+# intent: weather/find
+# slots: 10:19:condition_temperature, 23:30:location, 32:44:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	прохладнее	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Синклере	weather/find	B-location
+6	через	weather/find	B-datetime
+7	8	weather/find	I-datetime
+8	часов	weather/find	I-datetime
+
+# annotator: Angelina
+# text EN: add this tune to my in the arms of a woman
+# text RU: добавь эту мелодию в мой in the arms of a woman
+# intent: AddToPlaylist
+# slots: 12:18:music_item, 22:24:reference, 26:47:playlist
+1	добавь	AddToPlaylist	O
+2	эту	AddToPlaylist	O
+3	мелодию	AddToPlaylist	B-music_item
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	in	AddToPlaylist	B-playlist
+7	the	AddToPlaylist	I-playlist
+8	arms	AddToPlaylist	I-playlist
+9	of	AddToPlaylist	I-playlist
+10	a	AddToPlaylist	I-playlist
+11	woman	AddToPlaylist	I-playlist
+
+# annotator: Angelina
+# text EN: book for 3 in U.S. Virgin Islands
+# text RU: забронируй на 3-х в U.S. Virgin Islands
+# intent: BookRestaurant
+# slots: 15:17:party_size_number, 21:39:location
+1	забронируй	BookRestaurant	O
+2	на	BookRestaurant	O
+3	3-х	BookRestaurant	B-party_size_number
+4	в	BookRestaurant	O
+5	U.S.	BookRestaurant	B-location
+6	Virgin	BookRestaurant	I-location
+7	Islands	BookRestaurant	I-location
+
+# annotator: Angelina
+# text EN: Will it be chillier in La Mesa ?
+# text RU: Будет ли прохладнее в Ла Меса ?
+# intent: weather/find
+# slots: 10:19:condition_temperature, 23:29:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	прохладнее	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Ла	weather/find	B-location
+6	Меса	weather/find	I-location
+7	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Rate this essay 2 out of 6 stars
+# text RU: Оцени это эссе на 2 из 6 звезд
+# intent: RateBook
+# slots: 7:9:object_select, 11:14:object_type, 19:19:rating_value, 24:24:best_rating, 26:30:rating_unit
+1	Оцени	RateBook	O
+2	это	RateBook	B-object_select
+3	эссе	RateBook	B-object_type
+4	на	RateBook	O
+5	2	RateBook	B-rating_value
+6	из	RateBook	O
+7	6	RateBook	B-best_rating
+8	звезд	RateBook	B-rating_unit
+
+# annotator: Angelina
+# text EN: Give three stars / 6 to My Sister, My Love
+# text RU: Дай три звезды / 6 для My Sister, My Love
+# intent: RateBook
+# slots: 5:7:rating_value, 9:14:rating_unit, 18:18:best_rating, 24:41:object_name
+1	Дай	RateBook	O
+2	три	RateBook	B-rating_value
+3	звезды	RateBook	B-rating_unit
+4	/	RateBook	O
+5	6	RateBook	B-best_rating
+6	для	RateBook	O
+7	My	RateBook	B-object_name
+8	Sister,	RateBook	I-object_name
+9	My	RateBook	I-object_name
+10	Love	RateBook	I-object_name
+
+# annotator: Angelina
+# text EN: Find the movie schedule for Marcus Corporation .
+# text RU: Найди расписание фильмов в Marcus Corporation .
+# intent: SearchScreeningEvent
+# slots: 7:24:object_type, 28:45:location
+1	Найди	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	фильмов	SearchScreeningEvent	I-object_type
+4	в	SearchScreeningEvent	O
+5	Marcus	SearchScreeningEvent	B-location
+6	Corporation	SearchScreeningEvent	I-location
+7	.	SearchScreeningEvent	O
+
+# annotator: Angelina
+# text EN: What movies are scheduled in the neighbourhood ?
+# text RU: Какие фильмы в расписании в округе ?
+# intent: SearchScreeningEvent
+# slots: 7:12:movie_type, 14:34:location
+1	Какие	SearchScreeningEvent	O
+2	фильмы	SearchScreeningEvent	B-movie_type
+3	в	SearchScreeningEvent	O
+4	расписании	SearchScreeningEvent	O
+5	в	SearchScreeningEvent	B-location
+6	округе	SearchScreeningEvent	I-location
+7	?	SearchScreeningEvent	O
+
+# annotator: Angelina
+# text EN: add cross bones style to Guest List TaKe
+# text RU: добавь cross bones style в Guest List TaKe
+# intent: AddToPlaylist
+# slots: 8:24:entity_name, 28:42:playlist
+1	добавь	AddToPlaylist	O
+2	cross	AddToPlaylist	B-entity_name
+3	bones	AddToPlaylist	I-entity_name
+4	style	AddToPlaylist	I-entity_name
+5	в	AddToPlaylist	O
+6	Guest	AddToPlaylist	B-playlist
+7	List	AddToPlaylist	I-playlist
+8	TaKe	AddToPlaylist	I-playlist
+
+# annotator: Angelina
+# text EN: Find a reservation for a tavern that serves pizzas for a party of 6
+# text RU: Найди бронирование в закусочную, в которой подают пиццу для 6-х
+# intent: BookRestaurant
+# slots: 22:31:restaurant_type, 51:55:served_dish, 61:63:party_size_number
+1	Найди	BookRestaurant	O
+2	бронирование	BookRestaurant	O
+3	в	BookRestaurant	O
+4	закусочную	BookRestaurant	B-restaurant_type
+5	,	BookRestaurant	O
+6	в	BookRestaurant	O
+7	которой	BookRestaurant	O
+8	подают	BookRestaurant	O
+9	пиццу	BookRestaurant	B-served_dish
+10	для	BookRestaurant	O
+11	6-х	BookRestaurant	B-party_size_number
+
+# annotator: Angelina
+# text EN: Rate The Art of Nijinsky 5 points
+# text RU: Оцени The Art of Nijinsky 5 баллами
+# intent: RateBook
+# slots: 7:25:object_name, 27:27:rating_value, 29:35:rating_unit
+1	Оцени	RateBook	O
+2	The	RateBook	B-object_name
+3	Art	RateBook	I-object_name
+4	of	RateBook	I-object_name
+5	Nijinsky	RateBook	I-object_name
+6	5	RateBook	B-rating_value
+7	баллами	RateBook	B-rating_unit
+
+# annotator: Angelina
+# text EN: add Jacob Hoggard to my get going playlist
+# text RU: добавь Jacob Hoggard в мой get going плейлист
+# intent: AddToPlaylist
+# slots: 8:20:artist, 24:26:reference, 28:36:playlist
+1	добавь	AddToPlaylist	O
+2	Jacob	AddToPlaylist	B-artist
+3	Hoggard	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	get	AddToPlaylist	B-playlist
+7	going	AddToPlaylist	I-playlist
+8	плейлист	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: Give me a list of movie times for films in the area .
+# text RU: Дай мне список фильмов и расписаний для фильмов в моем округе .
+# intent: SearchScreeningEvent
+# slots: 16:22:object_type, 26:35:movie_type, 49:61:location
+1	Дай	SearchScreeningEvent	O
+2	мне	SearchScreeningEvent	O
+3	список	SearchScreeningEvent	O
+4	фильмов	SearchScreeningEvent	B-object_type
+5	и	SearchScreeningEvent	O
+6	расписаний	SearchScreeningEvent	B-movie_type
+7	для	SearchScreeningEvent	O
+8	фильмов	SearchScreeningEvent	O
+9	в	SearchScreeningEvent	B-location
+10	моем	SearchScreeningEvent	I-location
+11	округе	SearchScreeningEvent	I-location
+12	.	SearchScreeningEvent	O
+
+# annotator: Angelina
+# text EN: find The Ultimate Gift , a television show
+# text RU: найди Последний подарок , телешоу
+# intent: SearchCreativeWork
+# slots: 7:23:object_name, 27:33:object_type
+1	найди	SearchCreativeWork	O
+2	Последний	SearchCreativeWork	B-object_name
+3	подарок	SearchCreativeWork	I-object_name
+4	,	SearchCreativeWork	O
+5	телешоу	SearchCreativeWork	B-object_type
+
+# annotator: Angelina
+# text EN: What's the weather close-by Triumph
+# text RU: Какая погода ближе к Триумфу
+# intent: weather/find
+# slots: 14:18:location, 22:28:location
+1	Какая	weather/find	O
+2	погода	weather/find	O
+3	ближе	weather/find	B-location
+4	к	weather/find	O
+5	Триумфу	weather/find	B-location
+
+# annotator: Angelina
+# text EN: when can i see A Handful of Dust in a movie theatre
+# text RU: когда я могу увидеть A Handful of Dust в кинотеатре
+# intent: SearchScreeningEvent
+# slots: 22:38:movie_name, 42:51:object_location_type
+1	когда	SearchScreeningEvent	O
+2	я	SearchScreeningEvent	O
+3	могу	SearchScreeningEvent	O
+4	увидеть	SearchScreeningEvent	O
+5	A	SearchScreeningEvent	B-movie_name
+6	Handful	SearchScreeningEvent	I-movie_name
+7	of	SearchScreeningEvent	I-movie_name
+8	Dust	SearchScreeningEvent	I-movie_name
+9	в	SearchScreeningEvent	O
+10	кинотеатре	SearchScreeningEvent	B-object_location_type
+
+# annotator: Angelina
+# text EN: Please put an album by Joseph Meyer on my POP GOES THE 80s playlist
+# text RU: Пожалуйста, добавь альбом Жозефа Мейера в мой POP GOES THE 80s плейлист
+# intent: AddToPlaylist
+# slots: 20:25:music_item, 27:39:artist, 43:45:reference, 47:62:playlist
+1	Пожалуйста	AddToPlaylist	O
+2	,	AddToPlaylist	O
+3	добавь	AddToPlaylist	O
+4	альбом	AddToPlaylist	B-music_item
+5	Жозефа	AddToPlaylist	B-artist
+6	Мейера	AddToPlaylist	I-artist
+7	в	AddToPlaylist	O
+8	мой	AddToPlaylist	B-reference
+9	POP	AddToPlaylist	B-playlist
+10	GOES	AddToPlaylist	I-playlist
+11	THE	AddToPlaylist	I-playlist
+12	80s	AddToPlaylist	I-playlist
+13	плейлист	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: show of From South Africa to South Carolina
+# text RU: выставка From South Africa to South Carolina
+# intent: SearchCreativeWork
+# slots: 1:8:object_type, 10:44:object_name
+1	выставка	SearchCreativeWork	B-object_type
+2	From	SearchCreativeWork	B-object_name
+3	South	SearchCreativeWork	I-object_name
+4	Africa	SearchCreativeWork	I-object_name
+5	to	SearchCreativeWork	I-object_name
+6	South	SearchCreativeWork	I-object_name
+7	Carolina	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: book a top-rated osteria seven weeks from now
+# text RU: забронируй высоко-оцененную остерию семь недель спустя
+# intent: BookRestaurant
+# slots: 12:27:sort, 29:35:restaurant_type, 37:54:datetime
+1	забронируй	BookRestaurant	O
+2	высоко-оцененную	BookRestaurant	B-sort
+3	остерию	BookRestaurant	B-restaurant_type
+4	семь	BookRestaurant	B-datetime
+5	недель	BookRestaurant	I-datetime
+6	спустя	BookRestaurant	I-datetime
+
+# annotator: Angelina
+# text EN: What movie house is showing Flower and Snake at 08:56:29 ?
+# text RU: Какой кинотеатр показывает Flower and Snake в 08:56:29 ?
+# intent: SearchScreeningEvent
+# slots: 7:15:object_location_type, 28:43:movie_name, 47:54:datetime
+1	Какой	SearchScreeningEvent	O
+2	кинотеатр	SearchScreeningEvent	B-object_location_type
+3	показывает	SearchScreeningEvent	O
+4	Flower	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	Snake	SearchScreeningEvent	I-movie_name
+7	в	SearchScreeningEvent	O
+8	08:56:29	SearchScreeningEvent	B-datetime
+9	?	SearchScreeningEvent	O
+
+# annotator: Angelina
+# text EN: Find a restaurant in FM that servec quiche
+# text RU: Найди ресторан в FM, который подает киш
+# intent: BookRestaurant
+# slots: 7:14:restaurant_type, 18:19:location, 37:39:served_dish
+1	Найди	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	FM	BookRestaurant	B-location
+5	,	BookRestaurant	O
+6	который	BookRestaurant	O
+7	подает	BookRestaurant	O
+8	киш	BookRestaurant	B-served_dish
+
+# annotator: Angelina
+# text EN: Book a reservation for 7 people at The French Laundry on june the 8th, 2029
+# text RU: Забронируй столик на 7 персон в The French Laundry на июнь 8-го, 2029
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 33:50:restaurant_name, 55:69:datetime
+1	Забронируй	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	на	BookRestaurant	O
+4	7	BookRestaurant	B-party_size_number
+5	персон	BookRestaurant	O
+6	в	BookRestaurant	O
+7	The	BookRestaurant	B-restaurant_name
+8	French	BookRestaurant	I-restaurant_name
+9	Laundry	BookRestaurant	I-restaurant_name
+10	на	BookRestaurant	O
+11	июнь	BookRestaurant	B-datetime
+12	8-го,	BookRestaurant	I-datetime
+13	2029	BookRestaurant	I-datetime
+
+# annotator: Angelina
+# text EN: play fourties tunes
+# text RU: включи мелодии сороковых
+# intent: PlayMusic
+# slots: 16:24:datetime
+1	включи	PlayMusic	O
+2	мелодии	PlayMusic	O
+3	сороковых	PlayMusic	B-datetime
+
+# annotator: Angelina
+# text EN: When will the Santikos Theatres be showing animated movies
+# text RU: Когда будет Santikos Theatres показывать анимационные фильмы
+# intent: SearchScreeningEvent
+# slots: 13:29:location, 42:60:movie_type
+1	Когда	SearchScreeningEvent	O
+2	будет	SearchScreeningEvent	O
+3	Santikos	SearchScreeningEvent	B-location
+4	Theatres	SearchScreeningEvent	I-location
+5	показывать	SearchScreeningEvent	O
+6	анимационные	SearchScreeningEvent	B-movie_type
+7	фильмы	SearchScreeningEvent	I-movie_type
+
+# annotator: Angelina
+# text EN: Play music on Itunes
+# text RU:  Включи музыку в Itunes
+# intent: PlayMusic
+# slots: 17:22:service
+1	Включи	PlayMusic	O
+2	музыку	PlayMusic	O
+3	в	PlayMusic	O
+4	Itunes	PlayMusic	B-service
+
+# annotator: Angelina
+# text EN: show book name Straight No Chase
+# text RU: покажи книжное имя Straight No Chase
+# intent: SearchCreativeWork
+# slots: 8:14:object_type, 20:36:object_name
+1	покажи	SearchCreativeWork	O
+2	книжное	SearchCreativeWork	B-object_type
+3	имя	SearchCreativeWork	O
+4	Straight	SearchCreativeWork	B-object_name
+5	No	SearchCreativeWork	I-object_name
+6	Chase	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: Find the movie schedules for movies close by
+# text RU: Найди расписание для фильмов поблизости
+# intent: SearchScreeningEvent
+# slots: 7:16:object_type, 22:28:movie_type, 30:39:location
+1	Найди	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	для	SearchScreeningEvent	O
+4	фильмов	SearchScreeningEvent	B-movie_type
+5	поблизости	SearchScreeningEvent	B-location
+
+# annotator: Angelina
+# text EN: this winter , meredith, betty and erika want to food at a gastropub that is in the same area as fran's location .
+# text RU: этой зимой , Мередит, Бетти и Эрика хотят поесть в гастропабе, который в том же районе, что и Фрэн 
+# intent: BookRestaurant
+# slots: 1:10:datetime, 14:35:party_size_description, 52:62:restaurant_type, 74:87:location, 95:98:location
+1	этой	BookRestaurant	B-datetime
+2	зимой	BookRestaurant	I-datetime
+3	,	BookRestaurant	O
+4	Мередит,	BookRestaurant	B-party_size_description
+5	Бетти	BookRestaurant	I-party_size_description
+6	и	BookRestaurant	I-party_size_description
+7	Эрика	BookRestaurant	I-party_size_description
+8	хотят	BookRestaurant	O
+9	поесть	BookRestaurant	O
+10	в	BookRestaurant	O
+11	гастропабе,	BookRestaurant	B-restaurant_type
+12	который	BookRestaurant	O
+13	в	BookRestaurant	O
+14	том	BookRestaurant	B-location
+15	же	BookRestaurant	I-location
+16	районе,	BookRestaurant	I-location
+17	что	BookRestaurant	O
+18	и	BookRestaurant	O
+19	Фрэн	BookRestaurant	B-location
+20	.	BookRestaurant	O
+
+# annotator: Angelina
+# text EN: Add tune to my Para comer
+# text RU: Добавь мелодию в мой Para comer
+# intent: AddToPlaylist
+# slots: 8:14:music_item, 18:20:reference, 22:31:playlist
+1	Добавь	AddToPlaylist	O
+2	мелодию	AddToPlaylist	B-music_item
+3	в	AddToPlaylist	O
+4	мой	AddToPlaylist	B-reference
+5	Para	AddToPlaylist	B-playlist
+6	comer	AddToPlaylist	I-playlist
+
+# annotator: Angelina
+# text EN: Is it going to rain today?
+# text RU: Будет ли дождь сегодня?
+# intent: weather/find
+# slots: 10:14:weather/attribute, 16:22:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: how hot is it going to be today
+# text RU: насколько жарко будет сегодня
+# intent: weather/find
+# slots: 11:15:weather/attribute, 23:29:datetime
+1	насколько	weather/find	O
+2	жарко	weather/find	B-weather/attribute
+3	будет	weather/find	O
+4	сегодня	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: How hot is it?
+# text RU: Насколько жарко сейчас?
+# intent: weather/find
+# slots: 11:15:weather/attribute
+1	Насколько	weather/find	O
+2	жарко	weather/find	B-weather/attribute
+3	сейчас	weather/find	O
+4	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Will it be sunny today?
+# text RU: Будет ли солнечно сегодня?
+# intent: weather/find
+# slots: 10:17:weather/attribute, 19:25:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	солнечно	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Is it cloudy today?
+# text RU: Облачно ли сегодня?
+# intent: weather/find
+# slots: 1:7:weather/attribute, 12:18:datetime
+1	Облачно	weather/find	B-weather/attribute
+2	ли	weather/find	O
+3	сегодня	weather/find	B-datetime
+4	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Cancel all my reminders.
+# text RU: Отмени все мои напоминания.
+# intent: reminder/cancel_reminder
+# slots: 8:14:reference
+1	Отмени	reminder/cancel_reminder	O
+2	все	reminder/cancel_reminder	B-reference
+3	мои	reminder/cancel_reminder	I-reference
+4	напоминания	reminder/cancel_reminder	O
+5	.	reminder/cancel_reminder	O
+
+# annotator: Angelina
+# text EN: what alarms do I have set?
+# text RU: какие будильники у меня установлены?
+# intent: alarm/show_alarms
+# slots: 
+1	какие	alarm/show_alarms	O
+2	будильники	alarm/show_alarms	O
+3	у	alarm/show_alarms	O
+4	меня	alarm/show_alarms	O
+5	установлены	alarm/show_alarms	O
+6	?	alarm/show_alarms	O
+
+# annotator: Angelina
+# text EN: I need an alarm for 5pm to remind me to take my medicine
+# text RU: Мне нужен будильник на 5 вечера для напоминания о приеме лекарства
+# intent: alarm/set_alarm
+# slots: 24:31:datetime, 51:66:reminder/todo
+1	Мне	alarm/set_alarm	O
+2	нужен	alarm/set_alarm	O
+3	будильник	alarm/set_alarm	O
+4	на	alarm/set_alarm	O
+5	5	alarm/set_alarm	B-datetime
+6	вечера	alarm/set_alarm	I-datetime
+7	для	alarm/set_alarm	O
+8	напоминания	alarm/set_alarm	O
+9	о	alarm/set_alarm	O
+10	приеме	alarm/set_alarm	B-reminder/todo
+11	лекарства	alarm/set_alarm	I-reminder/todo
+
+# annotator: Angelina
+# text EN: set alarm for every 3 minutes
+# text RU: установи будильник на каждые 3 минуты
+# intent: alarm/set_alarm
+# slots: 23:37:recurring_datetime
+1	установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	каждые	alarm/set_alarm	B-recurring_datetime
+5	3	alarm/set_alarm	I-recurring_datetime
+6	минуты	alarm/set_alarm	I-recurring_datetime
+
+# annotator: Angelina
+# text EN: Is it going to storm today?
+# text RU: Будет ли шторм сегодня?
+# intent: weather/find
+# slots: 10:14:weather/attribute, 16:22:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	шторм	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Cancel this afternoon's alarm.
+# text RU: Отмени этот послеобеденный будильник.
+# intent: alarm/cancel_alarm
+# slots: 8:26:datetime
+1	Отмени	alarm/cancel_alarm	O
+2	этот	alarm/cancel_alarm	B-datetime
+3	послеобеденный	alarm/cancel_alarm	I-datetime
+4	будильник	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: Is it going to rain next week
+# text RU: Будет ли дождь на следующей неделе
+# intent: weather/find
+# slots: 10:14:weather/attribute, 19:34:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	на	weather/find	O
+5	следующей	weather/find	B-datetime
+6	неделе	weather/find	I-datetime
+
+# annotator: Angelina
+# text EN: What's next week's forecast?
+# text RU: Какой прогноз на следующую неделю?
+# intent: weather/find
+# slots: 18:33:datetime
+1	Какой	weather/find	O
+2	прогноз	weather/find	O
+3	на	weather/find	O
+4	следующую	weather/find	B-datetime
+5	неделю	weather/find	I-datetime
+6	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Read me my reminders.
+# text RU: Прочитай мне текущие напоминания.
+# intent: reminder/show_reminders
+# slots: 14:20:reference
+1	Прочитай	reminder/show_reminders	O
+2	мне	reminder/show_reminders	O
+3	текущие	reminder/show_reminders	B-reference
+4	напоминания	reminder/show_reminders	O
+5	.	reminder/show_reminders	O
+
+# annotator: Angelina
+# text EN: Show all alarms
+# text RU: Покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	Покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# annotator: Angelina
+# text EN: Alarm every five minutes for 20 minutes please
+# text RU: Будильник каждые пять минут на 20 минут, пожалуйста
+# intent: alarm/set_alarm
+# slots: 11:40:recurring_datetime
+1	Будильник	alarm/set_alarm	O
+2	каждые	alarm/set_alarm	B-recurring_datetime
+3	пять	alarm/set_alarm	I-recurring_datetime
+4	минут	alarm/set_alarm	I-recurring_datetime
+5	на	alarm/set_alarm	I-recurring_datetime
+6	20	alarm/set_alarm	I-recurring_datetime
+7	минут,	alarm/set_alarm	I-recurring_datetime
+8	пожалуйста	alarm/set_alarm	O
+
+# annotator: Angelina
+# text EN: Change tomorrow mornings alarm to 6 am.
+# text RU: Измени завтрашний утренний будильник на 6 утра.
+# intent: alarm/modify_alarm
+# slots: 8:26:datetime, 41:46:datetime
+1	Измени	alarm/modify_alarm	O
+2	завтрашний	alarm/modify_alarm	B-datetime
+3	утренний	alarm/modify_alarm	I-datetime
+4	будильник	alarm/modify_alarm	O
+5	на	alarm/modify_alarm	O
+6	6	alarm/modify_alarm	B-datetime
+7	утра	alarm/modify_alarm	I-datetime
+8	.	alarm/modify_alarm	O
+
+# annotator: Angelina
+# text EN: cancel all reminders
+# text RU: отмени все напоминания
+# intent: reminder/cancel_reminder
+# slots: 8:10:reference
+1	отмени	reminder/cancel_reminder	O
+2	все	reminder/cancel_reminder	B-reference
+3	напоминания	reminder/cancel_reminder	O
+
+# annotator: Angelina
+# text EN: Show me my alarms
+# text RU: Покажи мне все будильники
+# intent: alarm/show_alarms
+# slots: 12:14:reference
+1	Покажи	alarm/show_alarms	O
+2	мне	alarm/show_alarms	O
+3	все	alarm/show_alarms	B-reference
+4	будильники	alarm/show_alarms	O
+
+# annotator: Angelina
+# text EN: Cancel alarms
+# text RU: Отмени будильники
+# intent: alarm/cancel_alarm
+# slots: 
+1	Отмени	alarm/cancel_alarm	O
+2	будильники	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: Set alarm for 6 am tomorrow
+# text RU: Установи будильник на 6 утра завтра
+# intent: alarm/set_alarm
+# slots: 23:35:datetime
+1	Установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+6	завтра	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: Set alarm for 7 am tomorrow
+# text RU: Установи будильник на 7 утра завтра
+# intent: alarm/set_alarm
+# slots: 23:35:datetime
+1	Установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	7	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+6	завтра	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: set alarm for 6 am
+# text RU: установи будильник на 6 утра 
+# intent: alarm/set_alarm
+# slots: 23:28:datetime
+1	установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: i need a reminder to pick Lisa up
+# text RU: мне нужно напоминание, чтобы забрать Лизу
+# intent: reminder/set_reminder
+# slots: 30:41:reminder/todo
+1	мне	reminder/set_reminder	O
+2	нужно	reminder/set_reminder	O
+3	напоминание,	reminder/set_reminder	O
+4	чтобы	reminder/set_reminder	O
+5	забрать	reminder/set_reminder	B-reminder/todo
+6	Лизу	reminder/set_reminder	I-reminder/todo
+
+# annotator: Angelina
+# text EN: show all alarms
+# text RU: покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# annotator: Angelina
+# text EN: Turn off all alarms
+# text RU: Отключи все будильники
+# intent: alarm/cancel_alarm
+# slots: 9:11:reference
+1	Отключи	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: What are my reminders?
+# text RU: Какие у меня напоминания?
+# intent: reminder/show_reminders
+# slots: 9:12:reference
+1	Какие	reminder/show_reminders	O
+2	у	reminder/show_reminders	O
+3	меня	reminder/show_reminders	B-reference
+4	напоминания	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# annotator: Angelina
+# text EN: is it hot outside
+# text RU: жарко ли на улице
+# intent: weather/find
+# slots: 1:5:weather/attribute, 13:17:location
+1	жарко	weather/find	B-weather/attribute
+2	ли	weather/find	O
+3	на	weather/find	O
+4	улице	weather/find	B-location
+
+# annotator: Angelina
+# text EN: Snooze alarm
+# text RU: Отложи будильник
+# intent: alarm/snooze_alarm
+# slots: 
+1	Отложи	alarm/snooze_alarm	O
+2	будильник	alarm/snooze_alarm	O
+
+# annotator: Angelina
+# text EN: alarm on
+# text RU: включи будильник
+# intent: alarm/set_alarm
+# slots: 
+1	включи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+
+# annotator: Angelina
+# text EN: Set an alarm for 6 am on Wed
+# text RU: Установи будильник на 6 утра на среду
+# intent: alarm/set_alarm
+# slots: 23:37:datetime
+1	Установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+6	на	alarm/set_alarm	I-datetime
+7	среду	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: remind me to submit my lesson plans every monday by the end of the day
+# text RU: напомни мне утвердить мои учебные планы каждый понедельник до конца дня
+# intent: reminder/set_reminder
+# slots: 13:39:reminder/todo, 41:71:recurring_datetime
+1	напомни	reminder/set_reminder	O
+2	мне	reminder/set_reminder	O
+3	утвердить	reminder/set_reminder	B-reminder/todo
+4	мои	reminder/set_reminder	I-reminder/todo
+5	учебные	reminder/set_reminder	I-reminder/todo
+6	планы	reminder/set_reminder	I-reminder/todo
+7	каждый	reminder/set_reminder	B-recurring_datetime
+8	понедельник	reminder/set_reminder	I-recurring_datetime
+9	до	reminder/set_reminder	I-recurring_datetime
+10	конца	reminder/set_reminder	I-recurring_datetime
+11	дня	reminder/set_reminder	I-recurring_datetime
+
+# annotator: Angelina
+# text EN: how hot is it going to be today
+# text RU: насколько жарко будет сегодня
+# intent: weather/find
+# slots: 11:15:weather/attribute, 23:29:datetime
+1	насколько	weather/find	O
+2	жарко	weather/find	B-weather/attribute
+3	будет	weather/find	O
+4	сегодня	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: Clear all set alarms.
+# text RU: Очисти все установленные будильники. 
+# intent: alarm/cancel_alarm
+# slots: 8:10:reference
+1	Очисти	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	установленные	alarm/cancel_alarm	O
+4	будильники	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: Show all alarms
+# text RU: Покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	Покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# annotator: Angelina
+# text EN: Will it be sunny today?
+# text RU: Будет ли солнечно сегодня?
+# intent: weather/find
+# slots: 10:17:weather/attribute, 19:25:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	солнечно	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: What is the humidity level today
+# text RU: Какова влажность сегодня
+# intent: weather/find
+# slots: 8:16:weather/attribute, 18:24:datetime
+1	Какова	weather/find	O
+2	влажность	weather/find	B-weather/attribute
+3	сегодня	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: Cancel all reminders
+# text RU: Отмени все напоминания
+# intent: reminder/cancel_reminder
+# slots: 8:10:reference
+1	Отмени	reminder/cancel_reminder	O
+2	все	reminder/cancel_reminder	B-reference
+3	напоминания	reminder/cancel_reminder	O
+
+# annotator: Angelina
+# text EN: set an alarm for fifteen minutes
+# text RU: установи будильник на пятнадцать минут
+# intent: alarm/set_alarm
+# slots: 23:38:datetime
+1	установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	пятнадцать	alarm/set_alarm	B-datetime
+5	минут	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: Please set my alarm for 4am this Saturday.
+# text RU: Пожалуйста, установи мне будильник на 4 утра в эту субботу.
+# intent: alarm/set_alarm
+# slots: 22:24:reference, 39:58:datetime
+1	Пожалуйста,	alarm/set_alarm	O
+2	установи	alarm/set_alarm	O
+3	мне	alarm/set_alarm	B-reference
+4	будильник	alarm/set_alarm	O
+5	на	alarm/set_alarm	O
+6	4	alarm/set_alarm	B-datetime
+7	утра	alarm/set_alarm	I-datetime
+8	в	alarm/set_alarm	I-datetime
+9	эту	alarm/set_alarm	I-datetime
+10	субботу	alarm/set_alarm	I-datetime
+11	.	alarm/set_alarm	O
+
+# annotator: Angelina
+# text EN: Give me a reminder for house closing at 10am tomorrow.
+# text RU: Поставь напоминание закрыть дом в 10 утра завтра. 
+# intent: reminder/set_reminder
+# slots: 21:31:reminder/todo, 35:48:datetime
+1	Поставь	reminder/set_reminder	O
+2	напоминание	reminder/set_reminder	O
+3	закрыть	reminder/set_reminder	B-reminder/todo
+4	дом	reminder/set_reminder	I-reminder/todo
+5	в	reminder/set_reminder	O
+6	10	reminder/set_reminder	B-datetime
+7	утра	reminder/set_reminder	I-datetime
+8	завтра	reminder/set_reminder	I-datetime
+9	.	reminder/set_reminder	O
+
+# annotator: Angelina
+# text EN: delete all alarms
+# text RU: удали все будильники
+# intent: alarm/cancel_alarm
+# slots: 7:9:reference
+1	удали	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: How many alarms do I have set for Sunday?
+# text RU: Сколько будильников у меня установлено на воскресенье?
+# intent: alarm/show_alarms
+# slots: 43:53:datetime
+1	Сколько	alarm/show_alarms	O
+2	будильников	alarm/show_alarms	O
+3	у	alarm/show_alarms	O
+4	меня	alarm/show_alarms	O
+5	установлено	alarm/show_alarms	O
+6	на	alarm/show_alarms	O
+7	воскресенье	alarm/show_alarms	B-datetime
+8	?	alarm/show_alarms	O
+
+# annotator: Angelina
+# text EN: show all alarms
+# text RU: покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# annotator: Angelina
+# text EN: Is it going to be sunny today?
+# text RU: Будет ли солнечно сегодня?
+# intent: weather/find
+# slots: 10:17:weather/attribute, 19:25:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	солнечно	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: set alarm for 615am
+# text RU: установи будильник на 6 15 утра
+# intent: alarm/set_alarm
+# slots: 23:31:datetime
+1	установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	15	alarm/set_alarm	I-datetime
+6	утра	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: Set two alarms for tomorrow morning
+# text RU: Установи два будильника на завтрашнее утро
+# intent: alarm/set_alarm
+# slots: 28:42:datetime
+1	Установи	alarm/set_alarm	O
+2	два	alarm/set_alarm	O
+3	будильника	alarm/set_alarm	O
+4	на	alarm/set_alarm	O
+5	завтрашнее	alarm/set_alarm	B-datetime
+6	утро	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: Turn off all alarms
+# text RU: Отключи все будильники
+# intent: alarm/cancel_alarm
+# slots: 9:11:reference
+1	Отключи	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: What is the temperature like in London right now?
+# text RU: Какая температура в Лондоне прямо сейчас?
+# intent: weather/find
+# slots: 7:17:weather/attribute, 21:27:location, 35:40:datetime
+1	Какая	weather/find	O
+2	температура	weather/find	B-weather/attribute
+3	в	weather/find	O
+4	Лондоне	weather/find	B-location
+5	прямо	weather/find	O
+6	сейчас	weather/find	B-datetime
+7	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Cancel my last reminder
+# text RU: Отмени мое последнее напоминание
+# intent: reminder/cancel_reminder
+# slots: 8:20:reference
+1	Отмени	reminder/cancel_reminder	O
+2	мое	reminder/cancel_reminder	B-reference
+3	последнее	reminder/cancel_reminder	I-reference
+4	напоминание	reminder/cancel_reminder	O
+
+# annotator: Angelina
+# text EN: Set a reminder to go to the grocery store later
+# text RU: Поставь напоминание сходить в продуктовый магазин позже
+# intent: reminder/set_reminder
+# slots: 21:49:reminder/todo, 51:55:datetime
+1	Поставь	reminder/set_reminder	O
+2	напоминание	reminder/set_reminder	O
+3	сходить	reminder/set_reminder	B-reminder/todo
+4	в	reminder/set_reminder	I-reminder/todo
+5	продуктовый	reminder/set_reminder	I-reminder/todo
+6	магазин	reminder/set_reminder	I-reminder/todo
+7	позже	reminder/set_reminder	B-datetime
+
+# annotator: Angelina
+# text EN: What will be the heat index today?
+# text RU: Какой будет температура воздуха сегодня?
+# intent: weather/find
+# slots: 13:31:weather/attribute, 33:39:datetime
+1	Какой	weather/find	O
+2	будет	weather/find	O
+3	температура	weather/find	B-weather/attribute
+4	воздуха	weather/find	I-weather/attribute
+5	сегодня	weather/find	B-datetime
+6	?	weather/find	O
+
+# annotator: Angelina
+# text EN: How cold will it be today?
+# text RU: Насколько холодно будет сегодня?
+# intent: weather/find
+# slots: 11:17:weather/attribute, 25:31:datetime
+1	Насколько	weather/find	O
+2	холодно	weather/find	B-weather/attribute
+3	будет	weather/find	O
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: will it snow today
+# text RU: будет ли снег сегодня
+# intent: weather/find
+# slots: 10:13:weather/attribute, 15:21:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	снег	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: Set alarm for 5am
+# text RU: Поставь будильник на 5 утра
+# intent: alarm/set_alarm
+# slots: 22:27:datetime
+1	Поставь	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	5	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: turn off alarm
+# text RU: выключи будильник
+# intent: alarm/cancel_alarm
+# slots: 
+1	выключи	alarm/cancel_alarm	O
+2	будильник	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: cancel all alarms
+# text RU: отмени все будильники
+# intent: alarm/cancel_alarm
+# slots: 8:10:reference
+1	отмени	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: Add reminder to swim at 11am tomorrow
+# text RU: Добавь напоминание на плавание в 11 утра завтра
+# intent: reminder/set_reminder
+# slots: 23:30:reminder/todo, 34:47:datetime
+1	Добавь	reminder/set_reminder	O
+2	напоминание	reminder/set_reminder	O
+3	на	reminder/set_reminder	O
+4	плавание	reminder/set_reminder	B-reminder/todo
+5	в	reminder/set_reminder	O
+6	11	reminder/set_reminder	B-datetime
+7	утра	reminder/set_reminder	I-datetime
+8	завтра	reminder/set_reminder	I-datetime
+
+# annotator: Angelina
+# text EN: Show my reminder
+# text RU: Покажи мое напоминание
+# intent: reminder/show_reminders
+# slots: 8:10:reference
+1	Покажи	reminder/show_reminders	O
+2	мое	reminder/show_reminders	B-reference
+3	напоминание	reminder/show_reminders	O
+
+# annotator: Angelina
+# text EN: Cancel my alarm on Saturday
+# text RU: Отмени мой будильник на субботу
+# intent: alarm/cancel_alarm
+# slots: 8:10:reference, 25:31:datetime
+1	Отмени	alarm/cancel_alarm	O
+2	мой	alarm/cancel_alarm	B-reference
+3	будильник	alarm/cancel_alarm	O
+4	на	alarm/cancel_alarm	O
+5	субботу	alarm/cancel_alarm	B-datetime
+
+# annotator: Angelina
+# text EN: Is it cold out?
+# text RU: Холодно ли на улице?
+# intent: weather/find
+# slots: 1:7:weather/attribute, 15:19:location
+1	Холодно	weather/find	B-weather/attribute
+2	ли	weather/find	O
+3	на	weather/find	O
+4	улице	weather/find	B-location
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Is it humid today?
+# text RU: Влажно ли сегодня?
+# intent: weather/find
+# slots: 1:6:weather/attribute, 11:17:datetime
+1	Влажно	weather/find	B-weather/attribute
+2	ли	weather/find	O
+3	сегодня	weather/find	B-datetime
+4	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Set alarm every minute for 11 minutes
+# text RU: Установи будильник на каждую минуту на 11 минут
+# intent: alarm/set_alarm
+# slots: 23:34:recurring_datetime
+1	Установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	каждую	alarm/set_alarm	B-recurring_datetime
+5	минуту	alarm/set_alarm	I-recurring_datetime
+6	на	alarm/set_alarm	I-recurring_datetime
+7	11	alarm/set_alarm	I-recurring_datetime
+8	минут	alarm/set_alarm	I-recurring_datetime
+
+# annotator: Angelina
+# text EN: Show my reminder
+# text RU: Покажи мое напоминание
+# intent: reminder/show_reminders
+# slots: 8:10:reference
+1	Покажи	reminder/show_reminders	O
+2	мое	reminder/show_reminders	B-reference
+3	напоминание	reminder/show_reminders	O
+
+# annotator: Angelina
+# text EN: Is it going to be windy today?
+# text RU: Будет ли ветренно сегодня?
+# intent: weather/find
+# slots: 10:17:weather/attribute, 19:25:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	ветренно	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Cancel tomorrow's reminders
+# text RU: Отмени завтрашние напоминания
+# intent: reminder/cancel_reminder
+# slots: 8:17:datetime
+1	Отмени	reminder/cancel_reminder	O
+2	завтрашние	reminder/cancel_reminder	B-datetime
+3	напоминания	reminder/cancel_reminder	O
+
+# annotator: Angelina
+# text EN: tell me the 3 day forecast
+# text RU: скажи мне 3-х дневный прогноз
+# intent: weather/find
+# slots: 11:21:datetime
+1	скажи	weather/find	O
+2	мне	weather/find	O
+3	3-х	weather/find	B-datetime
+4	дневный	weather/find	I-datetime
+5	прогноз	weather/find	O
+
+# annotator: Angelina
+# text EN: how many inches of rain are we suppose to get tomorrow?
+# text RU: сколько дюймов дождя ожидается завтра?
+# intent: weather/find
+# slots: 9:20:weather/attribute, 32:37:datetime
+1	сколько	weather/find	O
+2	дюймов	weather/find	B-weather/attribute
+3	дождя	weather/find	I-weather/attribute
+4	ожидается	weather/find	O
+5	завтра	weather/find	B-datetime
+6	?	weather/find	O
+
+# annotator: Angelina
+# text EN: remind me about the wedding
+# text RU: напомни мне про свадьбу
+# intent: reminder/set_reminder
+# slots: 17:23:reminder/todo
+1	напомни	reminder/set_reminder	O
+2	мне	reminder/set_reminder	O
+3	про	reminder/set_reminder	O
+4	свадьбу	reminder/set_reminder	B-reminder/todo
+
+# annotator: Angelina
+# text EN: Snooze all alarms
+# text RU: Отложи все будильники
+# intent: alarm/snooze_alarm
+# slots: 8:10:reference
+1	Отложи	alarm/snooze_alarm	O
+2	все	alarm/snooze_alarm	B-reference
+3	будильники	alarm/snooze_alarm	O
+
+# annotator: Angelina
+# text EN: When will it rain today?
+# text RU: Когда будет дождь сегодня?
+# intent: weather/find
+# slots: 13:17:weather/attribute, 19:25:datetime
+1	Когда	weather/find	O
+2	будет	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: show all alarms
+# text RU: покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# annotator: Angelina
+# text EN: Turn off all alarms
+# text RU: Отключи все будильники
+# intent: alarm/cancel_alarm
+# slots: 9:11:reference
+1	Отключи	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: Is it going to rain today?
+# text RU: Будет ли дождь сегодня?
+# intent: weather/find
+# slots: 10:14:weather/attribute, 16:22:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Show all reminders for tomorrow
+# text RU: Покажи все напоминания на завтра
+# intent: reminder/show_reminders
+# slots: 8:10:reference, 27:32:datetime
+1	Покажи	reminder/show_reminders	O
+2	все	reminder/show_reminders	B-reference
+3	напоминания	reminder/show_reminders	O
+4	на	reminder/show_reminders	O
+5	завтра	reminder/show_reminders	B-datetime
+
+# annotator: Angelina
+# text EN: cancel my alarm for tomorrow morning
+# text RU: отмени мой будильник на завтрашнее утро
+# intent: alarm/cancel_alarm
+# slots: 8:10:reference, 25:39:datetime
+1	отмени	alarm/cancel_alarm	O
+2	мой	alarm/cancel_alarm	B-reference
+3	будильник	alarm/cancel_alarm	O
+4	на	alarm/cancel_alarm	O
+5	завтрашнее	alarm/cancel_alarm	B-datetime
+6	утро	alarm/cancel_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: How hot is it?
+# text RU: Насколько жарко сейчас?
+# intent: weather/find
+# slots: 11:15:weather/attribute
+1	Насколько	weather/find	O
+2	жарко	weather/find	B-weather/attribute
+3	сейчас	weather/find	O
+4	?	weather/find	O
+
+# annotator: Angelina
+# text EN: remind me to buy milk tonight
+# text RU: напомни мне купить молоко сегодня
+# intent: reminder/set_reminder
+# slots: 13:25:reminder/todo, 27:33:datetime
+1	напомни	reminder/set_reminder	O
+2	мне	reminder/set_reminder	O
+3	купить	reminder/set_reminder	B-reminder/todo
+4	молоко	reminder/set_reminder	I-reminder/todo
+5	сегодня	reminder/set_reminder	B-datetime
+
+# annotator: Angelina
+# text EN: Cancel all reminders
+# text RU: Отмени все напоминания
+# intent: reminder/cancel_reminder
+# slots: 8:10:reference
+1	Отмени	reminder/cancel_reminder	O
+2	все	reminder/cancel_reminder	B-reference
+3	напоминания	reminder/cancel_reminder	O
+
+# annotator: Angelina
+# text EN: Show all alarms
+# text RU: Покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	Покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# annotator: Angelina
+# text EN: cancel my alarm for tomorrow morning
+# text RU: отмени мой будильник на завтрашнее утро
+# intent: alarm/cancel_alarm
+# slots: 8:10:reference, 25:39:datetime
+1	отмени	alarm/cancel_alarm	O
+2	мой	alarm/cancel_alarm	B-reference
+3	будильник	alarm/cancel_alarm	O
+4	на	alarm/cancel_alarm	O
+5	завтрашнее	alarm/cancel_alarm	B-datetime
+6	утро	alarm/cancel_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: Will it be sunny tomorrow?
+# text RU: Будет ли солнечно завтра?
+# intent: weather/find
+# slots: 10:17:weather/attribute, 19:24:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	солнечно	weather/find	B-weather/attribute
+4	завтра	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Cancel alarm for tomorrow morning
+# text RU: Отмени будильник на завтрашнее утро
+# intent: alarm/cancel_alarm
+# slots: 21:35:datetime
+1	Отмени	alarm/cancel_alarm	O
+2	будильник	alarm/cancel_alarm	O
+3	на	alarm/cancel_alarm	O
+4	завтрашнее	alarm/cancel_alarm	B-datetime
+5	утро	alarm/cancel_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: show all reminders for tomorrow morning
+# text RU: покажи все напоминания на завтрашнее утро
+# intent: reminder/show_reminders
+# slots: 27:41:datetime
+1	покажи	reminder/show_reminders	O
+2	все	reminder/show_reminders	O
+3	напоминания	reminder/show_reminders	O
+4	на	reminder/show_reminders	O
+5	завтрашнее	reminder/show_reminders	B-datetime
+6	утро	reminder/show_reminders	I-datetime
+
+# annotator: Angelina
+# text EN: What is the humidity today?
+# text RU: Какая влажность сегодня?
+# intent: weather/find
+# slots: 7:15:weather/attribute, 17:23:datetime
+1	Какая	weather/find	O
+2	влажность	weather/find	B-weather/attribute
+3	сегодня	weather/find	B-datetime
+4	?	weather/find	O
+
+# annotator: Angelina
+# text EN: When is it going to rain?
+# text RU: Когда пойдет дождь?
+# intent: weather/find
+# slots: 14:18:weather/attribute
+1	Когда	weather/find	O
+2	пойдет	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# annotator: Angelina
+# text EN: How hot is it
+# text RU: Насколько жарко на улице
+# intent: weather/find
+# slots: 11:15:weather/attribute
+1	Насколько	weather/find	O
+2	жарко	weather/find	B-weather/attribute
+3	на	weather/find	O
+4	улице	weather/find	O
+
+# annotator: Angelina
+# text EN: show me my reminders
+# text RU: покажи мне все напоминания
+# intent: reminder/show_reminders
+# slots: 12:14:reference
+1	покажи	reminder/show_reminders	O
+2	мне	reminder/show_reminders	O
+3	все	reminder/show_reminders	B-reference
+4	напоминания	reminder/show_reminders	O
+
+# annotator: Angelina
+# text EN: What is the 5 day forecast?
+# text RU: Какой прогноз на 5 дней?
+# intent: weather/find
+# slots: 18:23:datetime
+1	Какой	weather/find	O
+2	прогноз	weather/find	O
+3	на	weather/find	O
+4	5	weather/find	B-datetime
+5	дней	weather/find	I-datetime
+6	?	weather/find	O
+
+# annotator: Angelina
+# text EN: set alarm for 6 am
+# text RU: установи будильник на 6 утра
+# intent: alarm/set_alarm
+# slots: 23:28:datetime
+1	установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: Is it cold today?
+# text RU: Холодно ли сегодня?
+# intent: weather/find
+# slots: 1:7:weather/attribute, 12:18:datetime
+1	Холодно	weather/find	B-weather/attribute
+2	ли	weather/find	O
+3	сегодня	weather/find	B-datetime
+4	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Set a reminder to call my school on Monday at 4 PM
+# text RU: Установи напоминание позвонить в школу в понедельник в 4 вечера
+# intent: reminder/set_reminder
+# slots: 22:38:reminder/todo, 42:63:datetime
+1	Установи	reminder/set_reminder	O
+2	напоминание	reminder/set_reminder	O
+3	позвонить	reminder/set_reminder	B-reminder/todo
+4	в	reminder/set_reminder	I-reminder/todo
+5	школу	reminder/set_reminder	I-reminder/todo
+6	в	reminder/set_reminder	O
+7	понедельник	reminder/set_reminder	B-datetime
+8	в	reminder/set_reminder	I-datetime
+9	4	reminder/set_reminder	I-datetime
+10	вечера	reminder/set_reminder	I-datetime
+
+# annotator: Angelina
+# text EN: Delete my reminder for picking up Patrick from school tomorrow.
+# text RU: Удали мое напоминание для подбора Патрика из школы завтра.
+# intent: reminder/cancel_reminder
+# slots: 7:9:reference, 27:50:reminder/todo, 52:57:datetime
+1	Удали	reminder/cancel_reminder	O
+2	мое	reminder/cancel_reminder	B-reference
+3	напоминание	reminder/cancel_reminder	O
+4	для	reminder/cancel_reminder	O
+5	подбора	reminder/cancel_reminder	B-reminder/todo
+6	Патрика	reminder/cancel_reminder	I-reminder/todo
+7	из	reminder/cancel_reminder	I-reminder/todo
+8	школы	reminder/cancel_reminder	I-reminder/todo
+9	завтра	reminder/cancel_reminder	B-datetime
+10	.	reminder/cancel_reminder	O
+
+# annotator: Angelina
+# text EN: How cold will it be in the morning?
+# text RU: Насколько холодно будет утром?
+# intent: weather/find
+# slots: 11:17:weather/attribute, 25:29:datetime
+1	Насколько	weather/find	O
+2	холодно	weather/find	B-weather/attribute
+3	будет	weather/find	O
+4	утром	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: do i need an umbrella tomorrow
+# text RU: нужен ли мне зонт завтра
+# intent: weather/find
+# slots: 14:17:weather/attribute, 19:24:datetime
+1	нужен	weather/find	O
+2	ли	weather/find	O
+3	мне	weather/find	O
+4	зонт	weather/find	B-weather/attribute
+5	завтра	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: Show my reminder
+# text RU: Покажи текущее напоминание
+# intent: reminder/show_reminders
+# slots: 8:14:reference
+1	Покажи	reminder/show_reminders	O
+2	текущее	reminder/show_reminders	B-reference
+3	напоминание	reminder/show_reminders	O
+
+# annotator: Angelina
+# text EN: Stop alarm for 6:00 am
+# text RU: Останови будильник на 6:00 утра
+# intent: alarm/cancel_alarm
+# slots: 23:31:datetime
+1	Останови	alarm/cancel_alarm	O
+2	будильник	alarm/cancel_alarm	O
+3	на	alarm/cancel_alarm	O
+4	6:00	alarm/cancel_alarm	B-datetime
+7	утра	alarm/cancel_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: Cancel all alarms
+# text RU: Отмени все будильники
+# intent: alarm/cancel_alarm
+# slots: 8:10:reference
+1	Отмени	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: Will it be sunny today?
+# text RU: Будет ли солнечно сегодня?
+# intent: weather/find
+# slots: 10:17:weather/attribute, 19:25:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	солнечно	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: what is the weather in london?
+# text RU: какая погода в лондоне?
+# intent: weather/find
+# slots: 16:22:location
+1	какая	weather/find	O
+2	погода	weather/find	O
+3	в	weather/find	O
+4	лондоне	weather/find	B-location
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: What are my reminders?
+# text RU: Какие у меня напоминания?
+# intent: reminder/show_reminders
+# slots: 9:12:reference
+1	Какие	reminder/show_reminders	O
+2	у	reminder/show_reminders	O
+3	меня	reminder/show_reminders	B-reference
+4	напоминания	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# annotator: Angelina
+# text EN: Cancel my reminder to text Dad
+# text RU: Отмени мое напоминание написать отцу
+# intent: reminder/cancel_reminder
+# slots: 8:10:reference, 24:36:reminder/todo
+1	Отмени	reminder/cancel_reminder	O
+2	мое	reminder/cancel_reminder	B-reference
+3	напоминание	reminder/cancel_reminder	O
+4	написать	reminder/cancel_reminder	B-reminder/todo
+5	отцу	reminder/cancel_reminder	I-reminder/todo
+
+# annotator: Angelina
+# text EN: set alarm for 6 am
+# text RU: установи будильник на 6 утра
+# intent: alarm/set_alarm
+# slots: 23:28:datetime
+1	установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: turn off the alarm
+# text RU: отключи будильник
+# intent: alarm/cancel_alarm
+# slots: 
+1	отключи	alarm/cancel_alarm	O
+2	будильник	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: cancel the alarm
+# text RU: отмени будильник
+# intent: alarm/cancel_alarm
+# slots: 
+1	отмени	alarm/cancel_alarm	O
+2	будильник	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: turn off alarm
+# text RU: отключи будильник
+# intent: alarm/cancel_alarm
+# slots: 
+1	отключи	alarm/cancel_alarm	O
+2	будильник	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: remind me to call mom today at 2 p.m.
+# text RU: напомни мне позвонить маме сегодня в 2 часа.
+# intent: reminder/set_reminder
+# slots: 13:26:reminder/todo, 28:44:datetime
+1	напомни	reminder/set_reminder	O
+2	мне	reminder/set_reminder	O
+3	позвонить	reminder/set_reminder	B-reminder/todo
+4	маме	reminder/set_reminder	I-reminder/todo
+5	сегодня	reminder/set_reminder	B-datetime
+6	в	reminder/set_reminder	I-datetime
+7	2	reminder/set_reminder	I-datetime
+8	часа	reminder/set_reminder	I-datetime
+9	.	reminder/set_reminder	I-datetime
+
+# annotator: Angelina
+# text EN: cancel all alarms
+# text RU: отмени все будильники
+# intent: alarm/cancel_alarm
+# slots: 8:10:reference
+1	отмени	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: is it going to be hot tomorrow
+# text RU: будет ли жарко завтра
+# intent: weather/find
+# slots: 10:14:weather/attribute, 16:21:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	жарко	weather/find	B-weather/attribute
+4	завтра	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: is it cold out today?
+# text RU: холодно снаружи сегодня?
+# intent: weather/find
+# slots: 1:7:weather/attribute, 9:15:location, 17:23:datetime
+1	холодно	weather/find	B-weather/attribute
+2	снаружи	weather/find	B-location
+3	сегодня	weather/find	B-datetime
+4	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Set alarm for 5 pm tonight
+# text RU: Установи будильник на 5 вечера сегодня
+# intent: alarm/set_alarm
+# slots: 23:38:datetime
+1	Установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	5	alarm/set_alarm	B-datetime
+5	вечера	alarm/set_alarm	I-datetime
+6	сегодня	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: Will it rain this weekend?
+# text RU: Будет ли дождь в эти выходные?
+# intent: weather/find
+# slots: 10:14:weather/attribute, 18:29:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	в	weather/find	O
+5	эти	weather/find	B-datetime
+6	выходные	weather/find	I-datetime
+7	?	weather/find	O
+
+# annotator: Angelina
+# text EN: is it going to rain today
+# text RU: будет ли дождь сегодня
+# intent: weather/find
+# slots: 10:14:weather/attribute, 16:22:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: set an alarm for monday at 3 am
+# text RU: установи будильник на понедельник в 3 утра
+# intent: alarm/set_alarm 
+# slots: 23:42:datetime
+1	установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	понедельник	alarm/set_alarm	B-datetime
+5	в	alarm/set_alarm	I-datetime
+6	3	alarm/set_alarm	I-datetime
+7	утра	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: alarm on
+# text RU: включи будильник
+# intent: alarm/set_alarm
+# slots: 
+1	включи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+
+# annotator: Angelina
+# text EN: Is it going to rain on Saturday?
+# text RU: Будет ли дождь в субботу?
+# intent: weather/find
+# slots: 10:14:weather/attribute, 18:24:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	в	weather/find	O
+5	субботу	weather/find	B-datetime
+6	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Set alarm for 5 am
+# text RU: Установи будильник на 5 утра
+# intent: alarm/set_alarm
+# slots: 23:28:datetime
+1	Установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	5	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+
+# annotator: Angelina
+# text EN: Will I need a coat today?
+# text RU: Нужно ли мне пальто сегодня?
+# intent: weather/find
+# slots: 14:19:weather/attribute, 21:27:datetime
+1	Нужно	weather/find	O
+2	ли	weather/find	O
+3	мне	weather/find	O
+4	пальто	weather/find	B-weather/attribute
+5	сегодня	weather/find	B-datetime
+6	?	weather/find	O
+
+# annotator: Angelina
+# text EN: turn off alarm
+# text RU: отключи будильник
+# intent: alarm/cancel_alarm
+# slots: 
+1	отключи	alarm/cancel_alarm	O
+2	будильник	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: What weather warnings do I have?
+# text RU: Какие погодные предупреждения у меня есть?
+# intent: weather/find
+# slots: 16:29:weather/attribute
+1	Какие	weather/find	O
+2	погодные	weather/find	O
+3	предупреждения	weather/find	B-weather/attribute
+4	у	weather/find	O
+5	меня	weather/find	O
+6	есть	weather/find	O
+7	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Cancel the reminder for the meeting at the lodge
+# text RU: Отмени напоминание для встречи в лодже
+# intent: reminder/cancel_reminder
+# slots: 24:38:reminder/todo
+1	Отмени	reminder/cancel_reminder	O
+2	напоминание	reminder/cancel_reminder	O
+3	для	reminder/cancel_reminder	O
+4	встречи	reminder/cancel_reminder	B-reminder/todo
+5	в	reminder/cancel_reminder	I-reminder/todo
+6	лодже	reminder/cancel_reminder	I-reminder/todo
+
+# annotator: Angelina
+# text EN: Should I wear a coat today
+# text RU: Должен ли я надеть пальто сегодня
+# intent: weather/find
+# slots: 20:25:weather/attribute, 27:33:datetime
+1	Должен	weather/find	O
+2	ли	weather/find	O
+3	я	weather/find	O
+4	надеть	weather/find	O
+5	пальто	weather/find	B-weather/attribute
+6	сегодня	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: Turn off all alarms.
+# text RU: Отключи все будильники.
+# intent: alarm/cancel_alarm
+# slots: 9:11:reference
+1	Отключи	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+4	.	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: show all alarms
+# text RU: покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# annotator: Angelina
+# text EN: Make a new alarm for Thursday at 1pm.
+# text RU: Создай новый будильник на четверг 13:00.
+# intent: alarm/set_alarm
+# slots: 27:39:datetime
+1	Создай	alarm/set_alarm	O
+2	новый	alarm/set_alarm	O
+3	будильник	alarm/set_alarm	O
+4	на	alarm/set_alarm	O
+5	четверг	alarm/set_alarm	B-datetime
+6	в	alarm/set_alarm	I-datetime
+7	13:00	alarm/set_alarm	I-datetime
+8	.	alarm/set_alarm	O
+
+# annotator: Angelina
+# text EN: Remind me to go to the dentist next Monday.
+# text RU: Напомни нме сходить к зубному в следующий понедельник.
+# intent: reminder/set_reminder
+# slots: 13:29:reminder/todo, 33:53:datetime
+1	Напомни	reminder/set_reminder	O
+2	мне	reminder/set_reminder	O
+3	сходить	reminder/set_reminder	B-reminder/todo
+4	к	reminder/set_reminder	I-reminder/todo
+5	зубному	reminder/set_reminder	I-reminder/todo
+6	в	reminder/set_reminder	O
+7	следующий	reminder/set_reminder	B-datetime
+8	понедельник	reminder/set_reminder	I-datetime
+9	.	reminder/set_reminder	O
+
+# annotator: Angelina
+# text EN: should I bring an umbrella today
+# text RU: должен ли я взать зонт сегодня
+# intent: weather/find
+# slots: 19:22:weather/attribute, 24:30:datetime
+1	должен	weather/find	O
+2	ли	weather/find	O
+3	я	weather/find	O
+4	взять	weather/find	O
+5	зонт	weather/find	B-weather/attribute
+6	сегодня	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: how is the weather this week?
+# text RU: какая будет погода эту неделю?
+# intent: weather/find
+# slots: 20:29:datetime
+1	какая	weather/find	O
+2	будет	weather/find	O
+3	погода	weather/find	O
+4	эту	weather/find	B-datetime
+5	неделю	weather/find	I-datetime
+6	?	weather/find	O
+
+# annotator: Angelina
+# text EN: is it below freezing today?
+# text RU: минусовая ли температура сегодня?
+# intent: weather/find
+# slots: 1:9:weather/attribute, 26:32:datetime
+1	минусовая	weather/find	B-weather/attribute
+2	ли	weather/find	O
+3	температура	weather/find	I-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Delete all reminders
+# text RU: Удали все напоминания
+# intent: reminder/cancel_reminder
+# slots: 7:9:reference
+1	Удали	reminder/cancel_reminder	O
+2	все	reminder/cancel_reminder	B-reference
+3	напоминия	reminder/cancel_reminder	O
+
+# annotator: Angelina
+# text EN: Is it going to rain today?
+# text RU: Будет ли дождь сегодня?
+# intent: weather/find
+# slots: 10:14:weather/attribute, 16:22:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	сегодня	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Will it rain this weekend?
+# text RU: Будет ли дождь в эти выходные?
+# intent: weather/find
+# slots: 10:14:weather/attribute, 18:29:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	в	weather/find	O
+5	эти	weather/find	B-datetime
+6	выходные	weather/find	I-datetime
+7	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Set reminder for mom's visit next week
+# text RU: Установи напоминание к маминому визиту на следующей неделе
+# intent: reminder/set_reminder
+# slots: 24:38:reminder/todo, 43:58:datetime
+1	Установи	reminder/set_reminder	O
+2	напоминание	reminder/set_reminder	O
+3	к	reminder/set_reminder	O
+4	маминому	reminder/set_reminder	B-reminder/todo
+5	визиту	reminder/set_reminder	I-reminder/todo
+6	на	reminder/set_reminder	O
+7	следующей	reminder/set_reminder	B-datetime
+8	неделе	reminder/set_reminder	I-datetime
+
+# annotator: Angelina
+# text EN: Will it snow tomorrow?
+# text RU: Будет ли снег завтра?
+# intent: weather/find
+# slots: 10:13:weather/attribute, 15:20:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	снег	weather/find	B-weather/attribute
+4	завтра	weather/find	B-datetime
+5	?	weather/find	O
+
+# annotator: Angelina
+# text EN: show all reminders
+# text RU: покажи все напоминания
+# intent: reminder/show_reminders
+# slots: 8:10:reference
+1	покажи	reminder/show_reminders	O
+2	все	reminder/show_reminders	B-reference
+3	напоминания	reminder/show_reminders	O
+
+# annotator: Angelina
+# text EN: Do I need a coat today?
+# text RU: Нужно ли мне пальто сегодня?
+# intent: weather/find
+# slots: 14:19:weather/attribute, 21:27:datetime
+1	Нужно	weather/find	O
+2	ли	weather/find	O
+3	мне	weather/find	O
+4	пальто	weather/find	B-weather/attribute
+5	сегодня	weather/find	B-datetime
+6	?	weather/find	O
+
+# annotator: Angelina
+# text EN: is it going to snow thursday
+# text RU: будет ли снег в четверг
+# intent: weather/find
+# slots: 10:13:weather/attribute, 17:23:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	снег	weather/find	B-weather/attribute
+4	в	weather/find	O
+5	четверг	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: Remind me to buy coffee at Starbucks this afternoon
+# text RU: Напомни мне купить кофе в Старбакс после обеда
+# intent: reminder/set_reminder
+# slots: 13:34:reminder/todo, 36:46:datetime
+1	Напомни	reminder/set_reminder	O
+2	мне	reminder/set_reminder	O
+3	купить	reminder/set_reminder	B-reminder/todo
+4	кофе	reminder/set_reminder	I-reminder/todo
+5	в	reminder/set_reminder	I-reminder/todo
+6	Старбакс	reminder/set_reminder	I-reminder/todo
+7	после	reminder/set_reminder	B-datetime
+8	обеда	reminder/set_reminder	I-datetime
+
+# annotator: Angelina
+# text EN: Set an alarm for every ten minutes, starting at 5:30 and ending at 6 am.
+# text RU: Установи будильник на каждые десять минут, начиная с 5:30 и заканчивая в 6 утра.
+# intent: alarm/set_alarm
+# slots: 23:79:recurring_datetime
+1	Установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	каждые	alarm/set_alarm	B-recurring_datetime
+5	десять	alarm/set_alarm	I-recurring_datetime
+6	минут	alarm/set_alarm	I-recurring_datetime
+7	,	alarm/set_alarm	I-recurring_datetime
+8	начиная	alarm/set_alarm	I-recurring_datetime
+9	с	alarm/set_alarm	I-recurring_datetime
+10	5:30	alarm/set_alarm	I-recurring_datetime
+11	и	alarm/set_alarm	I-recurring_datetime
+12	заканчивая	alarm/set_alarm	I-recurring_datetime
+13	в	alarm/set_alarm	I-recurring_datetime
+14	6	alarm/set_alarm	I-recurring_datetime
+15	утра	alarm/set_alarm	I-recurring_datetime
+16	.	alarm/set_alarm	O
+
+# annotator: Angelina
+# text EN: Is it going to rain on Saturday?
+# text RU: Будет ли дождь в субботу?
+# intent: weather/find
+# slots: 10:14:weather/attribute, 18:24:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	в	weather/find	O
+5	субботу	weather/find	B-datetime
+6	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Set eh alarm to 7:20am for the shoe release.
+# text RU: Установи будильник на 7:20 утра для обувного релиза.
+# intent: alarm/set_alarm
+# slots: 23:31:datetime, 37:51:reminder/todo
+1	Установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	7:20	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+6	для	alarm/set_alarm	O
+7	обувного	alarm/set_alarm	B-reminder/todo
+8	релиза	alarm/set_alarm	I-reminder/todo
+9	.	alarm/set_alarm	O
+
+# annotator: Angelina
+# text EN: Will there be storms in Bordentown today
+# text RU: Будет ли шторм в Бордентаун сегодня
+# intent: weather/find
+# slots: 10:14:weather/attribute, 18:27:location, 29:35:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	шторм	weather/find	B-weather/attribute
+4	в	weather/find	O
+5	Бордентаун	weather/find	B-location
+6	сегодня	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: what is the current temperature
+# text RU: какая сейчас температура
+# intent: weather/find
+# slots: 7:12:datetime, 14:24:weather/attribute
+1	какая	weather/find	O
+2	сейчас	weather/find	B-datetime
+3	температура	weather/find	B-weather/attribute
+
+# annotator: Angelina
+# text EN: remind me to make Dan's lunch at 7:30am tomorrow.
+# text RU: напомни мне сделать Дэну ланч в 7:30 утра завтра.
+# intent: reminder/set_reminder
+# slots: 13:29:reminder/todo, 33:48:datetime
+1	напомни	reminder/set_reminder	O
+2	мне	reminder/set_reminder	O
+3	сделать	reminder/set_reminder	B-reminder/todo
+4	Дэну	reminder/set_reminder	I-reminder/todo
+5	ланч	reminder/set_reminder	I-reminder/todo
+6	в	reminder/set_reminder	O
+7	7:30	reminder/set_reminder	B-datetime
+8	утра	reminder/set_reminder	I-datetime
+9	завтра	reminder/set_reminder	I-datetime
+10	.	reminder/set_reminder	O
+
+# annotator: Angelina
+# text EN: Set alarm for 6:30am tomorrow.
+# text RU: Установи будильник на 6:30 утра завтра. 
+# intent: alarm/set_alarm
+# slots: 23:38:datetime
+1	Установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	6:30	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+6	завтра	alarm/set_alarm	I-datetime
+7	.	alarm/set_alarm	O
+
+# annotator: Angelina
+# text EN: Do I have any reminders set?
+# text RU: Есть ли у меня установленные напоминания?
+# intent: reminder/show_reminders
+# slots: 
+1	Есть	reminder/show_reminders	O
+2	ли	reminder/show_reminders	O
+3	у	reminder/show_reminders	O
+4	меня	reminder/show_reminders	O
+5	установленные	reminder/show_reminders	O
+6	напоминания	reminder/show_reminders	O
+7	?	reminder/show_reminders	O
+
+# annotator: Angelina
+# text EN: Is my dentist appointment in my reminder ?
+# text RU: Есть ли моя запись к зубному в моих напоминаиях ?
+# intent: reminder/show_reminders
+# slots: 9:28:reminder/todo, 32:35:reference
+1	Есть	reminder/show_reminders	O
+2	ли	reminder/show_reminders	O
+3	моя	reminder/show_reminders	B-reminder/todo
+4	запись	reminder/show_reminders	I-reminder/todo
+5	к	reminder/show_reminders	I-reminder/todo
+6	зубному	reminder/show_reminders	I-reminder/todo
+7	в	reminder/show_reminders	O
+8	моих	reminder/show_reminders	B-reference
+9	напоминаниях	reminder/show_reminders	O
+10	?	reminder/show_reminders	O
+
+# annotator: Angelina
+# text EN: when will it stop raining?
+# text RU: когда остановится дождь?
+# intent: weather/find
+# slots: 19:23:weather/attribute
+1	когда	weather/find	O
+2	остановится	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Is it going to snow this week?
+# text RU: Будет ли идти снег на этой неделе?
+# intent: weather/find
+# slots: 15:18:weather/attribute, 23:33:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	идти	weather/find	O
+4	снег	weather/find	B-weather/attribute
+5	на	weather/find	O
+6	этой	weather/find	B-datetime
+7	неделе	weather/find	I-datetime
+8	?	weather/find	O
+
+# annotator: Angelina
+# text EN: turn off alarm
+# text RU: отключи будильник
+# intent: alarm/cancel_alarm
+# slots: 
+1	отключи	alarm/cancel_alarm	O
+2	будильник	alarm/cancel_alarm	O
+
+# annotator: Angelina
+# text EN: I would give Half a Life 3 out of 6
+# text RU: Я хочу дать Half a Life 3 из 6
+# intent: RateBook
+# slots: 13:23:object_name, 25:25:rating_value, 30:30:best_rating
+1	Я	RateBook	O
+2	хочу	RateBook	O
+3	дать	RateBook	O
+4	Half	RateBook	B-object_name
+5	a	RateBook	I-object_name
+6	Life	RateBook	I-object_name
+7	3	RateBook	B-rating_value
+8	из	RateBook	O
+9	6	RateBook	B-best_rating
+
+# annotator: Angelina
+# text EN: Play some Mf Doom from the sixties on pandora .
+# text RU: Включи Mf Doom из шестидесятых на pandora . 
+# intent: PlayMusic
+# slots: 8:14:artist, 19:30:datetime, 35:41:service
+1	Включи	PlayMusic	O
+2	Mf	PlayMusic	B-artist
+3	Doom	PlayMusic	I-artist
+4	из	PlayMusic	O
+5	шестидесятых	PlayMusic	B-datetime
+6	на	PlayMusic	O
+7	pandora	PlayMusic	B-service
+8	.	PlayMusic	O
+
+# annotator: Angelina
+# text EN: Search for Chasing Fortune a TV series .
+# text RU: Найди Chasing Fortune телешоу .
+# intent: SearchCreativeWork
+# slots: 7:21:object_name, 23:29:object_type
+1	Найди	SearchCreativeWork	O
+2	Chasing	SearchCreativeWork	B-object_name
+3	Fortune	SearchCreativeWork	I-object_name
+4	телешоу	SearchCreativeWork	B-object_type
+5	.	SearchCreativeWork	O
+
+# annotator: Angelina
+# text EN: Play shadowplay by Dana on Deezer .
+# text RU: Включи shadowplay от Dana в Deezer .
+# intent: PlayMusic
+# slots: 8:17:track, 22:25:artist, 29:34:service
+1	Включи	PlayMusic	O
+2	shadowplay	PlayMusic	B-track
+3	от	PlayMusic	O
+4	Dana	PlayMusic	B-artist
+5	в	PlayMusic	O
+6	Deezer	PlayMusic	B-service
+7	.	PlayMusic	O
+
+# annotator: Angelina
+# text EN: me and imelda want a reservation in Missouri at seven am
+# text RU: я и Имельда хотим столик в Missouri в семь утра
+# intent: BookRestaurant
+# slots: 1:11:party_size_description, 28:35:location, 39:47:datetime
+1	я	BookRestaurant	B-party_size_description
+2	и	BookRestaurant	I-party_size_description
+3	Имельда	BookRestaurant	I-party_size_description
+4	хотим	BookRestaurant	O
+5	столик	BookRestaurant	O
+6	в	BookRestaurant	O
+7	Missouri	BookRestaurant	B-location
+8	в	BookRestaurant	O
+9	семь	BookRestaurant	B-datetime
+10	утра	BookRestaurant	I-datetime
+
+# annotator: Angelina
+# text EN: add bob klose to la mejor música para tus fiestas
+# text RU: добавь bob klose в la mejor música para tus fiestas
+# intent: AddToPlaylist
+# slots: 8:16:artist, 20:51:playlist
+1	добавь	AddToPlaylist	O
+2	bob	AddToPlaylist	B-artist
+3	klose	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	la	AddToPlaylist	B-playlist
+6	mejor	AddToPlaylist	I-playlist
+7	música	AddToPlaylist	I-playlist
+8	para	AddToPlaylist	I-playlist
+9	tus	AddToPlaylist	I-playlist
+10	fiestas	AddToPlaylist	I-playlist
+
+# annotator: Angelina
+# text EN: play Luis Alfonzo Larrain from 1995
+# text RU: включи Luis Alfonzo Larrain из 1995
+# intent: PlayMusic
+# slots: 8:27:artist, 32:35:datetime
+1	включи	PlayMusic	O
+2	Luis	PlayMusic	B-artist
+3	Alfonzo	PlayMusic	I-artist
+4	Larrain	PlayMusic	I-artist
+5	из	PlayMusic	O
+6	1995	PlayMusic	B-datetime
+
+# annotator: Angelina
+# text EN: What will the weather be like in the Bahamas eleven years and a half from now
+# text RU: Какая будет погода на Багамах одиннадцать с половиной лет спустя
+# intent: weather/find
+# slots: 23:29:location, 31:64:datetime
+1	Какая	weather/find	O
+2	будет	weather/find	O
+3	погода	weather/find	O
+4	на	weather/find	O
+5	Багамах	weather/find	B-location
+6	одиннадцать	weather/find	B-datetime
+7	с	weather/find	I-datetime
+8	половиной	weather/find	I-datetime
+9	лет	weather/find	I-datetime
+10	спустя	weather/find	I-datetime
+
+# annotator: Angelina
+# text EN: What will the weather be like in Arizona on october the 3rd
+# text RU: Какая будет погода в Аризоне в октябре третьего
+# intent: weather/find
+# slots: 22:28:location, 32:47:datetime
+1	Какая	weather/find	O
+2	будет	weather/find	O
+3	погода	weather/find	O
+4	в	weather/find	O
+5	Аризоне	weather/find	B-location
+6	в	weather/find	O
+7	октябре	weather/find	B-datetime
+8	третьего	weather/find	I-datetime
+
+# annotator: Angelina
+# text EN: Play opera music on google music
+# text RU: Включи оперную музыку в google music
+# intent: PlayMusic
+# slots: 8:14:genre, 25:36:service
+1	Включи	PlayMusic	O
+2	оперную	PlayMusic	B-genre
+3	музыку	PlayMusic	O
+4	в	PlayMusic	O
+5	google	PlayMusic	B-service
+6	music	PlayMusic	I-service
+
+# annotator: Angelina
+# text EN: find Vegucated starting at zero pm
+# text RU: найди Vegucated начиная с полуночи
+# intent: SearchScreeningEvent
+# slots: 7:15:movie_name, 27:34:datetime
+1	найди	SearchScreeningEvent	O
+2	Vegucated	SearchScreeningEvent	B-movie_name
+3	начиная	SearchScreeningEvent	O
+4	с	SearchScreeningEvent	O
+5	полуночи	SearchScreeningEvent	B-datetime
+
+# annotator: Angelina
+# text EN: Give the current novel a 3 out of 6 rating
+# text RU: Дай текущему роману 3 из 6 звезд
+# intent: RateBook
+# slots: 5:12:object_select, 14:19:object_type, 21:21:rating_value, 26:26:best_rating
+1	Дай	RateBook	O
+2	текущему	RateBook	B-object_select
+3	роману	RateBook	B-object_type
+4	3	RateBook	B-rating_value
+5	из	RateBook	O
+6	6	RateBook	B-best_rating
+7	звезд	RateBook	O
+
+# annotator: Angelina
+# text EN: I'd like to add this album to funtime .
+# text RU: Я хочу добавить этот альбом в funtime .
+# intent: AddToPlaylist
+# slots: 22:27:music_item, 31:37:playlist
+1	Я	AddToPlaylist	O
+2	хочу	AddToPlaylist	O
+3	добавить	AddToPlaylist	O
+4	этот	AddToPlaylist	O
+5	альбом	AddToPlaylist	B-music_item
+6	в	AddToPlaylist	O
+7	funtime	AddToPlaylist	B-playlist
+8	.	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: I need a table for 4 at a restaurant around 0 AM .
+# text RU: Мне нужен столик на 4 персоны в ресторане около 12 дня .
+# intent: BookRestaurant
+# slots: 21:21:party_size_number, 33:41:restaurant_type, 49:54:datetime
+1	Мне	BookRestaurant	O
+2	нужен	BookRestaurant	O
+3	столик	BookRestaurant	O
+4	на	BookRestaurant	O
+5	4	BookRestaurant	B-party_size_number
+6	персоны	BookRestaurant	O
+7	в	BookRestaurant	O
+8	ресторане	BookRestaurant	B-restaurant_type
+9	около	BookRestaurant	O
+10	12	BookRestaurant	B-datetime
+11	дня	BookRestaurant	I-datetime
+12	.	BookRestaurant	O
+
+# annotator: Angelina
+# text EN: find the picture Louder Than Bombs
+# text RU: найди кино Громче, чем бомбы
+# intent: SearchCreativeWork
+# slots: 7:10:object_type, 12:17:object_name
+1	найди	SearchCreativeWork	O
+2	кино	SearchCreativeWork	B-object_type
+3	Громче	SearchCreativeWork	B-object_name
+4	,	SearchCreativeWork	O
+5	чем	SearchCreativeWork	I-object_name
+6	бомбы	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: Give 2 out of 6 points to A Tale of Time City
+# text RU: Дай 2 из 6 баллов A Tale of Time City
+# intent: RateBook
+# slots: 5:5:rating_value, 10:10:best_rating, 12:17:rating_unit, 19:37:object_name
+1	Дай	RateBook	O
+2	2	RateBook	B-rating_value
+3	из	RateBook	O
+4	6	RateBook	B-best_rating
+5	баллов	RateBook	B-rating_unit
+6	A	RateBook	B-object_name
+7	Tale	RateBook	I-object_name
+8	of	RateBook	I-object_name
+9	Time	RateBook	I-object_name
+10	City	RateBook	I-object_name
+
+# annotator: Angelina
+# text EN: add this current book five stars
+# text RU: добавь текущей книге пять звезд
+# intent: RateBook
+# slots: 8:14:object_select, 16:20:object_type, 22:25:rating_value, 27:31:rating_unit
+1	добавь	RateBook	O
+2	текущей	RateBook	B-object_select
+3	книге	RateBook	B-object_type
+4	пять	RateBook	B-rating_value
+5	звезд	RateBook	B-rating_unit
+
+# annotator: Angelina
+# text EN: add track 70s smash hits to my
+# text RU: добавь трек в мой 70s smash hits
+# intent: AddToPlaylist
+# slots: 8:11:music_item, 15:17:reference, 19:32:playlist
+1	добавь	AddToPlaylist	O
+2	трек	AddToPlaylist	B-music_item
+3	в	AddToPlaylist	O
+4	мой	AddToPlaylist	B-reference
+5	70s	AddToPlaylist	B-playlist
+6	smash	AddToPlaylist	I-playlist
+7	hits	AddToPlaylist	I-playlist
+
+# annotator: Angelina
+# text EN: book near Montana restaurant serving sri lankan food for 6 that is highly rated on tues.
+# text RU: забронируй около Монтаны ресторан, подающий шри-ланкинскую кухню на 6-х, который высоко оценен, на вторник.
+# intent: BookRestaurant
+# slots: 12:16:location, 18:24:location, 26:33:restaurant_type, 45:58:cuisine, 69:71:party_size_number, 82:94:sort, 100:107:datetime
+1	забронируй	BookRestaurant	O
+2	около	BookRestaurant	B-location
+3	Монтаны	BookRestaurant	B-location
+4	ресторан	BookRestaurant	B-restaurant_type
+5	,	BookRestaurant	O
+6	подающий	BookRestaurant	O
+7	шри-ланкинскую	BookRestaurant	B-cuisine
+8	кухню	BookRestaurant	O
+9	на	BookRestaurant	O
+10	6-х	BookRestaurant	B-party_size_number
+11	,	BookRestaurant	O
+12	который	BookRestaurant	O
+13	высоко	BookRestaurant	B-sort
+14	оценен	BookRestaurant	I-sort
+15	,	BookRestaurant	O
+16	на	BookRestaurant	O
+17	вторник.	BookRestaurant	B-datetime
+
+# annotator: Angelina
+# text EN: Book me a lunch at Boreas for a party of 8
+# text RU: Забронируй мне обед в Boreas на 8-х
+# intent: BookRestaurant
+# slots: 16:19:datetime, 23:28:restaurant_name, 33:35:party_size_number
+1	Забронируй	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	обед	BookRestaurant	B-datetime
+4	в	BookRestaurant	O
+5	Boreas	BookRestaurant	B-restaurant_name
+6	на	BookRestaurant	O
+7	8-х	BookRestaurant	B-party_size_number
+
+# annotator: Angelina
+# text EN: Please put another tune into the laundry playlist.
+# text RU: Пожалуйтса, включи другую мелодию в laundry плейлист.
+# intent: AddToPlaylist
+# slots: 27:33:music_item, 37:43:playlist
+1	Пожалуйста	AddToPlaylist	O
+2	,	AddToPlaylist	O
+3	включи	AddToPlaylist	O
+4	другую	AddToPlaylist	O
+5	мелодию	AddToPlaylist	B-music_item
+6	в	AddToPlaylist	O
+7	laundry	AddToPlaylist	B-playlist
+8	плейлист.	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: what is the PW forecast for stormy weather
+# text RU: какой в PW прогноз на штормовую погоду
+# intent: weather/find
+# slots: 9:10:location, 23:31:condition_description
+1	какой	weather/find	O
+2	в	weather/find	O
+3	PW	weather/find	B-location
+4	прогноз	weather/find	O
+5	на	weather/find	O
+6	штормовую	weather/find	B-condition_description
+7	погоду	weather/find	O
+
+# annotator: Angelina
+# text EN: What is the predicted weather for my current spot next month ?
+# text RU: Какая прогнозируемая погода для моего текущего местонахождения в следующем месяце?
+# intent: weather/find
+# slots: 39:62:location, 66:81:datetime
+1	Какая	weather/find	O
+2	прогнозируемая	weather/find	O
+3	погода	weather/find	O
+4	для	weather/find	O
+5	моего	weather/find	O
+6	текущего	weather/find	B-location
+7	местонахождения	weather/find	I-location
+8	в	weather/find	O
+9	следующем	weather/find	B-datetime
+10	месяце	weather/find	I-datetime
+11	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Book a reservation for 1 on march 17
+# text RU: Забронируй столик на одного на март 17
+# intent: BookRestaurant
+# slots: 22:27:party_size_number, 32:38:datetime
+1	Забронируй	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	на	BookRestaurant	O
+4	одного	BookRestaurant	B-party_size_number
+5	на	BookRestaurant	O
+6	март	BookRestaurant	B-datetime
+7	17	BookRestaurant	I-datetime
+
+# annotator: Angelina
+# text EN: The current album gets three out of 6 points
+# text RU: Текущий альбом получает три из 6 баллов
+# intent: RateBook
+# slots: 1:7:object_select, 9:14:object_type, 25:27:rating_value, 32:32:best_rating, 34:39:rating_unit
+1	Текущий	RateBook	B-object_select
+2	альбом	RateBook	B-object_type
+3	получает	RateBook	O
+4	три	RateBook	B-rating_value
+5	из	RateBook	O
+6	6	RateBook	B-best_rating
+7	баллов	RateBook	B-rating_unit
+
+# annotator: Angelina
+# text EN: Add the Nastya Kamenskih song to my The Martin Garrix Show playlist.
+# text RU: Добавь песню Насти Каменских в мой The Martin Garrix Show плейлист.
+# intent: AddToPlaylist
+# slots: 8:12:music_item, 14:28:artist, 32:34:reference, 36:57:playlist
+1	Добавь	AddToPlaylist	O
+2	песню	AddToPlaylist	B-music_item
+3	Насти	AddToPlaylist	B-artist
+4	Каменских	AddToPlaylist	I-artist
+5	в	AddToPlaylist	O
+6	мой	AddToPlaylist	B-reference
+7	The	AddToPlaylist	B-playlist
+8	Martin	AddToPlaylist	I-playlist
+9	Garrix	AddToPlaylist	I-playlist
+10	Show	AddToPlaylist	I-playlist
+11	плейлист.	AddToPlaylist	O
+
+# annotator: Angelina
+# text EN: Wish to hear the album Since I Saw You Last
+# text RU: Хочу услышать альбом Since I Saw You Last
+# intent: SearchCreativeWork
+# slots: 15:20:object_type, 22:41:object_name
+1	Хочу	SearchCreativeWork	O
+2	услышать	SearchCreativeWork	O
+3	альбом	SearchCreativeWork	B-object_type
+4	Since	SearchCreativeWork	B-object_name
+5	I	SearchCreativeWork	I-object_name
+6	Saw	SearchCreativeWork	I-object_name
+7	You	SearchCreativeWork	I-object_name
+8	Last	SearchCreativeWork	I-object_name
+
+# annotator: Angelina
+# text EN: play top tunes by Joseph Utsler
+# text RU: сыграй лучшие мелодии Joseph Utsler
+# intent: PlayMusic
+# slots: 8:13:sort, 23:35:artist
+1	сыграй	PlayMusic	O
+2	лучшие	PlayMusic	B-sort
+3	мелодии	PlayMusic	O
+4	Joseph	PlayMusic	B-artist
+5	Utsler	PlayMusic	I-artist
+
+# annotator: Angelina
+# text EN: Find the schedule for Ghost World .
+# text RU: Найди расписание показа Ghost World .
+# intent: SearchScreeningEvent
+# slots: 7:16:object_type, 25:35:movie_name
+1	Найди	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	показа	SearchScreeningEvent	O
+4	Ghost	SearchScreeningEvent	B-movie_name
+5	World	SearchScreeningEvent	I-movie_name
+6	.	SearchScreeningEvent	O
+
+# annotator: Angelina
+# text EN: I want to listen to a concerto from Timour Moutsouraev .
+# text RU: Я хочу послушать концерт Тимура Муцураева .
+# intent: PlayMusic
+# slots: 18:24:music_item, 26:41:artist
+1	Я	PlayMusic	O
+2	хочу	PlayMusic	O
+3	послушать	PlayMusic	O
+4	концерт	PlayMusic	B-music_item
+5	Тимура	PlayMusic	B-artist
+6	Муцураева	PlayMusic	I-artist
+7	.	PlayMusic	O
+
+# annotator: Angelina
+# text EN: play the album Everybody Happy by Lee Aaron
+# text RU: включи альбом Everybody Happy от Lee Aaron
+# intent: PlayMusic
+# slots: 8:13:music_item, 15:29:album, 34:42:artist
+1	включи	PlayMusic	O
+2	альбом	PlayMusic	B-music_item
+3	Everybody	PlayMusic	B-album
+4	Happy	PlayMusic	I-album
+5	от	PlayMusic	O
+6	Lee	PlayMusic	B-artist
+7	Aaron	PlayMusic	I-artist
+
+# annotator: Angelina
+# text EN: play Fereydoun Farrokhzad best track
+# text RU: включи лучший трек Ферейдуна Фаррохзада
+# intent: PlayMusic
+# slots: 8:13:sort, 15:18:music_item, 20:39:artist
+1	включи	PlayMusic	O
+2	лучший	PlayMusic	B-sort
+3	трек	PlayMusic	B-music_item
+4	Ферейдуна	PlayMusic	B-artist
+5	Фаррохзада	PlayMusic	I-artist
+
+# annotator: Angelina
+# text EN: rate the current book three stars
+# text RU: оцени текущую книгу на три звезды
+# intent: RateBook
+# slots: 7:13:object_select, 15:19:object_type, 24:26:rating_value, 28:33:rating_unit
+1	оцени	RateBook	O
+2	текущую	RateBook	B-object_select
+3	книгу	RateBook	B-object_type
+4	на	RateBook	O
+5	три	RateBook	B-rating_value
+6	звезды	RateBook	B-rating_unit
+
+# annotator: Angelina
+# text EN: What will the weather be in Meeres-Nationalpark Insel Bastimentos at twelve PM ?
+# text RU: Какая будет погода в Meeres-Nationalpark Insel Bastimentos в 12 дня ?
+# intent: weather/find
+# slots: 22:58:location, 62:67:datetime
+1	Какая	weather/find	O
+2	будет	weather/find	O
+3	погода	weather/find	O
+4	в	weather/find	O
+5	Meeres-Nationalpark	weather/find	B-location
+6	Insel	weather/find	I-location
+7	Bastimentos	weather/find	I-location
+8	в	weather/find	O
+9	12	weather/find	B-datetime
+10	дня	weather/find	I-datetime
+11	?	weather/find	O
+
+# annotator: Angelina
+# text EN: Book a table for 10 people at a restaurant which offers internet .
+# text RU: Забронируй стол на 10 человек в ресторане, который предоставляет интернет .
+# intent: BookRestaurant
+# slots: 20:21:party_size_number, 33:41:restaurant_type, 66:73:facility
+1	Забронируй	BookRestaurant	O
+2	стол	BookRestaurant	O
+3	на	BookRestaurant	O
+4	10	BookRestaurant	B-party_size_number
+5	человек	BookRestaurant	O
+6	в	BookRestaurant	O
+7	ресторане	BookRestaurant	B-restaurant_type
+8	,	BookRestaurant	O
+9	который	BookRestaurant	O
+10	предоставляет	BookRestaurant	O
+11	интернет	BookRestaurant	B-facility
+12	.	BookRestaurant	O
+
+# annotator: Angelina
+# text EN: give five points to The Tenor Wore Tapshoes
+# text RU: дай 5 баллов The Tenor Wore Tapshoes
+# intent: RateBook
+# slots: 5:5:rating_value, 7:12:rating_unit, 14:36:object_name
+1	дай	RateBook	O
+2	5	RateBook	B-rating_value
+3	баллов	RateBook	B-rating_unit
+4	The	RateBook	B-object_name
+5	Tenor	RateBook	I-object_name
+6	Wore	RateBook	I-object_name
+7	Tapshoes	RateBook	I-object_name
+
+# annotator: Angelina
+# text EN: Play a tune by Houston on Spotify
+# text RU: Включи мелодии Houston в Spotify
+# intent: PlayMusic
+# slots: 8:14:music_item, 16:22:artist, 26:32:service
+1	Включи	PlayMusic	O
+2	мелодии	PlayMusic	B-music_item
+3	Houston	PlayMusic	B-artist
+4	в	PlayMusic	O
+5	Spotify	PlayMusic	B-service
+
+# annotator: Angelina
+# text EN: find a movie theatre with Life and Death
+# text RU: найди кинотеатр с Life and Death
+# intent: SearchScreeningEvent
+# slots: 7:15:object_location_type, 19:32:movie_name
+1	найди	SearchScreeningEvent	O
+2	кинотеатр	SearchScreeningEvent	B-object_location_type
+3	с	SearchScreeningEvent	O
+4	Life	SearchScreeningEvent	B-movie_name
+5	and	SearchScreeningEvent	I-movie_name
+6	Death	SearchScreeningEvent	I-movie_name
+
+# annotator: Angelina
+# text EN: Play music from the playlist Get Your Mind Right
+# text RU: Включи музыку из плейлиста Get Your Mind Right
+# intent: PlayMusic
+# slots: 28:46:playlist
+1	Включи	PlayMusic	O
+2	музыку	PlayMusic	O
+3	из	PlayMusic	O
+4	плейлиста	PlayMusic	O
+5	Get	PlayMusic	B-playlist
+6	Your	PlayMusic	I-playlist
+7	Mind	PlayMusic	I-playlist
+8	Right	PlayMusic	I-playlist
+
+# annotator: Angelina
+# text EN: book a table today at a steakhouse for eight that serves sashimi
+# text RU: забронируй столик сегодня в стейкхаусе на восьмерых, где подают сашими
+# intent: BookRestaurant
+# slots: 19:25:datetime, 29:38:restaurant_type, 43:51:party_size_number, 65:70:served_dish
+1	забронируй	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	сегодня	BookRestaurant	B-datetime
+4	в	BookRestaurant	O
+5	стейкхаусе	BookRestaurant	B-restaurant_type
+6	на	BookRestaurant	O
+7	восьмерых	BookRestaurant	B-party_size_number
+8	,	BookRestaurant	O
+9	где	BookRestaurant	O
+10	подают	BookRestaurant	O
+11	сашими	BookRestaurant	B-served_dish
+
+# annotator: Angelina
+# text EN: find animated movies at Caribbean Cinemas
+# text RU: найди анимационные фильмы в Caribbean Cinemas
+# intent: SearchScreeningEvent
+# slots: 7:25:movie_type, 29:45:location
+1	найди	SearchScreeningEvent	O
+2	анимационные	SearchScreeningEvent	B-movie_type
+3	фильмы	SearchScreeningEvent	I-movie_type
+4	в	SearchScreeningEvent	O
+5	Caribbean	SearchScreeningEvent	B-location
+6	Cinemas	SearchScreeningEvent	I-location
+
+# annotator: Angelina
+# text EN: Will there be a storm nearby
+# text RU: Будет ли шторм рядом
+# intent: weather/find
+# slots: 10:14:condition_description, 16:20:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	шторм	weather/find	B-condition_description
+4	рядом	weather/find	B-location
+
+# annotator: Angelina
+# text EN: Play some melody from the eighties on Spotify
+# text RU: Включи какие-нибудь мелодии из восьмидесятых в Spotify
+# intent: PlayMusic
+# slots: 21:27:music_item, 32:44:datetime, 48:54:service
+1	Включи	PlayMusic	O
+2	какие-нибудь	PlayMusic	O
+3	мелодии	PlayMusic	B-music_item
+4	из	PlayMusic	O
+5	восьмидесятых	PlayMusic	B-datetime
+6	в	PlayMusic	O
+7	Spotify	PlayMusic	B-service
+
+# annotator: Angelina
+# text EN: Where can I find The World According to Paris ?
+# text RU: Где я могу найти The World According to Paris 
+# intent: SearchCreativeWork
+# slots: 18:45:object_name
+1	Где	SearchCreativeWork	O
+2	я	SearchCreativeWork	O
+3	могу	SearchCreativeWork	O
+4	найти	SearchCreativeWork	O
+5	The	SearchCreativeWork	B-object_name
+6	World	SearchCreativeWork	I-object_name
+7	According	SearchCreativeWork	I-object_name
+8	to	SearchCreativeWork	I-object_name
+9	Paris	SearchCreativeWork	I-object_name
+10	?	SearchCreativeWork	O
+
+# annotator: Angelina
+# text EN: Tell me when it will be hotter in China
+# text RU: Скажи мне, когда будет жарче в Китае
+# intent: weather/find
+# slots: 24:28:condition_temperature, 32:36:location
+1	Скажи	weather/find	O
+2	мне	weather/find	O
+3	когда	weather/find	O
+4	,	weather/find	O
+5	будет	weather/find	O
+6	жарче	weather/find	B-condition_temperature
+7	в	weather/find	O
+8	Китае	weather/find	B-location
+
+# annotator: Angelina
+# text EN: What are the movie times for the Caribbean Cinemas ?
+# text RU: Какое расписание фильмов в Caribbean Cinemas ?
+# intent: SearchScreeningEvent
+# slots: 7:24:object_type, 28:44:location
+1	Какое	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	фильмов	SearchScreeningEvent	I-object_type
+4	в	SearchScreeningEvent	O
+5	Caribbean	SearchScreeningEvent	B-location
+6	Cinemas	SearchScreeningEvent	I-location
+7	?	SearchScreeningEvent	O
+
+# annotator: Angelina
+# text EN: Will the wind die down at my current location by supper time?
+# text RU: Стихнет ли ветер в моей текущей локации к ужину?
+# intent: weather/find
+# slots: 12:16:condition_description, 25:39:location, 43:48:datetime
+1	Стихнет	weather/find	O
+2	ли	weather/find	O
+3	ветер	weather/find	B-condition_description
+4	в	weather/find	O
+5	моей	weather/find	O
+6	текущей	weather/find	B-location
+7	локации	weather/find	I-location
+8	к	weather/find	O
+9	ужину?	weather/find	B-datetime
+
+# annotator: Angelina
+# text EN: Find me The Twinkler playing at National Amusements in 2 minutes
+# text RU: Найди мне показ The Twinkler в National Amusements через 2 минуты
+# intent: SearchScreeningEvent
+# slots: 17:28:movie_name, 32:50:location, 52:65:datetime
+1	Найди	SearchScreeningEvent	O
+2	мне	SearchScreeningEvent	O
+3	показ	SearchScreeningEvent	O
+4	The	SearchScreeningEvent	B-movie_name
+5	Twinkler	SearchScreeningEvent	I-movie_name
+6	в	SearchScreeningEvent	O
+7	National	SearchScreeningEvent	B-location
+8	Amusements	SearchScreeningEvent	I-location
+9	через	SearchScreeningEvent	B-datetime
+10	2	SearchScreeningEvent	I-datetime
+11	минуты	SearchScreeningEvent	I-datetime
+
+# annotator: Angelina
+# text EN: I give Hadon of Ancient Opar two out of 6 points
+# text RU: Я дам Hadon of Ancient Opar два из 6 баллов
+# intent: RateBook
+# slots: 7:27:object_name, 29:31:rating_value, 36:36:best_rating, 38:43:rating_unit
+1	Я	RateBook	O
+2	дам	RateBook	O
+3	Hadon	RateBook	B-object_name
+4	of	RateBook	I-object_name
+5	Ancient	RateBook	I-object_name
+6	Opar	RateBook	I-object_name
+7	два	RateBook	B-rating_value
+8	из	RateBook	O
+9	6	RateBook	B-best_rating
+10	баллов	RateBook	B-rating_unit
+
+# annotator: Angelina
+# text EN: I'm looking to bring shawn, marguerite and della to a place to eat at near Rwanda .
+# text RU: Я собираюсь сводить Шона, Маргариту и Деллу поесть недалеко от Руанды .
+# intent: BookRestaurant
+# slots: 21:43:party_size_description, 52:62:location, 64:69:location
+1	Я	BookRestaurant	O
+2	собираюсь	BookRestaurant	O
+3	сводить	BookRestaurant	O
+4	Шона,	BookRestaurant	B-party_size_description
+5	Маргариту	BookRestaurant	I-party_size_description
+6	и	BookRestaurant	I-party_size_description
+7	Деллу	BookRestaurant	I-party_size_description
+8	поесть	BookRestaurant	O
+9	недалеко	BookRestaurant	B-location
+10	от	BookRestaurant	I-location
+11	Руанды	BookRestaurant	B-location
+12	.	BookRestaurant	O
+
+# annotator: Angelina
+# text EN: Play music on Lastfm
+# text RU: Включи музыку на Lastfm
+# intent: PlayMusic
+# slots: 18:23:service
+1	Включи	PlayMusic	O
+2	музыку	PlayMusic	O
+3	на	PlayMusic	O
+4	Lastfm	PlayMusic	B-service
