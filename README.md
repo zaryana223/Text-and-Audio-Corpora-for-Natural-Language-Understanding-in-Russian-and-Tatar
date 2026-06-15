@@ -57,22 +57,3 @@ python run_metrics.py \
 | Validation (per variant) | 300 | 300 |
 | Training (deduplicated) | 37,173 | 37,173 |
 | Audio (test + val) | 800 | 800 |
-
-Russian spoken benchmark **ruSLUn** is also distributed via [MERA Multi](https://github.com/ai-forever/MERA).
-
----
-
-## Citation
-
-```bibtex
-@inproceedings{vandergoot2021masked,
-  title={Massive Choice, Ample Tasks ({MA}t{AMPA}): A New Dataset for Massive Multilingual {NLU}},
-  author={van der Goot, Rob and others},
-  booktitle={ACL-IJCNLP},
-  year={2021}
-}
-```
-
-## License
-
-MIT — see [LICENSE](LICENSE).
