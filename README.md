@@ -3,7 +3,7 @@
 Anonymous release for the ICNLSP 2026 paper.  
 **Anonymous view:** [anonymous.4open.science](https://anonymous.4open.science/r/Text-and-Audio-Corpora-for-Natural-Language-Understanding-in-Russian-and-Tatar-0151)
 
-Parallel task-oriented NLU corpora (intent detection + BIO slot filling) for **Russian** and **Tatar**, built on the [xSID]((https://github.com/mainlp/xsid.git)) schema.
+Parallel task-oriented NLU corpora (intent detection + BIO slot filling) for **Russian** and **Tatar**, built on the [xSID](https://github.com/mainlp/xsid.git) schema. schema. 
 
 ---
 
