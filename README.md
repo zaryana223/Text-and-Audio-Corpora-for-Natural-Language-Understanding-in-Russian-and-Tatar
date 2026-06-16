@@ -3,7 +3,7 @@
 Anonymous release for the ICNLSP 2026 paper.  
 **Anonymous view:** [anonymous.4open.science](https://anonymous.4open.science/r/Text-and-Audio-Corpora-for-Natural-Language-Understanding-in-Russian-and-Tatar-0151)
 
-Parallel task-oriented NLU corpora (intent detection + BIO slot filling) for **Russian** and **Tatar**, built on the [xSID](https://github.com/facebookresearch/xsid) schema.
+Parallel task-oriented NLU corpora (intent detection + BIO slot filling) for **Russian** and **Tatar**, built on the [xSID]([https://github.com/facebookresearch/xsid](https://github.com/mainlp/xsid.git)) schema.
 
 ---
 
@@ -41,7 +41,6 @@ python run_metrics.py \
 | Metric | Description |
 |--------|-------------|
 | Intent Accuracy | Fraction of correct intents |
-| Intent F1 (weighted) | Weighted F1 over intent classes |
 | Span F1 | BIO span F1 ([seqeval](https://github.com/chakki-works/seqeval)) |
 | Slot F1 (/N) | Mean per-utterance BIO F1 (ASR→NLU pipeline) |
 | Avg. | `(Intent F1 + Span F1) / 2` |
