@@ -1,33 +1,33 @@
-# Ноутбук `zero_shot+few_shot_version.ipynb`
+# Notebook `zero_shot+few_shot_version.ipynb`
 
-Оценка **генеративных LLM** на русском NLU без дообучения: модель получает промпт и возвращает JSON `{intent, slots}`. Тест — `ru.test.conll` (532 реплики после фильтрации интентов из списка `INTENTS`).
+Zero-shot and few-shot evaluation of **generative LLMs** on Russian NLU without fine-tuning. The model receives a prompt and returns JSON `{intent, slots}`. The test split is `ru.test.conll` (532 utterances after filtering to the `INTENTS` list).
 
-Результаты по моделям и сценариям собираются в `generative_error_analysis_tables.xlsx` (папка `data/errors/`).
-
----
-
-## 1. Режимы эксперимента
-
-| Режим | Флаг | Что подаётся модели | Зачем |
-|--------|------|---------------------|--------|
-| **Zero-shot** | `RUN_ZERO_SHOT = True` | Только `SYSTEM_PROMPT` + текст реплики | Базовая способность LLM без примеров |
-| **Few-shot** | `RUN_FEWSHOT = True` | Промпт + 1–10 пар «запрос → JSON» из train + тестовая реплика | Проверка, помогают ли демонстрации из `ru.train.conll` |
-
-Общие настройки в начале ноутбука:
-
-| Параметр | Назначение |
-|----------|------------|
-| `ACTIVE_MODEL` | Какая модель грузится из `MODEL_REGISTRY` (например `Phi-4-mini-instruct`) |
-| `DEFAULT_QUANT` | Квантизация: `4bit` или `fp16` |
-| `SMOKE_N` | Если > 0 — взять только первые N реплик теста (быстрая проверка) |
-| `SAVE_DIR` | Куда пишутся логи и метрики (Colab: Google Drive `nlu_results`) |
+Results are aggregated in `data/errors/generative_error_analysis_tables.xlsx`.
 
 ---
 
-## 2. Модели (`MODEL_REGISTRY`)
+## 1. Experiment modes
 
-| Ключ в ноутбуке | Hugging Face ID | Семейство чата |
-|-----------------|-----------------|----------------|
+| Mode | Flag | Model input | Goal |
+|------|------|-------------|------|
+| **Zero-shot** | `RUN_ZERO_SHOT = True` | `SYSTEM_PROMPT` + utterance only | Baseline LLM capability without examples |
+| **Few-shot** | `RUN_FEWSHOT = True` | Prompt + 1–10 train pairs (query → JSON) + test utterance | Whether in-domain demos from `ru.train.conll` help |
+
+Global settings at the top of the notebook:
+
+| Parameter | Purpose |
+|-----------|---------|
+| `ACTIVE_MODEL` | Model key in `MODEL_REGISTRY` (e.g. `Phi-4-mini-instruct`) |
+| `DEFAULT_QUANT` | Quantization: `4bit` or `fp16` |
+| `SMOKE_N` | If > 0, use only the first N test utterances (smoke test) |
+| `SAVE_DIR` | Output directory for logs and metrics (Colab: Google Drive `nlu_results`) |
+
+---
+
+## 2. Models (`MODEL_REGISTRY`)
+
+| Notebook key | Hugging Face ID | Chat template |
+|--------------|-----------------|---------------|
 | `Qwen2.5-3B-Instruct` | Qwen/Qwen2.5-3B-Instruct | qwen |
 | `Qwen2.5-7B-Instruct` | Qwen/Qwen2.5-7B-Instruct | qwen |
 | `google/gemma-2-2b-it` | google/gemma-2-2b-it | gemma |
@@ -35,23 +35,23 @@
 | `Phi-4-mini-instruct` | microsoft/Phi-4-mini-instruct | qwen |
 | `Mistral-7B-Instruct-v0.3` | mistralai/Mistral-7B-Instruct-v0.3 | qwen |
 
-Для **Gemma** системный промпт вставляется в одно user-сообщение; для Qwen/Mistral/Phi — отдельные роли `system` и `user`.
+For **Gemma**, the system prompt is folded into a single user message; for Qwen/Mistral/Phi, separate `system` and `user` roles are used.
 
 ---
 
-## 3. Zero-shot: как устроен код
+## 3. Zero-shot pipeline
 
-| Шаг | Функция / блок | Действие |
-|-----|----------------|----------|
-| 1 | `SYSTEM_PROMPT` | Список 16 интентов, слотов и правил (JSON на выходе, без выдуманных слотов) |
-| 2 | `parse_conll_to_dicts` | Чтение `ru.test.conll` → текст, gold intent, gold slots, BIO |
-| 3 | `load_model` | Загрузка LLM (4-bit через `bitsandbytes`, GPU) |
-| 4 | `_build_messages_zeroshot(text)` | Сборка chat-сообщений без примеров |
-| 5 | `_generate` → `_parse_output` | `model.generate` → разбор JSON intent/slots |
-| 6 | `generate_prediction_zeroshot(text)` | Обёртка для одной реплики |
-| 7 | `run_evaluation(..., "zero_shot")` | Прогон по всему тесту + метрики |
+| Step | Function / block | Action |
+|------|------------------|--------|
+| 1 | `SYSTEM_PROMPT` | 16 intents, slot types, JSON output rules |
+| 2 | `parse_conll_to_dicts` | Read `ru.test.conll` → text, gold intent, gold slots, BIO |
+| 3 | `load_model` | Load LLM (4-bit via `bitsandbytes`, GPU) |
+| 4 | `_build_messages_zeroshot(text)` | Chat messages without examples |
+| 5 | `_generate` → `_parse_output` | `model.generate` → parse JSON intent/slots |
+| 6 | `generate_prediction_zeroshot(text)` | Single-utterance wrapper |
+| 7 | `run_evaluation(..., "zero_shot")` | Full test run + metrics |
 
-**Запуск одного эксперимента:**
+**Single run:**
 
 ```python
 run_evaluation(generate_prediction_zeroshot, "zero_shot", model_name=MODEL_NAME)
@@ -59,81 +59,81 @@ run_evaluation(generate_prediction_zeroshot, "zero_shot", model_name=MODEL_NAME)
 
 ---
 
-## 4. Few-shot: как устроен код
+## 4. Few-shot pipeline
 
-| Шаг | Функция / блок | Действие |
-|-----|----------------|----------|
-| 1 | `FEWSHOT_CONFIGS` | Набор интентов, для которых нужны примеры |
-| 2 | `get_fewshot_examples(intents)` | По каждому интенту — одна «богатая» реплика из `ru.train.conll` (много слотов) |
-| 3 | `_build_messages_fewshot(text, examples)` | В историю чата: user → assistant (JSON) для каждого примера, затем тест |
-| 4 | `generate_prediction_fewshot(text, examples)` | Генерация с подсказками |
-| 5 | `run_evaluation(lambda t, ex=examples: generate_prediction_fewshot(t, ex), exp_type, fewshot_examples=examples)` | Отдельная папка результатов на конфигурацию |
+| Step | Function / block | Action |
+|------|------------------|--------|
+| 1 | `FEWSHOT_CONFIGS` | Intent set for demonstration mining |
+| 2 | `get_fewshot_examples(intents)` | One slot-rich train example per intent from `ru.train.conll` |
+| 3 | `_build_messages_fewshot(text, examples)` | Chat history: user → assistant (JSON) per demo, then test |
+| 4 | `generate_prediction_fewshot(text, examples)` | Generation with demonstrations |
+| 5 | `run_evaluation(...)` | Separate output folder per configuration |
 
-### Конфигурации few-shot
+### Few-shot configurations
 
-| ID эксперимента (`exp_type`) | Интенты в примерах | Смысл |
-|------------------------------|-------------------|--------|
-| `few_shot_1_popular` | `weather/find` | 1 пример — самый частый интент |
-| `few_shot_1_problem` | `SearchScreeningEvent` | 1 пример — интент с частыми ошибками |
-| `few_shot_1_slots` | `BookRestaurant` | 1 пример — много слотов |
-| `few_shot_5` | 5 интентов (погода, ресторан, кино, будильник, напоминание) | Короткий набор |
-| `few_shot_10` | 10 разных интентов | Расширенный набор |
+| Experiment ID (`exp_type`) | Demo intents | Rationale |
+|----------------------------|--------------|-----------|
+| `few_shot_1_popular` | `weather/find` | Most frequent intent |
+| `few_shot_1_problem` | `SearchScreeningEvent` | Error-prone intent |
+| `few_shot_1_slots` | `BookRestaurant` | Slot-rich intent |
+| `few_shot_5` | 5 intents (weather, restaurant, movie, alarm, reminder) | Short set |
+| `few_shot_10` | 10 distinct intents | Extended set |
 
-Имя папки на диске: `{SAVE_DIR}/{exp_type}/{MODEL_NAME}/`.
+On-disk layout: `{SAVE_DIR}/{exp_type}/{MODEL_NAME}/`.
 
 ---
 
-## 5. Сравнение zero-shot и few-shot
+## 5. Zero-shot vs. few-shot
 
 | | Zero-shot | Few-shot |
 |---|-----------|----------|
-| Примеры в промпте | Нет | 1–10 реплик из train |
-| Папка результатов | `zero_shot/<модель>/` | `few_shot_* /<модель>/` |
-| Доп. файл | — | `fewshot_examples.json` (какие примеры использовались) |
-| Ожидаемый эффект в ВКР | Базовый уровень | Небольшой прирост по интентам; слоты всё равно слабее энкодеров |
+| Examples in prompt | No | 1–10 train utterances |
+| Output folder | `zero_shot/<model>/` | `few_shot_* /<model>/` |
+| Extra file | — | `fewshot_examples.json` |
+| Typical effect | Baseline | Small intent gains; slots still weaker than encoders |
 
 ---
 
-## 6. Метрики (`run_evaluation`)
+## 6. Metrics (`run_evaluation`)
 
-| Метрика | Уровень | Описание |
-|---------|---------|----------|
-| Intent Accuracy | реплика | Доля верных интентов |
-| Intent F1 macro / weighted | реплика | sklearn `f1_score` по классам |
-| Slot Precision / Recall / F1 | span (тип + значение) | Совпадение множеств спанов в тексте |
-| Slot F1 (seqeval) | BIO-последовательность | Span F1 по токенам (как у энкодеров) |
-| Joint (в сводках ВКР) | — | Обычно `(Intent F1 weighted + Span F1) / 2` из `metrics_summary.json` |
+| Metric | Level | Description |
+|--------|-------|-------------|
+| Intent Accuracy | utterance | Fraction of correct intents |
+| Intent F1 macro / weighted | utterance | sklearn `f1_score` over classes |
+| Slot Precision / Recall / F1 | span (type + value) | Exact span set match |
+| Slot F1 (seqeval) | BIO sequence | Token-level span F1 (same as encoders) |
+| Joint (paper) | — | `(Intent F1 weighted + Span F1) / 2` from `metrics_summary.json` |
 
-Дополнительно помечаются «слабые» интенты/слоты (редкие в train, порог 500 вхождений).
-
----
-
-## 7. Выходные файлы (на один прогон)
-
-| Файл | Содержание |
-|------|------------|
-| `metrics_summary.json` | Сводные метрики эксперимента |
-| `results.csv` | По каждой реплике: текст, gold/pred intent, слоты, confidence |
-| `log.txt` | Подробный лог |
-| `per_slot_bio.csv` | F1 по типам слотов (seqeval) |
-| `per_slot_span.csv` | F1 по типам слотов (строгое совпадение span) |
-| `fewshot_examples.json` | Только для few-shot: тексты примеров |
-| `checkpoint.json` | Промежуточное сохранение каждые 10 реплик (можно продолжить) |
-
-Сводка по всем экспериментам модели: `summary_<MODEL_NAME>.csv` в `SAVE_DIR`.
+Rare intents/slots in train (threshold 500) are flagged as weak categories.
 
 ---
 
-## 8. Зависимости и окружение
+## 7. Output files (per run)
 
-`transformers`, `accelerate`, `bitsandbytes`, `torch`, `pandas`, `seqeval`, `scikit-learn`, `tqdm`. Рекомендуется GPU (в ноутбуке — Colab L4). Для gated-моделей — токен Hugging Face (`HF_TOKEN`).
+| File | Content |
+|------|---------|
+| `metrics_summary.json` | Aggregated metrics |
+| `results.csv` | Per utterance: text, gold/pred intent, slots, confidence |
+| `log.txt` | Verbose log |
+| `per_slot_bio.csv` | Per-slot F1 (seqeval) |
+| `per_slot_span.csv` | Per-slot F1 (strict span match) |
+| `fewshot_examples.json` | Few-shot only: demonstration texts |
+| `checkpoint.json` | Resume checkpoint every 10 utterances |
+
+Model-level summary: `summary_<MODEL_NAME>.csv` under `SAVE_DIR`.
 
 ---
 
-## Связь с репозиторием
+## 8. Dependencies
 
-| Артефакт | Где |
-|----------|-----|
-| Код экспериментов | [zero_shot+few_shot_version.ipynb](../zero_shot+few_shot_version.ipynb) |
-| Таблицы ошибок LLM | [data/errors/generative_error_analysis_tables.xlsx](../data/errors/generative_error_analysis_tables.xlsx) |
-| Метрики энкодеров / GigaAM | [nlu_metrics/](../nlu_metrics/), [run_metrics.py](../run_metrics.py) |
+`transformers`, `accelerate`, `bitsandbytes`, `torch`, `pandas`, `seqeval`, `scikit-learn`, `tqdm`. GPU recommended (notebook targets Colab L4). Gated models require a Hugging Face token (`HF_TOKEN`).
+
+---
+
+## Repository links
+
+| Artifact | Location |
+|----------|----------|
+| Experiment notebook | [code/generative/zero_shot+few_shot_version.ipynb](../code/generative/zero_shot+few_shot_version.ipynb) |
+| LLM error tables | [data/errors/generative_error_analysis_tables.xlsx](../data/errors/generative_error_analysis_tables.xlsx) |
+| Encoder metrics code | [code/metrics/nlu_metrics/](../code/metrics/nlu_metrics/), [code/metrics/run_metrics.py](../code/metrics/run_metrics.py) |

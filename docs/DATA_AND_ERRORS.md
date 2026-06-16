@@ -1,62 +1,56 @@
-# Папка `data/errors/`: таблицы из ВКР
+# Folder `data/errors/`: validation and error-analysis spreadsheets
 
-Готовые **Excel-файлы** для разбора метрик и ошибок. Код пересчёта — в `nlu_metrics/` и `run_metrics.py` (см. README).
+Pre-computed **Excel workbooks** for metric review and error analysis. To recompute from CoNLL predictions, use `code/metrics/` (`run_metrics.py`, `nlu_metrics/`).
 
 ---
 
-## 1. `метрики_на_валид_данных.xlsx`
+## 1. `validation_metrics.xlsx`
 
-**Зачем:** сводка экспериментов на **validation** (не test): шесть энкодеров, сценарии RU/EN, pivot-языки, татарский train.
+**Purpose:** summary of **validation** experiments (not test): six encoders, RU/EN training setups, pivot languages, Tatar training runs.
 
-**Основные листы:**
+**Main sheets:**
 
-| Лист | Содержание |
-|------|------------|
-| `RU_EN_6models` | 36 конфигураций: сценарий, энкодер, Intent/Slots accuracy, Sum, лучшая эпоха |
-| `Languages_mDeBERTa` | Pivot-обучение по языкам → русский val |
-| `Raw_translated_val` / `Raw_adapted_val` | Сырые строки по каждому прогону (файл метрик, эпоха) |
-| `Pivot_Intent`, `Pivot_Slots`, `Pivot_Sum` | Сводные pivot-таблицы |
+| Sheet | Content |
+|-------|---------|
+| `RU_EN_6models` | 36 configs: scenario, encoder, intent/slot accuracy, sum, best epoch |
+| `Languages_mDeBERTa` | Pivot training by source language → Russian validation |
+| `Raw_translated_val` / `Raw_adapted_val` | Raw rows per run (metrics file, epoch) |
+| `Pivot_Intent`, `Pivot_Slots`, `Pivot_Sum` | Pivot summary tables |
 
-**Как использовать:** для сравнения train/val сценариев и выбора лучшей эпохи до оценки на test.
+**Use when:** comparing train/validation scenarios and selecting the best epoch before test evaluation.
 
 ---
 
 ## 2. `ERRORS_mdeberta_trans_trans_RU_best_val.xlsx`
 
-**Зачем:** разбор **ошибок** mDeBERTa-v3-base на validation (trans train → trans val, русский).
+**Purpose:** error breakdown for mDeBERTa-v3-base on validation (translated train → translated val, Russian).
 
-**Листы:** Сводка · F1 по интентам · Путаницы интентов · Ошибки интентов · Ошибки слотов · Худшие реплики.
+**Sheets:** Summary · per-intent F1 · intent confusion · intent errors · slot errors · worst utterances.
 
-**Как использовать:** типичные путаницы интентов и проблемные слоты перед переносом на test.
+**Use when:** identifying typical intent confusions and problematic slots before test runs.
 
 ---
 
 ## 3. `generative_error_analysis_tables.xlsx`
 
-**Зачем:** метрики и ошибки **генеративных LLM** (zero-shot, few-shot): Qwen, Gemma, Phi и др.
+**Purpose:** metrics and errors for **generative LLMs** (zero-shot, few-shot): Qwen, Gemma, Phi, etc.
 
-**Блоки листов:**
+**Sheet groups:**
 
-| Префикс | Смысл |
-|---------|--------|
-| `all_runs`, `pivot_*`, `best_*` | Сводные метрики, лучшие конфигурации |
-| `zs_*` | Zero-shot: путаницы, галлюцинации слотов, BIO vs span |
-| `best_*` | Лучший прогон (Gemma-2-9B-it): те же разрезы |
+| Prefix | Meaning |
+|--------|---------|
+| `all_runs`, `pivot_*`, `best_*` | Aggregated metrics, best configurations |
+| `zs_*` | Zero-shot: confusions, slot hallucinations, BIO vs. span |
+| `best_*` | Best run (Gemma-2-9B-it): same breakdowns |
 
-**Как использовать:** раздел про ошибки LLM в ВКР (косвенные запросы, лишние слоты, нормализация текста).
-
----
-
-## Локальный файл с полными метриками (не в репозитории)
-
-В дипломе также ведётся **`аналих_всех_полученных_результатов.xlsx`** (все ~80 конфигураций на test, лист `metrics_summary_detail` с полным набором колонок sklearn/seqeval). Его можно обновлять скриптами из `results/` после новых прогонов.
+**Use when:** writing the LLM error-analysis section (indirect requests, spurious slots, text normalization).
 
 ---
 
-## Быстрый выбор
+## Quick reference
 
-| Задача | Файл |
-|--------|------|
-| Метрики на validation | `метрики_на_валид_данных.xlsx` |
-| Ошибки mDeBERTa на val | `ERRORS_mdeberta_trans_trans_RU_best_val.xlsx` |
-| Ошибки генеративных моделей | `generative_error_analysis_tables.xlsx` |
+| Task | File |
+|------|------|
+| Validation metrics | `validation_metrics.xlsx` |
+| mDeBERTa validation errors | `ERRORS_mdeberta_trans_trans_RU_best_val.xlsx` |
+| Generative model errors | `generative_error_analysis_tables.xlsx` |

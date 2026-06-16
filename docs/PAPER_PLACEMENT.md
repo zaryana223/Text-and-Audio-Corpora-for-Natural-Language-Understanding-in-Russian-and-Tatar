@@ -1,8 +1,8 @@
-# Где вставить ссылку на репозиторий в статье (ICNLSP 2026)
+# Where to cite the repository in the ICNLSP 2026 paper
 
-Замените `ANON_URL` на ваш реальный анонимный URL после публикации на GitHub / 4open.science.
+Replace `ANON_URL` with your real anonymous URL after publishing on GitHub or 4open.science.
 
-В LaTeX удобно один раз определить макрос в преамбуле (уже добавлено в `icnlsp2026.tex`):
+Define a macro once in the preamble (already in `icnlsp2026.tex`):
 
 ```latex
 \newcommand{\anonrepo}{\url{https://anonymous.4open.science/r/ru-tt-nlu-icnlsp2026}}
@@ -10,40 +10,37 @@
 
 ---
 
-## Обязательные места (рекомендуем)
+## Recommended placements
 
-### 1. Section 3 — Corpora (после статистики) — **главное место**
+### 1. Section 3 — Corpora (after statistics) — **primary**
 
-Сразу после абзаца про audio (стр. ~136), перед Table span-length:
+Right after the paragraph on audio (~p. 136), before the span-length table:
 
-> **English:**  
 > *Code, manually annotated benchmarks, and training CoNLL files are available at \anonrepo{}.*
 
-> **Русский смысл:** код, ручные test/val и обучающие CoNLL выложены по ссылке.
-
-Рецензенты ожидают data availability именно в разделе про корпус.
+Reviewers expect data availability in the corpus section.
 
 ### 2. Section 5 — Experimental Setup → Metrics
 
-После первого абзаца про intent accuracy / span F1:
+After the first paragraph on intent accuracy / span F1:
 
 > *We provide a reference implementation of all reported metrics at \anonrepo{} (`code/metrics/`).*
 
-### 3. Conclusion — вместо голого "public release"
+### 3. Conclusion — instead of a vague “public release”
 
-Было: `Future work includes expanded generative evaluation and public release.`
+Replace:
 
-Стало:
+> *Future work includes expanded generative evaluation and public release.*
+
+With:
 
 > *Future work includes expanded generative evaluation; code and data are publicly available at \anonrepo{}.*
 
 ---
 
-## Дополнительно (по желанию)
+## Optional
 
-### Abstract — короткая сноска
-
-Только если есть место (1 строка):
+### Abstract — one line
 
 > *Data and code: \anonrepo{}.*
 
@@ -51,22 +48,22 @@
 
 > *Audio files are distributed via MERA Multi rather than the anonymous repository; see Section 3.4.*
 
-### Camera-ready / после рецензии
+### Camera-ready
 
-- Убрать `[review]` из `\usepackage[review]{acl}`
-- Заменить `\anonrepo` на финальный URL (или Zenodo DOI)
-- В README репозитория добавить bibtex принятой статьи
+- Remove `[review]` from `\usepackage[review]{acl}`
+- Replace `\anonrepo` with the final URL (or Zenodo DOI)
+- Add the accepted paper bibtex to the repository README
 
 ---
 
-## Что писать рецензентам в submission form
+## Submission form
 
 **Data availability:** Yes — anonymous repository  
-**URL:** `<ваш ANON_URL>`  
+**URL:** `<your ANON_URL>`  
 **License:** MIT (code); xSID-derived annotations subject to original xSID terms
 
 ---
 
-## Файл с готовыми LaTeX-фрагментами
+## Ready-made LaTeX fragments
 
-См. `docs/PAPER_SNIPPET.tex` — можно копировать блоки в Overleaf.
+See `docs/PAPER_SNIPPET.tex` for copy-paste blocks in Overleaf.

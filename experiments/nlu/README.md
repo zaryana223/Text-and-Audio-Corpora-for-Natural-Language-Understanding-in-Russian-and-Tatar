@@ -1,60 +1,45 @@
-# Разметка данных для задач понимания естественного языка (NLU) на русском языке
+# Russian NLU experiments (encoders, ASR, metrics)
 
-Здесь хранятся все файлы и коды, которые были использованы в работе с моделями. 
+Notebooks, CoNLL exports, and comparison CSVs used for Russian encoder and ASR→NLU experiments in the ICNLSP 2026 paper.
 
-Данные:
+## Data files
 
-ru.test_adapt.conll - 500 адаптированых тестовых данных датасета xSID-ru
+| File | Description |
+|------|-------------|
+| `ru.test_adapt.conll` | 500 adapted test utterances (xSID-ru) |
+| `ru.valid_adapt.conll` | 300 adapted validation utterances |
+| `xSID-ru/` | Russian xSID test/validation CoNLL (translated from [xSID](https://github.com/mainlp/xsid/tree/main/data/xSID)) |
+| `spoken_test_adapt/` | Recorded adapted **test** audio (500 utterances); used in `speech_recognition_pipeline.ipynb` |
+| `spoken_valid_adapt/` | Recorded adapted **validation** audio (150 utterances); used for Vosk and GigaAM comparison |
+| `cities_test_adapt.conll` | 1,125 city-name examples (generated with `automatic_labeling_data.ipynb`) |
+| `cities_test_adapt.raw.txt` | Same dataset in raw-text form |
+| `cities_test_adapt.raw_0.conll` | mDeBERTa-v3-base predictions |
 
-ru.valid_adapt.conll - 300 адаптированных тестовых данных датасета xSID-ru
+## Prediction and metric artifacts
 
-xSID-ru - датасет, перевод на русский язык датасета [xSID](https://github.com/mainlp/xsid/tree/main/data/xSID), 500 тестовых, 300 валид данных. 
+| File | Description |
+|------|-------------|
+| `comparison_cities.csv` | Gold vs. predicted (cities); scored with `metrics_evaluation.ipynb` |
+| `comparison_gigaAM.csv` | Test set via GigaAM ASR → NLU |
+| `comparison_test_adapt.csv` | Adapted test: gold vs. mDeBERTa predictions |
+| `comparison_vosk.csv` | Test set via Vosk ASR → NLU |
+| `metrics_epoch_15.json` | Best-epoch accuracy snapshot |
+| `nlu.xsid_test_adapt.out` | mDeBERTa-v3-base test predictions |
+| `nlu.xsid_test_adapt.out.eval` | Aggregated test evaluation |
+| `ru.test_vosk.raw.conll` | Vosk transcripts in raw CoNLL form |
+| `ru.test_vosk.raw_0.conll` | NLU predictions on Vosk text |
+| `ru_GigaAM_0.raw.txt` | GigaAM transcripts (raw) |
+| `ru_GigaAM.raw_0.conll` | NLU predictions on GigaAM text |
 
-озвучка_test_adapt - озвученные тест данные (500  штук), используются в тетрадке *Курсовая_работа_озвучка.ipynb*
+## Notebooks
 
-озвучка_valid_adapt - озвученные тест данные (150  штук), используются в тетрадке *Курсовая_работа_озвучка.ipynb*, нужны для оценки качества работы модели vosk-model-small-ru-0.22 и GigaAM 
+| Notebook | Purpose |
+|----------|---------|
+| `xSID.ipynb` | [MaChAmp](https://github.com/machamp-nlp/machamp) fine-tuning |
+| `automatic_labeling_data.ipynb` | Synthetic city dataset: gap filling, case agreement, entity replacement |
+| `speech_recognition_pipeline.ipynb` | Speech-to-text with [GigaAM](https://github.com/salute-developers/GigaAM) and [Vosk](https://alphacephei.com/vosk/models); WER/CER for model selection |
+| `metrics_evaluation.ipynb` | Restore utterance IDs, build comparison CSVs, compute Intent Accuracy |
 
-cities_test_adapt.conll - 1125 примеров, датасет с городами России, собранный с помощью *Автоматические_данные_для_разметки.ipynb*	
+## Recorded audio layout (`spoken_test_adapt/`)
 
-cities_test_adapt.raw.txt - датасет с городами России в формате raw файла 
-
-cities_test_adapt.raw_0.conll - предсказание модели mdeberta-v3-base 
-
-comparison_cities.csv - csv файл, где хранится правильный датасет (оригинальный) и предсказанный моделью, использовались для получения метрик из кода *Метрики.ipynb* (города России)
-
-comparison_gigaAM.csv - csv файл, где хранится правильный датасет (оригинальный) и предсказанный моделью, использовались для получения метрик из кода *Метрики.ipynb* (тестовые данные), предсказанные данные были озвучены с помощью vosk
-
-comparison_test_adapt.csv - csv файл, где хранится правильный датасет (оригинальный) и предсказанный моделью, использовались для получения метрик из кода *Метрики.ipynb* (тестовые данные)
-
-comparison_vosk.csv - csv файл, где хранится правильный датасет (оригинальный) и предсказанный модели, использовались для получения метрик из кода *Метрики.ipynb* (тестовые данные_vosk), предсказанные данные были озвучены с помощью vosk
-
-metrics_epoch_15.json - доля правильных ответов с лучшими параметрами (метрика Accuracy)
-
-nlu.xsid_test_adapt.out - предсказания модели mdeberta-v3-base (тест данные)
-
-nlu.xsid_test_adapt.out.eval - итоговая оценка модели на тест данных 
-
-ru.test_vosk.raw.conll - тест данные, которые были преобразованы моделью vosk, и файл переделан в формат raw, для того чтобы текстовая модель смогла сделать предсказание
-
-ru.test_vosk.raw_0.conll - предсказания модели mdeberta-v3-base
-
-ru_GigaAM.raw_0.conll - предсказания модели mdeberta-v3-base
-
-ru_GigaAM_0.raw.txt - тест данные, которые были преобразованы моделью GigaAM, и файл переделан в формат raw, для того чтобы текстовая модель смогла сделать предсказание
-
-xSID.ipynb - фреймворк machamp, где дообучалась модель, инструкция по использованию на их [github](https://github.com/machamp-nlp/machamp/tree/master)
-
-Автоматические_данные_для_разметки.ipynb - с помощью данного кода был получен датасет городов России, правило того как работать: 
-
-1. examples_test (сначала отчистить от r=right) - изначальные примеры; gaps_test - то что меняем; fillers (собрать данные сразу с переводом на английский) - то на что меняем; generated_test - итог 
-
-2. функция conjugate – ищет среди слов глагольные категории, и если в выражении есть глагол, то возвращает его без изменений; если же глаголов нет, то склоняет все слова подходящих частей речи (имена, прилагательные, числительные и т.п.) в заданный падеж, приводя их к нужной форме после поиска формы в именительном падеже
-3. функция change – выполняет замену фрагмента в разметке данных NLU: находит указанный отрезок текста, удаляет исходные токены в заданных границах (по номерам строк), вставляет на их место новое выражение (согласованное по падежу), корректирует номера строк, обновляет разметку сущностей и при необходимости добавляет знаки препинания.
-4. функция generation – читает информацию из трех файлов и применяет функцию change
-5. функция changename – более простая функция, нужна для имен, имя оно всегда заменяет одну позицию, поэтому не нужно менять остальные блоки.
-функция generationnames – меняет одно имя, затем второе, если их два, если имя одно, то одно
-
-Курсовая_работа_озвучка.ipynb - код, где происходило преобразование речи в текст, инструкция к [GigaAM](https://github.com/salute-developers/GigaAM), инструкция к [vosk-model-small-ru-0.22](https://alphacephei.com/vosk/models). Привести все аудио к формату wav, код там имеется, закинуть две папки с тестовыми и валид данным на гугл диск, и просто запустить код, все сохраниться на гугл диске. Далее в конце подсчитать метрики WER и CER, чтобы выбрать лучшую модель. 
-
-Метрики.ipynb - когда получили предсказания от модели, идем в данный код, берем ориг файл, который мы сделали raw, где есть id, и восстанавливаем id с помощью кода там, потом берем ориг файл и предсказание модели и делаем csv, после этого можно посчитать метрики Accuracy
-
+Speaker subfolders use English names: `male_16y`, `male_36y`, `female_20y_1`, `female_20y_2`, `female_20y_3`, `female_21y`, `female_46y`.
