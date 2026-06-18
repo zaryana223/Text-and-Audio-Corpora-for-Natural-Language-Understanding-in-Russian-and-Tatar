@@ -134,6 +134,6 @@ Model-level summary: `summary_<MODEL_NAME>.csv` under `SAVE_DIR`.
 
 | Artifact | Location |
 |----------|----------|
-| Experiment notebook | [code/generative/zero_shot+few_shot_version.ipynb](../code/generative/zero_shot+few_shot_version.ipynb) |
+| Experiment notebook | [experiments/generative/zero_shot+few_shot_version.ipynb](../experiments/generative/zero_shot+few_shot_version.ipynb) |
 | LLM error tables | [data/errors/generative_error_analysis_tables.xlsx](../data/errors/generative_error_analysis_tables.xlsx) |
 | Encoder metrics code | [code/metrics/nlu_metrics/](../code/metrics/nlu_metrics/), [code/metrics/run_metrics.py](../code/metrics/run_metrics.py) |

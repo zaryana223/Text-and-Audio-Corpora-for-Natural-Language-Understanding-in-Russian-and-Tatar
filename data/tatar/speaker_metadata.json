@@ -1,0 +1,27 @@
+{
+  "language": "tatar",
+  "speakers": 9,
+  "speaker_ids": [
+    { "id": "M_27", "gender": "male", "age": 27 },
+    { "id": "M_41", "gender": "male", "age": 41 },
+    { "id": "W_20", "gender": "female", "age": 20 },
+    { "id": "W_23", "gender": "female", "age": 23 },
+    { "id": "W_27", "gender": "female", "age": 27 },
+    { "id": "W_39", "gender": "female", "age": 39 },
+    { "id": "W_54", "gender": "female", "age": 54 },
+    { "id": "W_58", "gender": "female", "age": 58 },
+    { "id": "W_64", "gender": "female", "age": 64 }
+  ],
+  "recording": {
+    "device": "consumer smartphone microphone",
+    "setting": "everyday acoustic conditions, non-professional speakers"
+  },
+  "splits": {
+    "test": { "utterances": 500, "wav_path": "data/tatar/audio/test/" },
+    "val": { "utterances": 300, "wav_path": "data/tatar/audio/val/" }
+  },
+  "asr": {
+    "system": "Soyle",
+    "transcriptions": "data/tatar/audio/asr_transcriptions/"
+  }
+}

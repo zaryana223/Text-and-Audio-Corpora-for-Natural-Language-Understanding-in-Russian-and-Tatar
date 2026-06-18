@@ -1,0 +1,16 @@
+{
+  "language": "russian",
+  "speakers": 7,
+  "recording": {
+    "device": "consumer smartphone microphone",
+    "setting": "everyday acoustic conditions, non-professional speakers"
+  },
+  "splits": {
+    "test": { "utterances": 500, "wav_path": "data/russian/audio/test/" },
+    "val": { "utterances": 300, "wav_path": "data/russian/audio/val/" }
+  },
+  "asr_validation_wer": {
+    "GigaAM_v3": 0.1225,
+    "Vosk": 0.1569
+  }
+}

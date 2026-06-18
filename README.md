@@ -3,26 +3,55 @@
 Anonymous release for the ICNLSP 2026 paper.  
 **Anonymous view:** [anonymous.4open.science](https://anonymous.4open.science/r/Text-and-Audio-Corpora-for-Natural-Language-Understanding-in-Russian-and-Tatar-0151)
 
-Parallel task-oriented NLU corpora (intent detection + BIO slot filling) for **Russian** and **Tatar**, built on the [xSID](https://github.com/mainlp/xsid.git) schema. schema. 
+Parallel task-oriented NLU corpora (intent detection + BIO slot filling) for **Russian** and **Tatar**, built on the [xSID-0.7](https://github.com/mainlp/xsid) schema.
 
 ---
 
-## Repository structure
+## Repository layout
 
-| Path | Source | Contents |
-|------|--------|----------|
-| `benchmarks/russian/` | XSID-ru-NLP + manual adaptation | `ru.test.conll`, `ru.valid.conll`, `ru.test_adapt.conll`, `ru.valid_adapt.conll` |
-| `benchmarks/tatar/` | Tatar NLU collection | `tt.test.conll`, `tt.valid.conll`, adapted variants |
-| `training/russian/` | Development corpus (RU) | `ru.train.conll`, `ru.train_adapt.conll`, English reference |
-| `training/tatar/` | Tatar NLU collection | `tt.train.conll`, `tt.train_adapt.conll` |
-| `code/metrics/` | Development corpus (RU) | NLU evaluation (`run_metrics.py`, `nlu_metrics/`) |
-| `code/preprocessing/` | Development corpus (RU) | MT, cleanup, cultural adaptation notebooks |
-| `code/generative/` | Development corpus (RU) | Zero-shot / few-shot LLM evaluation |
-| `code/annotation/` | XSID-ru-NLP | Manual annotation notebooks |
-| `experiments/nlu/` | NLU (MaChAmp) | Encoder fine-tuning runs, predictions, configs |
-| `tatar/` | Tatar NLU collection | Scripts, full `data/` tree (text + audio + ASR transcriptions) |
-| `data/errors/` | Development corpus (RU) | Validation metrics and error-analysis spreadsheets |
-| `docs/` | Combined | Evaluation docs, generative LLM setup, paper snippets |
+```
+repo/
+├── data/                          # all corpora (text + audio)
+│   ├── russian/
+│   │   ├── text/                  # train + test/val (translated & adapted)
+│   │   ├── audio/test/            # 500 wav, 7 speakers
+│   │   ├── audio/val/             # 300 wav
+│   │   └── speaker_metadata.json
+│   └── tatar/
+│       ├── text/
+│       ├── audio/test/            # 500 wav, 9 speakers
+│       ├── audio/val/
+│       ├── audio/asr_transcriptions/
+│       └── speaker_metadata.json
+├── experiments/
+│   ├── encoders/                  # MaChAmp fine-tuning, ASR→NLU runs
+│   │   ├── configs/
+│   │   └── predictions/{russian,tatar}/
+│   └── generative/                # zero-/few-shot LLM evaluation
+│       ├── prompts/
+│       └── predictions/{russian,tatar}/
+├── code/
+│   ├── adaptation/                # MT, cleanup, cultural adaptation
+│   ├── annotation/
+│   ├── metrics/                   # run_metrics.py
+│   └── utils/                     # ASR helpers (Söyle, WER/CER)
+├── docs/
+├── scripts/
+└── requirements.txt
+```
+
+### Text files (`data/{lang}/text/`)
+
+| File | Split |
+|------|-------|
+| `train.conll` | Training (37,173 utt.) |
+| `test_translated.conll` | Test, translated (RU: 532 / TT: 500) |
+| `test_adapted.conll` | Test, culturally adapted (500) |
+| `val_translated.conll` | Validation, translated (300) |
+| `val_adapted.conll` | Validation, adapted (300) |
+
+Extra Russian files: `train_adapted.conll`, `en.train.reference.conll`.  
+Extra Tatar file: `train_adapted.conll`, `val_translated_tat.conll`.
 
 ---
 
@@ -32,9 +61,9 @@ Parallel task-oriented NLU corpora (intent detection + BIO slot filling) for **R
 pip install -r requirements.txt
 cd code/metrics
 python run_metrics.py \
-  --gold ../../benchmarks/russian/ru.test_adapt.conll \
+  --gold ../../data/russian/text/test_adapted.conll \
   --pred path/to/predictions.conll \
-  --model mdeberta_adapt_adapt \
+  --model my_model \
   --output-dir ../../results
 ```
 
@@ -43,7 +72,7 @@ python run_metrics.py \
 | Intent Accuracy | Fraction of correct intents |
 | Span F1 | BIO span F1 ([seqeval](https://github.com/chakki-works/seqeval)) |
 | Slot F1 (/N) | Mean per-utterance BIO F1 (ASR→NLU pipeline) |
-| Avg. | `(Intent F1 + Span F1) / 2` |
+| Avg. | `(Intent Acc + Span F1) / 2` |
 
 ---
 
