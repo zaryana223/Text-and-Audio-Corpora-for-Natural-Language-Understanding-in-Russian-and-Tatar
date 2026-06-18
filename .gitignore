@@ -5,6 +5,7 @@ venv/
 .env
 results/
 *.csv
+!predictions/**/*.csv
 .DS_Store
 .idea/
 .vscode/
