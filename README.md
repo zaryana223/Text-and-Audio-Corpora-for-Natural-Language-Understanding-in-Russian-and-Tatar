@@ -179,21 +179,6 @@ python run_metrics.py \
 
 ---
 
-## Citation
-
-```bibtex
-@inproceedings{damashova2026multimodal,
-  title     = {A Multimodal Corpus for Natural Language Understanding in Russian and Tatar},
-  author    = {Anonymous},
-  booktitle = {Proceedings of ICNLSP 2026},
-  year      = {2026}
-}
-```
-
-Built on [xSID-0.7](https://github.com/mainlp/xsid) — please cite van der Goot et al. (2021) when using the schema.
-
----
-
 ## License
 
 - **Code**: MIT  
