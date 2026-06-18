@@ -1,64 +1,164 @@
 # Text and Audio Corpora for NLU in Russian and Tatar
 
-Anonymous release for the ICNLSP 2026 paper.  
-**Anonymous view:** [anonymous.4open.science](https://anonymous.4open.science/r/Text-and-Audio-Corpora-for-Natural-Language-Understanding-in-Russian-and-Tatar-0151)
+![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Languages](https://img.shields.io/badge/Languages-Russian%20%7C%20Tatar-orange)
+![Paper](https://img.shields.io/badge/Paper-ICNLSP%202026-red)
 
-Parallel task-oriented NLU corpora (intent detection + BIO slot filling) for **Russian** and **Tatar**, built on the [xSID-0.7](https://github.com/mainlp/xsid) schema.
+*Anonymous release · [Anonymous view on 4open.science](https://anonymous.4open.science/r/Text-and-Audio-Corpora-for-Natural-Language-Understanding-in-Russian-and-Tatar-0151)*
+
+---
+
+## Abstract
+
+Task-oriented dialogue systems rely on natural language understanding (NLU) to map utterances to intents and slot values. Although voice assistants are widely deployed, Russian and — especially — Tatar remain low-resource for NLU: annotated corpora are scarce and manual cultural adaptation is costly.
+
+To address this gap, we construct parallel Russian and Tatar NLU resources based on the [xSID](https://github.com/mainlp/xsid) benchmark: test and validation splits are manually translated and culturally adapted; the training set is machine-translated with large language models (LLMs) and manually corrected. We additionally record native-speaker audio for both languages and evaluate spoken NLU through automatic speech recognition (ASR)→NLU.
+
+In-language training substantially outperforms English-only fine-tuning; typologically close pivot languages transfer better than distant ones on slot filling; and instruction-tuned generative models achieve strong intent scores but trail fine-tuned encoders on slot extraction.
 
 ---
 
 ## Repository layout
 
 ```
-repo/
-├── data/                          # all corpora (text + audio)
+├── data/                    # corpora only (text + audio)
 │   ├── russian/
-│   │   ├── text/                  # train + test/val (translated & adapted)
-│   │   ├── audio/test/            # 500 wav, 7 speakers
-│   │   ├── audio/val/             # 300 wav
-│   │   └── speaker_metadata.json
 │   └── tatar/
-│       ├── text/
-│       ├── audio/test/            # 500 wav, 9 speakers
-│       ├── audio/val/
-│       ├── audio/asr_transcriptions/
-│       └── speaker_metadata.json
-├── experiments/
-│   ├── encoders/                  # MaChAmp fine-tuning, ASR→NLU runs
-│   │   ├── configs/
-│   │   └── predictions/{russian,tatar}/
-│   └── generative/                # zero-/few-shot LLM evaluation
-│       ├── prompts/
-│       └── predictions/{russian,tatar}/
-├── code/
-│   ├── adaptation/                # MT, cleanup, cultural adaptation
-│   ├── annotation/
-│   ├── metrics/                   # run_metrics.py
-│   └── utils/                     # ASR helpers (Söyle, WER/CER)
-├── docs/
-├── scripts/
+├── code/                    # all pipelines and evaluation
+│   ├── adaptation/          # MT, cultural adaptation, entity lists
+│   ├── annotation/          # manual benchmark annotation
+│   ├── encoders/            # MaChAmp fine-tuning
+│   ├── generative/          # zero-/few-shot LLM evaluation
+│   ├── asr/                 # speech recognition + ASR→NLU
+│   └── metrics/             # NLU scoring (Intent Acc, Span F1)
 └── requirements.txt
 ```
 
-### Text files (`data/{lang}/text/`)
+---
 
-| File | Split |
-|------|-------|
-| `train.conll` | Training (37,173 utt.) |
-| `test_translated.conll` | Test, translated (RU: 532 / TT: 500) |
-| `test_adapted.conll` | Test, culturally adapted (500) |
-| `val_translated.conll` | Validation, translated (300) |
-| `val_adapted.conll` | Validation, adapted (300) |
+## Data
 
-Extra Russian files: `train_adapted.conll`, `en.train.reference.conll`.  
-Extra Tatar file: `train_adapted.conll`, `val_translated_tat.conll`.
+All annotated material lives under `data/{language}/`. Both languages share the [xSID-0.7](https://github.com/mainlp/xsid) schema: **18 intents**, **44 slot types**, **BIO** tagging.
+
+### Text (`data/{lang}/text/`)
+
+| File | Description | Size |
+|------|-------------|------|
+| `train.conll` | Machine-translated training corpus (deduplicated) | 37,173 utt. |
+| `test_translated.conll` | Manually translated test (calque of English benchmark) | RU 532 / TT 500 |
+| `test_adapted.conll` | Manually culturally adapted test | 500 |
+| `val_translated.conll` | Manually translated validation | 300 |
+| `val_adapted.conll` | Culturally adapted validation | 300 |
+
+**Translated** splits follow the English source literally (foreign place names may remain). **Adapted** splits replace entities with culturally familiar Russian or Tatar equivalents while preserving intents and BIO spans.
+
+Optional extras in `data/russian/text/`: `train_adapted.conll`, `en.train.reference.conll`, `en.train.unique_ids.conll`, `ru.train.unique_ids.conll`.  
+Optional in `data/tatar/text/`: `train_adapted.conll`, `val_translated_tat.conll` (Tatar validation variant).
+
+**CoNLL format** — one token per line; intent on `# intent:`; slots in BIO:
+
+```
+# intent: weather/find
+какая    O
+погода   O
+будет    O
+завтра   B-datetime
+в        O
+Казани   B-location
+```
+
+### Audio
+
+| Path | Language | Contents |
+|------|----------|----------|
+| `data/russian/audio/test/` | Russian | 500 mono WAV (7 speakers) |
+| `data/russian/audio/val/` | Russian | 300 mono WAV |
+| `data/tatar/audio/test/` | Tatar | 500 mono WAV (9 speakers) |
+| `data/tatar/audio/val/` | Tatar | validation audio (when released) |
+| `data/tatar/audio/asr_transcriptions/` | Tatar | Söyle ASR hypotheses (`.txt`) |
+
+Speaker demographics and recording conditions: `data/{lang}/speaker_metadata.json`.  
+Recordings were made by non-professional native speakers on consumer smartphones in everyday acoustic settings.
+
+### Working with text and audio
+
+1. **Text-only NLU** — load any split from `data/{lang}/text/`, fine-tune an encoder (`code/encoders/`) or run generative prompts (`code/generative/`), score with `code/metrics/run_metrics.py`.
+2. **Adapted vs translated** — use **adapted** test/val when evaluating on localised entities; **translated** train often yields higher slot F1 when train and test variants match.
+3. **Spoken NLU** — transcribe WAV with `code/asr/` (GigaAM for Russian, Söyle for Tatar), then pass CoNLL transcripts to the same NLU models. Compare ASR output against gold text with `wer_and_cer.py`.
 
 ---
 
-## Quick start: metrics
+## Code
+
+All processing and evaluation scripts are under `code/`. Notebooks were used for the ICNLSP 2026 experiments; Python entry points can be extracted from them where noted.
+
+### `code/adaptation/` — corpus construction
+
+| File | Role |
+|------|------|
+| `translate.ipynb` | Machine translation of the English xSID training pool to Russian/Tatar via LLMs; CoNLL-only output, BIO correction |
+| `cultural_adapt.ipynb` | Cultural adaptation: entity replacement lists, morphological inflection, pattern-based slot fixes |
+| `translation.py` | Shared translation utilities and prompt helpers |
+| `train_adapted.ipynb` | Automated entity substitution for Tatar adapted training splits |
+| `automatic_labeling_data.ipynb` | Synthetic city-name dataset generation for adaptation stress tests |
+| `entities.py` | Curated replacement lexicons (locations, restaurants, media titles) for Tatar adaptation |
+
+The pipeline mirrors the paper: manual translation + adaptation for benchmarks; LLM translation + automatic adaptation at scale for training.
+
+### `code/annotation/` — manual labelling
+
+| File | Role |
+|------|------|
+| `manual_annotation.ipynb` | Interactive workflow for verifying intents and BIO spans on benchmark utterances |
+
+### `code/encoders/` — fine-tuned NLU models
+
+| File | Role |
+|------|------|
+| `machamp.ipynb` | [MaChAmp](https://github.com/machamp-nlp/machamp) joint intent classification + BIO slot labeling; mDeBERTa-v3, EuroBERT, XLM-R / Glot500 |
+
+Supports in-language and cross-lingual pivot training described in the paper.
+
+### `code/generative/` — instruction-tuned LLMs
+
+| File | Role |
+|------|------|
+| `zero_shot+few_shot_version.ipynb` | Zero- and few-shot evaluation of Qwen2.5, Gemma-2, Phi-4-mini, Mistral-7B; JSON `{intent, slots}` output against xSID inventory |
+
+Models are **not** fine-tuned on the corpus; prompts enforce the 16-intent / 33-slot schema at inference time.
+
+### `code/asr/` — speech recognition
+
+| File | Role |
+|------|------|
+| `speech_recognition_pipeline.ipynb` | ASR→NLU cascade: GigaAM v3 (Russian) or Söyle (Tatar) → NLU encoder |
+| `soyle.py` | Batch ASR with the Söyle Turkic speech model |
+| `wer_and_cer.py` | Word/character error rate between gold text and ASR transcripts |
+
+### `code/metrics/` — evaluation
+
+| File | Role |
+|------|------|
+| `run_metrics.py` | CLI: Intent Accuracy, Span F1 (seqeval), per-slot breakdown |
+| `metrics_evaluation.ipynb` | Batch comparison CSVs, utterance ID alignment, aggregated tables |
+| `nlu_metrics/` | Core metric functions (`metrics.py`, `csv_builder.py`) |
+
+| Metric | Definition |
+|--------|------------|
+| Intent Accuracy | Fraction of utterances with correct intent |
+| Span F1 | Token-level BIO span F1 ([seqeval](https://github.com/chakki-works/seqeval)) |
+| Slot F1 (/N) | Mean per-utterance BIO F1 (for ASR→NLU when lengths differ) |
+| Avg. | `(Intent Acc + Span F1) / 2` |
+
+---
+
+## Quick start
 
 ```bash
+git clone https://github.com/zaryana223/Text-and-Audio-Corpora-for-Natural-Language-Understanding-in-Russian-and-Tatar.git
+cd Text-and-Audio-Corpora-for-Natural-Language-Understanding-in-Russian-and-Tatar
 pip install -r requirements.txt
+
 cd code/metrics
 python run_metrics.py \
   --gold ../../data/russian/text/test_adapted.conll \
@@ -67,21 +167,37 @@ python run_metrics.py \
   --output-dir ../../results
 ```
 
-| Metric | Description |
-|--------|-------------|
-| Intent Accuracy | Fraction of correct intents |
-| Span F1 | BIO span F1 ([seqeval](https://github.com/chakki-works/seqeval)) |
-| Slot F1 (/N) | Mean per-utterance BIO F1 (ASR→NLU pipeline) |
-| Avg. | `(Intent Acc + Span F1) / 2` |
-
 ---
 
 ## Corpus statistics
 
-| | Russian | Tatar |
-|---|---------|-------|
-| Test (translated) | 532 | 500 |
-| Test (adapted) | 500 | 500 |
-| Validation (per variant) | 300 | 300 |
-| Training (deduplicated) | 37,173 | 37,173 |
-| Audio (test + val) | 800 | 800 |
+| Split | Russian (text) | Tatar (text) | Audio (test / val) |
+|-------|---------------|--------------|-------------------|
+| Train | 37,173 | 37,173 | — |
+| Test | 532 / 500* | 500 | 500 |
+| Dev | 300 | 300 | 300 |
+
+*532 translated / 500 culturally adapted
+
+---
+
+## Citation
+
+```bibtex
+@inproceedings{damashova2026multimodal,
+  title     = {A Multimodal Corpus for Natural Language Understanding in Russian and Tatar},
+  author    = {Anonymous},
+  booktitle = {Proceedings of ICNLSP 2026},
+  year      = {2026}
+}
+```
+
+Built on [xSID-0.7](https://github.com/mainlp/xsid) — please cite van der Goot et al. (2021) when using the schema.
+
+---
+
+## License
+
+- **Code**: MIT  
+- **Data**: CC BY 4.0  
+- **xSID base**: see [xSID license](https://github.com/mainlp/xsid/blob/main/LICENSE)
