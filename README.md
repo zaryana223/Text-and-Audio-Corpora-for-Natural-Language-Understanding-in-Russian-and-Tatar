@@ -4,8 +4,6 @@
 ![Languages](https://img.shields.io/badge/Languages-Russian%20%7C%20Tatar-orange)
 ![Paper](https://img.shields.io/badge/Paper-ICNLSP%202026-red)
 
-*Anonymous release · [Anonymous view on 4open.science](https://anonymous.4open.science/r/Text-and-Audio-Corpora-for-Natural-Language-Understanding-in-Russian-and-Tatar-0151)*
-
 ---
 
 ## Abstract
