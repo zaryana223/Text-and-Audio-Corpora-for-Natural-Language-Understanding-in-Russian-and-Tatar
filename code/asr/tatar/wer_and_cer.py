@@ -63,8 +63,8 @@ if __name__ == "__main__":
 
     print(f"WER: {wer:.4f}")
     print(f"CER: {cer:.4f}")
-    print("\nПримеры сравнения:")
-    for i, r, p in zip(ids[:10], refs_list[:10], preds_list[:10]):  # первые 10 для примера
+    print("\nComparison examples:")
+    for i, r, p in zip(ids[:10], refs_list[:10], preds_list[:10]):  # first 10 examples
         print(f"{i}:\n  REF: {r}\n  PRD: {p}")
 
 import os
@@ -75,13 +75,13 @@ from evaluate import load
 wer_metric = load("wer")
 cer_metric = load("cer")
 
-# Нормализация текста
+# Text normalization
 def normalize_text(text: str) -> str:
-    # убрать всё, кроме букв, цифр и пробелов
+    # keep letters, digits, and spaces only
     text = re.sub(r"[^\w\s]", "", text, flags=re.UNICODE)
-    # привести к нижнему регистру
+    # lowercase
     text = text.lower()
-    # убрать лишние пробелы
+    # collapse whitespace
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
@@ -124,7 +124,7 @@ def load_predictions(txt_path):
                     }
     return preds
 
-# Считаем метрики и сохраняем несовпадения
+# Compute metrics and save mismatches
 def evaluate_file(conll_path, results_path, mismatches_dir="mismatches"):
     references = load_references(conll_path)
     predictions = load_predictions(results_path)
@@ -150,7 +150,7 @@ def evaluate_file(conll_path, results_path, mismatches_dir="mismatches"):
     wer = wer_metric.compute(references=y_true, predictions=y_pred)
     cer = cer_metric.compute(references=y_true, predictions=y_pred)
 
-    # сохраняем несовпадения
+    # save mismatches
     os.makedirs(mismatches_dir, exist_ok=True)
     mism_path = os.path.join(
         mismatches_dir, os.path.basename(results_path).replace(".txt", "_mismatches.csv")
@@ -166,7 +166,7 @@ def evaluate_file(conll_path, results_path, mismatches_dir="mismatches"):
 
 if __name__ == "__main__":
     conll_path = "/content/drive/MyDrive/Курсовая_3_курс/Голосовые/Text/Test/tt.test_final.conll"
-    results_dir = "/content/drive/MyDrive/Курсовая_3_курс/Голосовые/Text/Söyle"   # поменяй на папку, где лежат soyle_results_*.txt
+    results_dir = "/content/drive/MyDrive/Курсовая_3_курс/Голосовые/Text/Söyle"   # change to the folder containing soyle_results_*.txt
 
     results = []
     for fname in os.listdir(results_dir):
@@ -175,7 +175,7 @@ if __name__ == "__main__":
             results.append(res)
             print(res)
 
-    # Общая таблица по всем файлам
+    # aggregate table across files
     df = pd.DataFrame(results)
     df.to_csv("wer_cer_results.csv", index=False, encoding="utf-8-sig")
-    print("Сводные WER/CER сохранены в wer_cer_results.csv")
+    print("Summary WER/CER saved to wer_cer_results.csv")

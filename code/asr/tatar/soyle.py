@@ -13,7 +13,7 @@ drive.mount('/content/drive')
 !pip install "optimum-onnx[onnxruntime_gpu]"@git+https://github.com/huggingface/optimum-onnx.git
 !pip install sentencepiece pyarrow regex huggingface-hub
 
-"""# Код из репозитория [Söyle](https://github.com/IS2AI/Soyle?tab=readme-ov-file)"""
+"""# Code from the [Söyle] repository(https://github.com/IS2AI/Soyle?tab=readme-ov-file)"""
 
 # Import required modules
 from optimum.onnxruntime import ORTModelForSpeechSeq2Seq
@@ -94,7 +94,7 @@ with open(output_path, "w", encoding="utf-8") as f:
         print_gpu_usage()
         print("-" * 40)
 
-print(f"Готово! Все результаты сохранены в {output_path}")
+print(f"Done! Все результаты сохранены в {output_path}")
 
 text_dir = "/content/drive/MyDrive/Курсовая_3_курс/Голосовые/Текст"
 
@@ -148,4 +148,4 @@ with open(output_file, "w", encoding="utf-8") as out:
     for _, block in entries:
         out.write(block.strip() + "\n\n")
 
-print(f"Готово! Итоговый файл сохранён: {output_file}")
+print(f"Done! Итоговый файл сохранён: {output_file}")

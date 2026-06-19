@@ -142,6 +142,7 @@ Models are **not** fine-tuned on the corpus; prompts enforce the 16-intent / 33-
 | Path | Role |
 |------|------|
 | `russian/metrics_evaluation.ipynb` | Batch comparison CSVs and aggregated tables (Russian) |
+| `russian/run_metrics.py` | CLI: Intent Accuracy, Span F1 (seqeval), per-slot breakdown |
 | `russian/metrics.py`, `csv_builder.py` | Intent Accuracy, Span F1, per-slot breakdown |
 | `tatar/metrics.py`, `csv_builder.py` | Same metric functions for Tatar evaluation |
 
@@ -162,7 +163,11 @@ cd Text-and-Audio-Corpora-for-Natural-Language-Understanding-in-Russian-and-Tata
 pip install -r requirements.txt
 
 cd code/metrics/russian
-python -c "from metrics import score; print(score('gold.conll','pred.out','model'))"
+python run_metrics.py \
+  --gold ../../data/russian/text/test_adapted.conll \
+  --pred path/to/predictions.out \
+  --model my_model \
+  --output-dir ../../results
 ```
 
 ---
