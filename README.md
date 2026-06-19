@@ -23,12 +23,12 @@ In-language training substantially outperforms English-only fine-tuning; typolog
 │   ├── russian/
 │   └── tatar/
 ├── code/                    # all pipelines and evaluation
-│   ├── adaptation/          # MT, cultural adaptation, entity lists
+│   ├── adaptation/          # MT, cultural adaptation (russian/ | tatar/)
 │   ├── annotation/          # manual benchmark annotation
 │   ├── encoders/            # MaChAmp fine-tuning
 │   ├── generative/          # zero-/few-shot LLM evaluation
-│   ├── asr/                 # speech recognition + ASR→NLU
-│   └── metrics/             # NLU scoring (Intent Acc, Span F1)
+│   ├── asr/                 # speech recognition (russian/ | tatar/)
+│   └── metrics/             # NLU scoring (russian/ | tatar/)
 └── requirements.txt
 ```
 
@@ -80,9 +80,9 @@ Recordings were made by non-professional native speakers on consumer smartphones
 
 ### Working with text and audio
 
-1. **Text-only NLU** — load any split from `data/{lang}/text/`, fine-tune an encoder (`code/encoders/`) or run generative prompts (`code/generative/`), score with `code/metrics/run_metrics.py`.
+1. **Text-only NLU** — load any split from `data/{lang}/text/`, fine-tune an encoder (`code/encoders/`) or run generative prompts (`code/generative/`), score with `code/metrics/{lang}/`.
 2. **Adapted vs translated** — use **adapted** test/val when evaluating on localised entities; **translated** train often yields higher slot F1 when train and test variants match.
-3. **Spoken NLU** — transcribe WAV with `code/asr/` (GigaAM for Russian, Söyle for Tatar), then pass CoNLL transcripts to the same NLU models. Compare ASR output against gold text with `wer_and_cer.py`.
+3. **Spoken NLU** — transcribe WAV with `code/asr/russian/` (GigaAM) or `code/asr/tatar/` (Söyle), then pass CoNLL transcripts to NLU models. Compare ASR output with `wer_and_cer.py`.
 
 ---
 
@@ -90,16 +90,19 @@ Recordings were made by non-professional native speakers on consumer smartphones
 
 All processing and evaluation scripts are under `code/`. Notebooks were used for the ICNLSP 2026 experiments; Python entry points can be extracted from them where noted.
 
+Language-specific folders (`russian/`, `tatar/`) are used for **adaptation**, **asr**, and **metrics**. **annotation**, **encoders**, and **generative** are shared.
+
 ### `code/adaptation/` — corpus construction
 
-| File | Role |
+| Path | Role |
 |------|------|
-| `translate.ipynb` | Machine translation of the English xSID training pool to Russian/Tatar via LLMs; CoNLL-only output, BIO correction |
-| `cultural_adapt.ipynb` | Cultural adaptation: entity replacement lists, morphological inflection, pattern-based slot fixes |
-| `translation.py` | Shared translation utilities and prompt helpers |
-| `train_adapted.ipynb` | Automated entity substitution for Tatar adapted training splits |
-| `automatic_labeling_data.ipynb` | Synthetic city-name dataset generation for adaptation stress tests |
-| `entities.py` | Curated replacement lexicons (locations, restaurants, media titles) for Tatar adaptation |
+| `russian/translate.ipynb` | Machine translation of the English xSID training pool via LLMs |
+| `russian/cultural_adapt.ipynb` | Russian cultural adaptation: entity replacement, morphological fixes |
+| `russian/translation.py` | Translation utilities and prompt helpers |
+| `tatar/translate.ipynb` | Tatar machine translation pipeline |
+| `tatar/train_adapted.ipynb` | Automated entity substitution for Tatar adapted training splits |
+| `tatar/automatic_labeling_data.ipynb` | Synthetic city-name dataset generation |
+| `tatar/entities.py` | Curated replacement lexicons for Tatar adaptation |
 
 The pipeline mirrors the paper: manual translation + adaptation for benchmarks; LLM translation + automatic adaptation at scale for training.
 
@@ -127,19 +130,20 @@ Models are **not** fine-tuned on the corpus; prompts enforce the 16-intent / 33-
 
 ### `code/asr/` — speech recognition
 
-| File | Role |
+| Path | Role |
 |------|------|
-| `speech_recognition_pipeline.ipynb` | ASR→NLU cascade: GigaAM v3 (Russian) or Söyle (Tatar) → NLU encoder |
-| `soyle.py` | Batch ASR with the Söyle Turkic speech model |
-| `wer_and_cer.py` | Word/character error rate between gold text and ASR transcripts |
+| `russian/speech_recognition_pipeline.ipynb` | GigaAM v3 ASR→NLU cascade for Russian |
+| `russian/wer_and_cer.py` | Word/character error rate for Russian ASR |
+| `tatar/soyle.py` | Batch ASR with the Söyle Turkic speech model |
+| `tatar/wer_and_cer.py` | WER/CER for Tatar ASR transcripts |
 
 ### `code/metrics/` — evaluation
 
-| File | Role |
+| Path | Role |
 |------|------|
-| `run_metrics.py` | CLI: Intent Accuracy, Span F1 (seqeval), per-slot breakdown |
-| `metrics_evaluation.ipynb` | Batch comparison CSVs, utterance ID alignment, aggregated tables |
-| `nlu_metrics/` | Core metric functions (`metrics.py`, `csv_builder.py`) |
+| `russian/metrics_evaluation.ipynb` | Batch comparison CSVs and aggregated tables (Russian) |
+| `russian/metrics.py`, `csv_builder.py` | Intent Accuracy, Span F1, per-slot breakdown |
+| `tatar/metrics.py`, `csv_builder.py` | Same metric functions for Tatar evaluation |
 
 | Metric | Definition |
 |--------|------------|
@@ -157,12 +161,8 @@ git clone https://github.com/zaryana223/Text-and-Audio-Corpora-for-Natural-Langu
 cd Text-and-Audio-Corpora-for-Natural-Language-Understanding-in-Russian-and-Tatar
 pip install -r requirements.txt
 
-cd code/metrics
-python run_metrics.py \
-  --gold ../../data/russian/text/test_adapted.conll \
-  --pred path/to/predictions.conll \
-  --model my_model \
-  --output-dir ../../results
+cd code/metrics/russian
+python -c "from metrics import score; print(score('gold.conll','pred.out','model'))"
 ```
 
 ---
