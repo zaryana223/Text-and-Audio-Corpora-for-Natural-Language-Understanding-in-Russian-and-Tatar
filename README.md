@@ -29,6 +29,9 @@ In-language training substantially outperforms English-only fine-tuning; typolog
 │   ├── generative/          # zero-/few-shot LLM evaluation
 │   ├── asr/                 # speech recognition (russian/ | tatar/)
 │   └── metrics/             # NLU scoring (russian/ | tatar/)
+├── predictions/             # model outputs (encoder/ | generative/)
+│   ├── encoder/
+│   └── generative/
 └── requirements.txt
 ```
 
@@ -51,7 +54,7 @@ All annotated material lives under `data/{language}/`. Both languages share the 
 **Translated** splits follow the English source literally (foreign place names may remain). **Adapted** splits replace entities with culturally familiar Russian or Tatar equivalents while preserving intents and BIO spans.
 
 Optional extras in `data/russian/text/`: `train_adapted.conll`, `en.train.reference.conll`, `en.train.unique_ids.conll`, `ru.train.unique_ids.conll`.  
-Optional in `data/tatar/text/`: `train_adapted.conll`, `val_translated_tat.conll` (Tatar validation variant).
+Optional in `data/tatar/text/`: `train_adapted.conll`, `english.conll`, `english_normalised.conll`, `söyle_raw.conll`.
 
 **CoNLL format** — one token per line; intent on `# intent:`; slots in BIO:
 
@@ -72,7 +75,6 @@ Optional in `data/tatar/text/`: `train_adapted.conll`, `val_translated_tat.conll
 | `data/russian/audio/test/` | Russian | 500 mono WAV (7 speakers) |
 | `data/russian/audio/val/` | Russian | 300 mono WAV |
 | `data/tatar/audio/test/` | Tatar | 500 mono WAV (9 speakers) |
-| `data/tatar/audio/val/` | Tatar | validation audio (when released) |
 | `data/tatar/audio/asr_transcriptions/` | Tatar | Söyle ASR hypotheses (`.txt`) |
 
 Speaker demographics and recording conditions: `data/{lang}/speaker_metadata.json`.  
@@ -99,9 +101,10 @@ Language-specific folders (`russian/`, `tatar/`) are used for **adaptation**, **
 | `russian/translate.ipynb` | Machine translation of the English xSID training pool via LLMs |
 | `russian/cultural_adapt.ipynb` | Russian cultural adaptation: entity replacement, morphological fixes |
 | `russian/translation.py` | Translation utilities and prompt helpers |
+| `russian/automatic_labeling_data.ipynb` | Synthetic city-name dataset generation |
 | `tatar/translate.ipynb` | Tatar machine translation pipeline |
+| `tatar/deepseek_translation.ipynb` | DeepSeek-based translation pipeline for Tatar |
 | `tatar/train_adapted.ipynb` | Automated entity substitution for Tatar adapted training splits |
-| `tatar/automatic_labeling_data.ipynb` | Synthetic city-name dataset generation |
 | `tatar/entities.py` | Curated replacement lexicons for Tatar adaptation |
 
 The pipeline mirrors the paper: manual translation + adaptation for benchmarks; LLM translation + automatic adaptation at scale for training.
@@ -110,7 +113,7 @@ The pipeline mirrors the paper: manual translation + adaptation for benchmarks; 
 
 | File | Role |
 |------|------|
-| `manual_annotation.ipynb` | Interactive workflow for verifying intents and BIO spans on benchmark utterances |
+| `annotation.ipynb` | Interactive workflow for verifying intents and BIO spans on benchmark utterances |
 
 ### `code/encoders/` — fine-tuned NLU models
 
@@ -133,9 +136,9 @@ Models are **not** fine-tuned on the corpus; prompts enforce the 16-intent / 33-
 | Path | Role |
 |------|------|
 | `russian/speech_recognition_pipeline.ipynb` | GigaAM v3 ASR→NLU cascade for Russian |
-| `russian/wer_and_cer.py` | Word/character error rate for Russian ASR |
-| `tatar/soyle.py` | Batch ASR with the Söyle Turkic speech model |
-| `tatar/wer_and_cer.py` | WER/CER for Tatar ASR transcripts |
+| `russian/wer_and_cer.ipynb` | Word/character error rate for Russian ASR |
+| `tatar/soyle.ipynb` | Batch ASR with the Söyle Turkic speech model |
+| `tatar/wer_and_cer.ipynb` | WER/CER for Tatar ASR transcripts |
 
 ### `code/metrics/` — evaluation
 
@@ -144,6 +147,7 @@ Models are **not** fine-tuned on the corpus; prompts enforce the 16-intent / 33-
 | `russian/metrics_evaluation.ipynb` | Batch comparison CSVs and aggregated tables (Russian) |
 | `russian/run_metrics.py` | CLI: Intent Accuracy, Span F1 (seqeval), per-slot breakdown |
 | `russian/metrics.py`, `csv_builder.py` | Intent Accuracy, Span F1, per-slot breakdown |
+| `tatar/run_metrics.py` | CLI: Intent Accuracy, Span F1 (seqeval), per-slot breakdown |
 | `tatar/metrics.py`, `csv_builder.py` | Same metric functions for Tatar evaluation |
 
 | Metric | Definition |
