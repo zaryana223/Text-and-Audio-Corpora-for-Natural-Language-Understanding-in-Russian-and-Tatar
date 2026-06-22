@@ -101,8 +101,6 @@ Language-specific folders (`russian/`, `tatar/`) are used for **adaptation**, **
 | `russian/translate.ipynb` | Machine translation of the English xSID training pool via LLMs |
 | `russian/cultural_adapt.ipynb` | Russian cultural adaptation: entity replacement, morphological fixes |
 | `russian/translation.py` | Translation utilities and prompt helpers |
-| `russian/automatic_labeling_data.ipynb` | Synthetic city-name dataset generation |
-| `tatar/translate.ipynb` | Tatar machine translation pipeline |
 | `tatar/deepseek_translation.ipynb` | DeepSeek-based translation pipeline for Tatar |
 | `tatar/train_adapted.ipynb` | Automated entity substitution for Tatar adapted training splits |
 | `tatar/entities.py` | Curated replacement lexicons for Tatar adaptation |
