@@ -84,7 +84,7 @@ Recordings were made by non-professional native speakers on consumer smartphones
 
 1. **Text-only NLU** — load any split from `data/{lang}/text/`, fine-tune an encoder (`code/encoders/`) or run generative prompts (`code/generative/`), score with `code/metrics/{lang}/`.
 2. **Adapted vs translated** — use **adapted** test/val when evaluating on localised entities; **translated** train often yields higher slot F1 when train and test variants match.
-3. **Spoken NLU** — transcribe WAV with `code/asr/russian/` (GigaAM) or `code/asr/tatar/` (Söyle), then pass CoNLL transcripts to NLU models. Compare ASR output with `wer_and_cer.py`.
+3. **Spoken NLU** — transcribe WAV with `code/asr/russian/` (GigaAM) or `code/asr/tatar/` (Söyle), then pass CoNLL transcripts to NLU models. Compare ASR output with `wer_and_cer.ipynb`.
 
 ---
 
@@ -154,6 +154,30 @@ Models are **not** fine-tuned on the corpus; prompts enforce the 16-intent / 33-
 | Span F1 | Token-level BIO span F1 ([seqeval](https://github.com/chakki-works/seqeval)) |
 | Slot F1 (/N) | Mean per-utterance BIO F1 (for ASR→NLU when lengths differ) |
 | Avg. | `(Intent Acc + Span F1) / 2` |
+
+---
+
+## Predictions
+
+Pre-computed model outputs are stored under `predictions/`. Each CSV contains per-utterance intent and slot predictions.
+
+### Encoder predictions (`predictions/encoder/`)
+
+| Path | Description |
+|------|-------------|
+| `russian/russian_encoder_adapt.zip` | MaChAmp encoder predictions on Russian adapted test |
+| `russian/russian_encoder_trans.zip` | MaChAmp encoder predictions on Russian translated test |
+| `tatar/tatar_encoder.zip` | MaChAmp encoder predictions on Tatar test |
+
+### Generative predictions (`predictions/generative/`)
+
+Each model has its own subfolder with zero-shot and few-shot result CSVs.
+
+**Russian** (`predictions/generative/russian/`): Gemma-2-2B-it, Gemma-2-9B-it, Mistral-7B-Instruct-v0.3, Phi-4-mini-instruct, Qwen2.5-3B-Instruct, Qwen2.5-7B-Instruct.
+
+**Tatar** (`predictions/generative/tatar/`): Gemma-2-2B-it, Gemma-2-9B-it, Mistral-7B-Instruct-v0.3, Phi-4-mini-instruct, Qwen2.5-3B-Instruct, Qwen2.5-7B-Instruct.
+
+Few-shot configurations: `few_shot_1_popular`, `few_shot_1_problem`, `few_shot_1_slots`, `few_shot_5`, `few_shot_10` — varying the number and selection strategy of in-context examples.
 
 ---
 
