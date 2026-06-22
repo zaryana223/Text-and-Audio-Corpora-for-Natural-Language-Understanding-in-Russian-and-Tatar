@@ -167,7 +167,8 @@ Pre-computed model outputs are stored under `predictions/`. Each CSV contains pe
 |------|-------------|
 | `russian/russian_encoder_adapt.zip` | MaChAmp encoder predictions on Russian adapted test |
 | `russian/russian_encoder_trans.zip` | MaChAmp encoder predictions on Russian translated test |
-| `tatar/tatar_encoder.zip` | MaChAmp encoder predictions on Tatar test |
+| `tatar/tatar_encoder_adapt.zip` | MaChAmp encoder predictions on Tatar adapted test |
+| `tatar/tatar_encoder_trans.zip` | MaChAmp encoder predictions on Tatar translated test |
 
 ### Generative predictions (`predictions/generative/`)
 
